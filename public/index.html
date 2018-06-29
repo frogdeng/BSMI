@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>漫畫博物館</title>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+<link rel="stylesheet" href="css/iziModal.css">
+
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/module.css">
+
+
+
+<script src="js/slick.min.js"></script>
+<script src="js/iziModal.min.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.min.css" />
+<script type="text/javascript" src='//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.min.js'></script>
+<script type="text/javascript" src='//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.jQueryUI.min.js'></script>
+
+
+
+<script>
+	$(document).on('ready', function() {
+		$(".main").slick({
+			dots: true,
+			infinite: true,
+			arrows: false,
+			adaptiveHeight: true
+		});
+
+		$(".ad_banner").slick({
+			dots: true,
+			adaptiveHeight: true,
+			infinite: true
+		});
+
+		$(".moreShow").slick({
+			dots: false,
+			adaptiveHeight: true,
+			infinite: true,
+			slidesToShow: 4,
+  			slidesToScroll: 4
+		});
+
+	});
+
+</script>
+<script>
+	$(function(){
+		 $(".iziModal").iziModal({
+		 	  title: '',
+			  width: 600,
+			  radius: 0,
+			  overlayColor: 'rgba(0, 0, 0, 0.9)',
+			  closeOnEscape: true,
+		      closeButton: true,
+			});
+	})	
+
+	$(function(){
+		 $("#modal-search-site").iziModal({
+		 	  title: '搜尋本站',
+			  width: 900,
+			  radius: 0,
+			  overlayColor: 'rgba(0, 0, 0, 0.9)',
+			  closeOnEscape: true,
+		      closeButton: true,
+			});
+	})		
+
+	$(function(){
+		 $(".iziModal_search").iziModal({
+		 	  title: '進階搜尋',
+			  width: 900,
+			  radius: 0,
+			  overlayColor: 'rgba(0, 0, 0, 0.9)',
+			  closeOnEscape: true,
+		      closeButton: true,
+			});
+	})	
+
+	// $(function(){
+	//  $(".iziModal_search").iziModal({
+	//  	  title: '',
+	// 	  width: 600,
+	// 	  radius: 0,
+	// 	  overlayColor: 'rgba(0, 0, 0, 0.9)',
+	// 	  closeOnEscape: true,
+ //          closeButton: true,
+	// 	});
+	// })
+
+
+
+
+
+
+</script>
+
+
+<script>
+	$(function(){
+		$('.open-popup-link').magnificPopup({
+		  type:'inline',
+		  midClick: true 
+		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
+	});
+	$(function(){
+		$('.open-popup-link2').magnificPopup({
+		  type:'inline',
+		  midClick: true 
+		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
+	});
+</script>
+
+</head>
+
+<body>
+	<div class="top_header">
+		<div class="top_header_menu">
+			<ul>
+				<li><a href="#">網站導覽</a></li>
+				<li class="lil"></li>
+				<li><a href="#">公告資訊</a></li>
+				<li class="lil"></li>
+				<li><a href="#">常見問題</a></li>
+				<li class="lil"></li>
+				<li><a href="#">意見信箱</a></li>				
+				<li class="lil"></li>
+				<div class="log_section trigger-custom" data-iziModal-open="#modal-custom">登入
+				</div>	
+	
+			</ul>
+
+		</div>
+	</div>
+
+
+
+		
+
+
+
+
+		
+
+
+
+
+
+
+
+
+<div class="grid-stack">
+    <div class="grid-stack-item"
+        data-gs-x="0" data-gs-y="0"
+        data-gs-width="4" data-gs-height="2">
+            <div class="grid-stack-item-content">111</div>
+    </div>
+    <div class="grid-stack-item"
+        data-gs-x="4" data-gs-y="0"
+        data-gs-width="4" data-gs-height="4">
+            <div class="grid-stack-item-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    $('.grid-stack').gridstack();
+});
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- comic_bg -->
+
+
+
+
+<div class="clear"></div>
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer_wrapper">
+	<footer>
+		
+		<div class="links_right">
+
+			<div class="footer_link">
+				<a href="">資訊安全政策</a>
+				<a href="">隱私權保護政策</a>
+				<a href="">政府網站資料開放</a>
+			</div>
+
+			<div class="copyright">
+				<p>文化部著作權聲明 Copyright © All rights reserved.</p>
+				<p>電話：(+886)-02-8512-6000</p>
+				<p>地址：24219新北市新莊區中平路439號南棟13樓</p>
+				<p>建議瀏覽器：Chrome、Firefox、Safari、IE10以上版本 (螢幕最佳顯示效果為1280*960 )</p>
+
+				
+			</div>
+			
+
+
+		</div>
+	</footer>
+</div>
+
+</body>
+</html>
