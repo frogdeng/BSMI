@@ -7,163 +7,65 @@
 <link rel="shortcut icon" href="/favicon.ico" />
 <meta name="keywords" content="">
 <meta name="description" content="">
-<title>漫畫博物館</title>
+<title>BSMI</title>
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.js'></script>
+<script type="text/javascript" src='https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js'></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
   crossorigin="anonymous"></script>
 
-<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
-<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-<link rel="stylesheet" href="css/slick.css">
-<link rel="stylesheet" href="css/slick-theme.css">
-<link rel="stylesheet" href="css/iziModal.css">
+<script type="text/javascript" src='js/gridstack.min.js'></script>
+<script type="text/javascript" src='js/gridstack.jQueryUI.min.js'></script>
 
-<link rel="stylesheet" href="css/magnific-popup.css">
-<link rel="stylesheet" href="css/demo.css">
+
+<link rel="stylesheet" href="css/gridstack.css">
+<link rel="stylesheet" href="css/gridstack-extra.css">
+
+
+
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+
 <link rel="stylesheet" href="css/module.css">
 
-
-
-<script src="js/slick.min.js"></script>
-<script src="js/iziModal.min.js"></script>
-<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.min.css" />
-<script type="text/javascript" src='//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.min.js'></script>
-<script type="text/javascript" src='//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.jQueryUI.min.js'></script>
-
-
-
-<script>
-	$(document).on('ready', function() {
-		$(".main").slick({
-			dots: true,
-			infinite: true,
-			arrows: false,
-			adaptiveHeight: true
-		});
-
-		$(".ad_banner").slick({
-			dots: true,
-			adaptiveHeight: true,
-			infinite: true
-		});
-
-		$(".moreShow").slick({
-			dots: false,
-			adaptiveHeight: true,
-			infinite: true,
-			slidesToShow: 4,
-  			slidesToScroll: 4
-		});
-
-	});
-
-</script>
-<script>
-	$(function(){
-		 $(".iziModal").iziModal({
-		 	  title: '',
-			  width: 600,
-			  radius: 0,
-			  overlayColor: 'rgba(0, 0, 0, 0.9)',
-			  closeOnEscape: true,
-		      closeButton: true,
-			});
-	})	
-
-	$(function(){
-		 $("#modal-search-site").iziModal({
-		 	  title: '搜尋本站',
-			  width: 900,
-			  radius: 0,
-			  overlayColor: 'rgba(0, 0, 0, 0.9)',
-			  closeOnEscape: true,
-		      closeButton: true,
-			});
-	})		
-
-	$(function(){
-		 $(".iziModal_search").iziModal({
-		 	  title: '進階搜尋',
-			  width: 900,
-			  radius: 0,
-			  overlayColor: 'rgba(0, 0, 0, 0.9)',
-			  closeOnEscape: true,
-		      closeButton: true,
-			});
-	})	
-
-	// $(function(){
-	//  $(".iziModal_search").iziModal({
-	//  	  title: '',
-	// 	  width: 600,
-	// 	  radius: 0,
-	// 	  overlayColor: 'rgba(0, 0, 0, 0.9)',
-	// 	  closeOnEscape: true,
- //          closeButton: true,
-	// 	});
-	// })
-
-
-
-
-
-
-</script>
-
-
-<script>
-	$(function(){
-		$('.open-popup-link').magnificPopup({
-		  type:'inline',
-		  midClick: true 
-		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-		});
-	});
-	$(function(){
-		$('.open-popup-link2').magnificPopup({
-		  type:'inline',
-		  midClick: true 
-		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-		});
-	});
-</script>
 
 </head>
 
 <body>
-	<div class="top_header">
-		<div class="top_header_menu">
-			<ul>
-				<li><a href="#">網站導覽</a></li>
-				<li class="lil"></li>
-				<li><a href="#">公告資訊</a></li>
-				<li class="lil"></li>
-				<li><a href="#">常見問題</a></li>
-				<li class="lil"></li>
-				<li><a href="#">意見信箱</a></li>				
-				<li class="lil"></li>
-				<div class="log_section trigger-custom" data-iziModal-open="#modal-custom">登入
-				</div>	
-	
-			</ul>
 
+
+	<div class="top_header">
+		<div class="logo"><img src="img/logo.png" alt=""></div>
+		<div class="top_search">
+			<input type="text">
 		</div>
+		<div class="alert"><i class="far fa-bell"></i> 超級飄髮哥，您好</div>		
 	</div>
 
 
+	<div class="top_header_menu">
+<ul>
+	<li>
+		<a href="">首頁</a>
+		<a href="">知識管理</a>
+		<a href="">討論區</a>
+		<a href="">問卷調查</a>
+		<a href="">線上報名</a>
+		<a href="">個人設定</a>
+		<a href="">系統設定	</a>
+	</li>
+</ul>
+
+	</div>
+
 
 		
 
 
-
-
-		
 
 
 {% block page %}{% endblock %}

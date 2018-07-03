@@ -7,189 +7,183 @@
 <link rel="shortcut icon" href="/favicon.ico" />
 <meta name="keywords" content="">
 <meta name="description" content="">
-<title>漫畫博物館</title>
+<title>BSMI</title>
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.js'></script>
+<script type="text/javascript" src='https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js'></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
   crossorigin="anonymous"></script>
 
-<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
-<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-<link rel="stylesheet" href="css/slick.css">
-<link rel="stylesheet" href="css/slick-theme.css">
-<link rel="stylesheet" href="css/iziModal.css">
+<script type="text/javascript" src='js/gridstack.min.js'></script>
+<script type="text/javascript" src='js/gridstack.jQueryUI.min.js'></script>
 
-<link rel="stylesheet" href="css/magnific-popup.css">
-<link rel="stylesheet" href="css/demo.css">
+
+<link rel="stylesheet" href="css/gridstack.css">
+<link rel="stylesheet" href="css/gridstack-extra.css">
+
+
+
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+
 <link rel="stylesheet" href="css/module.css">
 
-
-
-<script src="js/slick.min.js"></script>
-<script src="js/iziModal.min.js"></script>
-<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.min.css" />
-<script type="text/javascript" src='//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.min.js'></script>
-<script type="text/javascript" src='//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.4.0/gridstack.jQueryUI.min.js'></script>
-
-
-
-<script>
-	$(document).on('ready', function() {
-		$(".main").slick({
-			dots: true,
-			infinite: true,
-			arrows: false,
-			adaptiveHeight: true
-		});
-
-		$(".ad_banner").slick({
-			dots: true,
-			adaptiveHeight: true,
-			infinite: true
-		});
-
-		$(".moreShow").slick({
-			dots: false,
-			adaptiveHeight: true,
-			infinite: true,
-			slidesToShow: 4,
-  			slidesToScroll: 4
-		});
-
-	});
-
-</script>
-<script>
-	$(function(){
-		 $(".iziModal").iziModal({
-		 	  title: '',
-			  width: 600,
-			  radius: 0,
-			  overlayColor: 'rgba(0, 0, 0, 0.9)',
-			  closeOnEscape: true,
-		      closeButton: true,
-			});
-	})	
-
-	$(function(){
-		 $("#modal-search-site").iziModal({
-		 	  title: '搜尋本站',
-			  width: 900,
-			  radius: 0,
-			  overlayColor: 'rgba(0, 0, 0, 0.9)',
-			  closeOnEscape: true,
-		      closeButton: true,
-			});
-	})		
-
-	$(function(){
-		 $(".iziModal_search").iziModal({
-		 	  title: '進階搜尋',
-			  width: 900,
-			  radius: 0,
-			  overlayColor: 'rgba(0, 0, 0, 0.9)',
-			  closeOnEscape: true,
-		      closeButton: true,
-			});
-	})	
-
-	// $(function(){
-	//  $(".iziModal_search").iziModal({
-	//  	  title: '',
-	// 	  width: 600,
-	// 	  radius: 0,
-	// 	  overlayColor: 'rgba(0, 0, 0, 0.9)',
-	// 	  closeOnEscape: true,
- //          closeButton: true,
-	// 	});
-	// })
-
-
-
-
-
-
-</script>
-
-
-<script>
-	$(function(){
-		$('.open-popup-link').magnificPopup({
-		  type:'inline',
-		  midClick: true 
-		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-		});
-	});
-	$(function(){
-		$('.open-popup-link2').magnificPopup({
-		  type:'inline',
-		  midClick: true 
-		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-		});
-	});
-</script>
 
 </head>
 
 <body>
-	<div class="top_header">
-		<div class="top_header_menu">
-			<ul>
-				<li><a href="#">網站導覽</a></li>
-				<li class="lil"></li>
-				<li><a href="#">公告資訊</a></li>
-				<li class="lil"></li>
-				<li><a href="#">常見問題</a></li>
-				<li class="lil"></li>
-				<li><a href="#">意見信箱</a></li>				
-				<li class="lil"></li>
-				<div class="log_section trigger-custom" data-iziModal-open="#modal-custom">登入
-				</div>	
-	
-			</ul>
 
+
+	<div class="top_header">
+		<div class="logo"><img src="img/logo.png" alt=""></div>
+		<div class="top_search">
+			<input type="text">
 		</div>
+		<div class="alert"><i class="far fa-bell"></i> 超級飄髮哥，您好</div>		
+	</div>
+
+
+	<div class="top_header_menu">
+<ul>
+	<li>
+		<a href="">首頁</a>
+		<a href="">知識管理</a>
+		<a href="">討論區</a>
+		<a href="">問卷調查</a>
+		<a href="">線上報名</a>
+		<a href="">個人設定</a>
+		<a href="">系統設定	</a>
+	</li>
+</ul>
+
+	</div>
+
+
+		
+
+
+
+
+
+
+
+<div class="fun_item_wrapper">
+	<div class="fun_item">
+		<i class="fas fa-file-alt fa-3x"></i>
+		<p>公文線上簽核管理系統</p>
+	</div>
+	<div class="fun_item">
+		<i class="fas fa-money-check-alt fa-3x"></i>
+		<p>個人薪資查詢</p>
+	</div>
+	<div class="fun_item">
+		<i class="far fa-calendar-alt fa-3x"></i>
+		<p>差勤、領物、費用系統</p>
+	</div>
+	<div class="fun_item">
+		<i class="fas fa-building fa-3x"></i>
+		<p>本局郵件系統</p>
+	</div>	
+
+	<div class="fun_item">
+		<i class="fas fa-desktop fa-3x"></i>
+		<p>應用系統 單一登錄平台</p>
+	</div>
+	<div class="fun_item">
+		<i class="fas fa-globe-asia fa-3x"></i>
+		<p>本局 全球資訊網</p>
+	</div>
+	<div class="fun_item">
+		<i class="fas fa-chart-area fa-3x"></i>
+		<p>國家標準檢驗系統</p>
+	</div>
+	<div class="fun_item_add">
+		<i class="fas fa-plus fa-2x"></i>
 	</div>
 
 
 
-		
-
-
-
-
-		
-
+	
+</div>
 
 
 
 
 
 
+<div class="grid-stack grid_section">
 
-<div class="grid-stack">
     <div class="grid-stack-item"
         data-gs-x="0" data-gs-y="0"
-        data-gs-width="4" data-gs-height="2">
-            <div class="grid-stack-item-content">111</div>
+        data-gs-width="6" data-gs-height="6">
+        <div class="grid-stack-item-content index_calender">
+        		calender
+        </div>
     </div>
+
+
     <div class="grid-stack-item"
-        data-gs-x="4" data-gs-y="0"
-        data-gs-width="4" data-gs-height="4">
-            <div class="grid-stack-item-content"></div>
+        data-gs-x="6" data-gs-y="0"
+        data-gs-width="6" data-gs-height="6">
+        <div class="grid-stack-item-content index_attendance_records">
+        	attendance_records
+    	</div>
+    </div>    
+
+    <div class="grid-stack-item"
+        data-gs-x="8" data-gs-y="6"
+        data-gs-width="12" data-gs-height="6">
+        <div class="grid-stack-item-content index_news">
+        	news
+        </div>
     </div>
+
+
+    <div class="grid-stack-item"
+        data-gs-x="0" data-gs-y="12"
+        data-gs-width="6" data-gs-height="6">
+        <div class="grid-stack-item-content index_calender">
+        		links
+        </div>
+    </div>
+
+
+    <div class="grid-stack-item"
+        data-gs-x="6" data-gs-y="12"
+        data-gs-width="6" data-gs-height="6">
+        <div class="grid-stack-item-content index_attendance_records">
+        	contacts
+    	</div>
+    </div>    
+
+  <div class="grid-stack-item"
+        data-gs-x="8" data-gs-y="20"
+        data-gs-width="12" data-gs-height="6">
+        <div class="grid-stack-item-content index_news">
+        	department_calender
+        </div>
+    </div>
+
+
+
 </div>
+
 
 <script type="text/javascript">
 $(function () {
+	var options = {
+        cellHeight: 80,
+        verticalMargin: 10
+    };
     $('.grid-stack').gridstack();
 });
 </script>
+
+
 
 <br>
 <br>
