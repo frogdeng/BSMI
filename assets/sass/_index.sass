@@ -155,61 +155,126 @@ $page_width: 1400px
 	// background: #eee
 	margin: 0 auto
 	color: #FFF
-	font-size: 30px
 	
+
+
+
+
+@mixin block_style 
+	background: #f6f8fa
+	border: 1px solid rgba(0,0,0,.1)
+	// border-radius: 3px 3px 0 0
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	align-items: flex-start
+	padding: 20px
+	box-shadow: 1px 2px 3px rgba(0,0,0,.1)
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		width: 100%
+		height: 16px
+		background: #e8eaec
+		top: 0
+		left: 0
+		z-index: -1000
+
+
+.block_title
+	width: 100%
+	font-size: 23px
+	color: #0c3861
+	font-weight: 700
+	margin-top: 12px
+	margin-bottom: 20px
+	margin-left: 5px
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: center
+	i
+		margin-right: 10px
 
 
 .index_calender
-	background: #190
-	display: flex
-	flex-direction: row
-	justify-content: center
-	align-items: center
-	
+	+block_style 
 
 
 
 .index_attendance_records
-	background: #819
-	display: flex
-	flex-direction: row
-	justify-content: center
-	align-items: center
-	
+	+block_style
+	.i_today
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		.i_date
+			width: 49%
+			height: 230px
+			color: #222
+			background: #15a3ca
+			padding: 20px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			.s-year
+				font-size: 18px
+				line-height: 1.2
+				color: #FFF
+				font-weight: 900
+			.s-date
+				font-size: 100px
+				line-height: 1.2
+				color: #FFF
+			.s-time
+				font-size: 80px
+				line-height: 1.2
+				color: #FFF
+			.s-week
+				font-size: 18px
+				line-height: 1.2
+				color: #FFF
+	.today_card
+		margin-top: 20px
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		p
+			color: #222
+			margin-right: 10px
+		.timing
+			border: 1px solid #c0c0c0
+			padding: 10px 20px
+			margin: 0 7px
+			color: #222
+
+
+
+
+
+
+
 
 .index_news
-	background: #123
-	display: flex
-	flex-direction: row
-	justify-content: center
-	align-items: center
-	
+	+block_style 
+
 
 
 
 .index_links
-	background: #123
-	display: flex
-	flex-direction: row
-	justify-content: center
-	align-items: center
-	
-
+	+block_style 
 
 .index_contacts
-	background: #123
-	display: flex
-	flex-direction: row
-	justify-content: center
-	align-items: center
+	+block_style 
 	
 
 .index_department_calender
-	background: #123
-	display: flex
-	flex-direction: row
-	justify-content: center
-	align-items: center
+	+block_style 
 	
 
 
