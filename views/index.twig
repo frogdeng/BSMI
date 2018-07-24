@@ -4,9 +4,10 @@
 {% block page %}
 
 
-
+<div class="index_setting">
+	<a href="" class="setting_btn">版面設定</a>
+</div>
 <div class="fun_item_wrapper">
-
 
 	<div class="fun_item">
 		<i class="fas fa-edit"></i>
@@ -60,7 +61,7 @@
 
     <div class="grid-stack-item"
         data-gs-x="0" data-gs-y="0"
-        data-gs-width="6" data-gs-height="6">
+        data-gs-width="6" data-gs-height="5">
         <div class="grid-stack-item-content index_calender">
 			<!-- block_title -->
 			<div class="block_title">
@@ -85,7 +86,7 @@
 	
     <div class="grid-stack-item"
         data-gs-x="6" data-gs-y="0"
-        data-gs-width="6" data-gs-height="6">
+        data-gs-width="6" data-gs-height="5">
         <div class="grid-stack-item-content index_attendance_records">
         	<!-- block_title -->
 			<div class="block_title">
@@ -97,9 +98,94 @@
 				</div>
 			</div>
 			<!-- block_content -->
+			<div class="index_attendance_records_time">
+				<div class="index_attendance_records_date">
+					<div class="i-year">107年</div>
+					<div class="i-today">8月29日</div>
+					<div class="i-week">星期四 下午</div>
+					
+				</div>
+
+				<!-- clock -->
+				<div class="index_attendance_records_clock">
+						<svg width="200" height="200">
+
+						<filter id="innerShadow" x="-20%" y="-20%" width="140%" height="140%">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+						<feOffset in="blur" dx="2.5" dy="2.5"/>
+						</filter>
+
+						<g >
+						<circle id="shadow" style="fill:rgba(0,0,0,0.1)" cx="97" cy="100" r="87" filter="url(#innerShadow)"></circle>
+						<circle id="circle" style="stroke: #FFF; stroke-width: 2px; fill:#20B7AF" cx="100" cy="100" r="80"></circle>
+						</g>
+						<g>
+						<line x1="100" y1="100" x2="100" y2="55" transform="rotate(80 100 100)" style="stroke-width: 3px; stroke: #fffbf9;" id="hourhand">
+						<animatetransform attributeName="transform"
+						attributeType="XML"
+						type="rotate"
+						dur="43200s"
+						repeatCount="indefinite"/>
+						</line>
+						<line x1="100" y1="100" x2="100" y2="40" style="stroke-width: 4px; stroke: #fdfdfd;" id="minutehand">
+						<animatetransform attributeName="transform"
+						attributeType="XML"
+						type="rotate"
+						dur="3600s"
+						repeatCount="indefinite"/>
+						</line>
+						<line x1="100" y1="100" x2="100" y2="30" style="stroke-width: 2px; stroke: #C1EFED;" id="secondhand">
+						<animatetransform attributeName="transform"
+						attributeType="XML"
+						type="rotate"
+						dur="60s"
+						repeatCount="indefinite"/>
+						</line>
+						</g>
+						<circle id="center" style="fill:#128A86; stroke: #C1EFED; stroke-width: 2px;" cx="100" cy="100" r="3"></circle>
+						</svg>
+
+						<script>
+							var hands = [];
+								hands.push(document.querySelector('#secondhand > *'));
+								hands.push(document.querySelector('#minutehand > *'));
+								hands.push(document.querySelector('#hourhand > *'));
+
+								var cx = 100;
+								var cy = 100;
+
+								function shifter(val) {
+								  return [val, cx, cy].join(' ');
+								}
+
+								var date = new Date();
+								var hoursAngle = 360 * date.getHours() / 12 + date.getMinutes() / 2;
+								var minuteAngle = 360 * date.getMinutes() / 60;
+								var secAngle = 360 * date.getSeconds() / 60;
+
+								hands[0].setAttribute('from', shifter(secAngle));
+								hands[0].setAttribute('to', shifter(secAngle + 360));
+								hands[1].setAttribute('from', shifter(minuteAngle));
+								hands[1].setAttribute('to', shifter(minuteAngle + 360));
+								hands[2].setAttribute('from', shifter(hoursAngle));
+								hands[2].setAttribute('to', shifter(hoursAngle + 360));
+
+								for(var i = 1; i <= 12; i++) {
+								  var el = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+								  el.setAttribute('x1', '100');
+								  el.setAttribute('y1', '30');
+								  el.setAttribute('x2', '100');
+								  el.setAttribute('y2', '40');
+								  el.setAttribute('transform', 'rotate(' + (i*360/12) + ' 100 100)');
+								  el.setAttribute('style', 'stroke: #ffffff;');
+								  document.querySelector('svg').appendChild(el);
+								}
+						</script>
+				</div>
+			</div>
         	
 
-			
+		
 
     	</div>
     </div>    
@@ -113,7 +199,7 @@
 	<!-- index_news -->
     <div class="grid-stack-item"
         data-gs-x="8" data-gs-y="6"
-        data-gs-width="12" data-gs-height="6">
+        data-gs-width="12" data-gs-height="5">
         <div class="grid-stack-item-content index_news">
 			<div class="tab_section">
 				<div class="tab_btn on_self">
@@ -136,7 +222,10 @@
 				</div>
 			</div>
 			<div class="search_section">
-				<div class="i-input"><input type="text" class="index_news_input"></div>
+				<div class="i-input">
+					<input type="text" class="index_news_input" placeholder="搜尋...">
+					<i class="fas fa-search"></i>
+				</div>
 				<div class="i-select">
 					<select name="" id="" class="index_news_select">
 						<option value="">所有公告</option>
@@ -190,7 +279,7 @@
 
     <div class="grid-stack-item"
         data-gs-x="0" data-gs-y="12"
-        data-gs-width="6" data-gs-height="6">
+        data-gs-width="6" data-gs-height="5">
         <div class="grid-stack-item-content index_links">
         	<!-- block_title -->
 			<div class="block_title">
@@ -201,8 +290,54 @@
 					<i class="fas fa-trash-alt"></i>
 				</div>
 			</div>
+			<!-- block_search -->
+			<div class="search_section">
+				<div class="i-input">
+					<input type="text" class="index_news_input" placeholder="請輸入關鍵字">
+					<i class="fas fa-search"></i>
+				</div>
+				<div class="i-select">
+					<select name="" id="" class="index_news_select">
+						<option value="">所有分類</option>
+						<option value="">所有分類</option>
+						<option value="">所有分類</option>
+						<option value="">所有分類</option>
+					</select>
+				</div>
+			</div>
 			<!-- block_content -->
+			<div class="links">
+				<div class="links_title">
+					<div class="link_name">連結名稱</div>
+					<div class="link_bureau">分類</div>
+				</div>
+
+				<div class="links_row">
+					<div class="link_name">商品驗證及技術電子文件(總局)</div>
+					<div class="link_bureau">總局</div>
+				</div>
+
+				<div class="links_row">
+					<div class="link_name">商品驗證及技術電子文件(總局)</div>
+					<div class="link_bureau">總局</div>
+				</div>
+
+				<div class="links_row">
+					<div class="link_name">商品驗證及技術電子文件(總局)</div>
+					<div class="link_bureau">總局</div>
+				</div>
+
+				<div class="links_row">
+					<div class="link_name">商品驗證及技術電子文件(總局)</div>
+					<div class="link_bureau">總局</div>
+				</div>
+				<div class="links_row">
+					<div class="link_name">商品驗證及技術電子文件(總局)</div>
+					<div class="link_bureau">總局</div>
+				</div>
 	
+				<a href="" class="and_more">更多...</a>
+			</div>
         </div>
     </div>
 
@@ -211,7 +346,7 @@
 
     <div class="grid-stack-item"
         data-gs-x="6" data-gs-y="12"
-        data-gs-width="6" data-gs-height="6">
+        data-gs-width="6" data-gs-height="5">
         <div class="grid-stack-item-content index_contacts">
         	 <!-- block_title -->
 			<div class="block_title">
@@ -222,8 +357,59 @@
 					<i class="fas fa-trash-alt"></i>
 				</div>
 			</div>
+			<!-- block_search -->
+			<div class="search_section">
+				<div class="i-input">
+					<input type="text" class="index_news_input" placeholder="請輸入關鍵字">
+					<i class="fas fa-search"></i>
+				</div>
+				<div class="i-select">
+					<select name="" id="" class="index_news_select">
+						<option value="">所有分類</option>
+						<option value="">所有分類</option>
+						<option value="">所有分類</option>
+						<option value="">所有分類</option>
+					</select>
+				</div>
+			</div>
 			<!-- block_content -->
+			<div class="contacts">
+				<div class="contacts_title">
+					<div class="contacts_name">姓名</div>
+					<div class="contacts_bureau">單位</div>
+					<div class="contacts_tel"></div>
+				</div>
 
+				<div class="contacts_row">
+					<div class="contacts_name">吳東興</div>
+					<div class="contacts_bureau">台北總局人事室</div>
+					<div class="contacts_tel">02-2343-1808</div>
+				</div>
+				<div class="contacts_row">
+					<div class="contacts_name">林美珠</div>
+					<div class="contacts_bureau">台北總局人事室</div>
+					<div class="contacts_tel">02-2343-1808</div>
+				</div>
+				<div class="contacts_row">
+					<div class="contacts_name">林美珠</div>
+					<div class="contacts_bureau">台北總局人事室</div>
+					<div class="contacts_tel">02-2343-1808</div>
+				</div>
+				<div class="contacts_row">
+					<div class="contacts_name">林美珠</div>
+					<div class="contacts_bureau">台北總局人事室</div>
+					<div class="contacts_tel">02-2343-1808</div>
+				</div>
+				<div class="contacts_row">
+					<div class="contacts_name">林美珠</div>
+					<div class="contacts_bureau">台北總局人事室</div>
+					<div class="contacts_tel">02-2343-1808</div>
+				</div>
+
+				
+	
+				<a href="" class="and_more">更多...</a>
+			</div>s
 
 
 
@@ -242,9 +428,9 @@
 				<div class="front">
 					<i class="far fa-calendar-alt"></i> <h6>部門行事曆</h6>
 				</div>
-				<div class="fun_icons">
+				<!-- <div class="fun_icons">
 					<i class="fas fa-trash-alt"></i>
-				</div>
+				</div> -->
 			</div>
 			<!-- block_content -->
         

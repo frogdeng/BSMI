@@ -3,12 +3,13 @@
 
 
 
-$page_width: 1024px
+$page_width: 1044px
 
 
 .top_header_wrapper
 	background: #FFF
 	width: 100%
+
 .top_header
 	background: #FFF
 	height: 80px
@@ -23,26 +24,81 @@ $page_width: 1024px
 		img
 			display: block
 			width: 150px
-	.top_search
-		height: 50px
+	.search_w
 		width: 50%
-		input[type="text"]
-			width: 90%
-			height: 40px
-	.alert
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		.advance_search
+			display: block
+			width: 96px
+			height: 38px
+			background: #419fe3
+			color: #FFF
+			border-radius: 4px
+			margin-left: 5px
+			font-size: 16px
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+		.top_search
+			width: 400px
+			height: 38px
+			border-radius: 4px
+			border: solid 1px #cccccc
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			
+			.mainsearch
+				width: 370px
+				border: none
+				height: 30px
+				outline: 0
+				padding-left: 10px
+				&::placeholder
+					color: #cccccc
+			i 
+				color: #419fe3
+				margin-right: 10px
+	.top_mention
 		height: 50px
 		width: 30%
 		display: flex
 		flex-direction: row
-		justify-content: center
+		justify-content: flex-end
 		align-items: center
-		color: #555
-		svg
-			margin-right: 10px
-	
-
-
-
+		.font_size
+			margin-left: 40px
+			cursor: pointer
+		.alert
+			margin-left: 40px
+			position: relative
+			cursor: pointer
+			i 
+				font-size: 18px
+			.num
+				position: absolute
+				width: 22px
+				height: 22px
+				background: #f5a623
+				font-size: 12px
+				color: #FFF
+				border-radius: 3px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				right: -15px
+				top: -12px
+		.member
+			margin-left: 40px
+			cursor: pointer
+			i 
+				font-size: 14px
 
 	
 		
@@ -93,17 +149,31 @@ $page_width: 1024px
 					.bottom_line
 						opacity: 1	
 					
-
+.menu_self
+	color: #419fe3 !important	
+	.bottom_line
+		opacity: 1  !important	
 			
 
 
-
+.index_setting
+	width: $page_width
+	margin: 0 auto
+	margin-bottom: 16px
+	display: flex
+	flex-direction: row
+	justify-content: flex-end
+	align-items: center
+	.setting_btn
+		color: #419fe3
+		font-size: 12px
+		margin-right: 10px
 
 .fun_item_wrapper
 	width: $page_width
 	margin: 0 auto
-	margin-bottom: 40px
-	background: #FFF
+	margin-bottom: 20px
+	padding: 0 10px
 	display: flex
 	flex-direction: row
 	justify-content: flex-start
@@ -115,6 +185,7 @@ $page_width: 1024px
 		text-align: center
 
 	.fun_item
+		background: #FFF
 		width: 128px
 		height: 150px
 		padding: 12px
@@ -139,10 +210,11 @@ $page_width: 1024px
 		i 
 			font-size: 24px
 		&:hover
-			background: #FFF
+			background: #fafafa
 			transform: scale(1.08)
-			border: 1px solid #59778c
+			// border: 1px solid #59778c
 	.fun_item_add
+		background: #FFF
 		width: 128px
 		height: 150px
 		padding: 10px
@@ -161,19 +233,8 @@ $page_width: 1024px
 
 		
 			
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
+	
 
 
 .grid_section
@@ -204,7 +265,7 @@ $page_width: 1024px
 .block_title
 	height: 46px
 	width: 100%
-	border-bottom: 1px solid #ddd
+	border-bottom: 1px solid #eee
 	display: flex
 	flex-direction: row
 	justify-content: space-between
@@ -241,9 +302,43 @@ $page_width: 1024px
 
 .index_attendance_records
 	+block_style
-	
+	.index_attendance_records_time
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.index_attendance_records_date
+			width: 40%
+			height: 250px
+			padding: 0 20px
+			// background: #289
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: flex-start
+			.i-year
+				color: #666
+				font-size: 18px
+				margin-bottom: 12px
 
+			.i-today
+				color: #59778c
+				font-size: 36px
+				margin-bottom: 12px
+				font-weight: 900
+			.i-week
+				color: #666
+				font-size: 18px
+				margin-bottom: 12px
 
+		.index_attendance_records_clock
+			width: 60%
+			height: 250px
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
 
 .index_news
 	+block_style 
@@ -276,31 +371,7 @@ $page_width: 1024px
 				margin-right: 3px
 		
 
-	.search_section
-		width: 100%
-		height: 52px
-		background: #fafafa
-		display: flex
-		flex-direction: row
-		justify-content: flex-start
-		align-items: center
-		padding: 0 24px
-		
-		.i-input
-			margin-right: 10px
-			.index_news_input
-				width: 320px
-				height: 36px
-				border-radius: 4px
-				border: solid 1px #cccccc
-		.i-select
-			.index_news_select
-				width: 104px
-				height: 36px
-				border-radius: 4px
-				border: solid 1px #cccccc
-				background: #FFF
-
+	
 	.index_news_content
 		width: 100%
 		.content_row
@@ -327,9 +398,54 @@ $page_width: 1024px
 				color: #444
 				font-size: 16px
 
+
+.search_section
+	width: 100%
+	height: 52px
+	border-bottom: 1px solid #eee
+	background: #fafafa
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: center
+	padding: 0 24px
+	
+	.i-input
+		margin-right: 10px
+		width: 320px
+		height: 36px
+		border-radius: 4px
+		background: #FFF
+		border: solid 1px #cccccc
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		.index_news_input
+			width: 290px
+			height: 30px
+			border: none
+			background: #FFF
+			padding-left: 10px
+			&::placeholder
+				color: #ccc
+		i 
+			color: #419fe3
+
+	.i-select
+		.index_news_select
+			width: 104px
+			height: 36px
+			border-radius: 4px
+			border: solid 1px #cccccc
+			background: #FFF
+
+
 .on_self
 	border-bottom: 2px solid #419fe3 !important
-
+	color: #419fe3 !important
+	h6
+		color: #419fe3 !important
 
 .index_links
 	+block_style 
@@ -356,16 +472,103 @@ $page_width: 1024px
 	text-align: right
 	margin-right: 30px
 	
+
+
+
+@mixin links_table
+	width: 100%
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: center
+	padding: 0 24px
+	.link_name
+		height: 36px
+		width: 80%
+		color: #222
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		color: #419fe3
+	.link_bureau
+		height: 36px
+		width: 20%
+		color: #444
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+
 	
+.links
+	width: 100%
+	.links_title
+		+links_table
+		background: rgba(65, 159, 227, 0.05)
+		.link_name
+			color: #59778c
+		.link_bureau
+			color: #59778c
+	.links_row
+		+links_table
+		&:nth-child(odd)
+			background: #fafafa
 
 
 
+		
+@mixin contacts_table
+	width: 100%
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: center
+	padding: 0 24px
+	.contacts_name
+		height: 36px
+		width: 30%
+		color: #222
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		color: #419fe3
+	.contacts_bureau
+		height: 36px
+		width: 40%
+		color: #444
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center	
+	.contacts_tel
+		height: 36px
+		width: 30%
+		color: #444
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
 
 
+.contacts
+	width: 100%
+	.contacts_title
+		+contacts_table
+		background: rgba(65, 159, 227, 0.05)
+		.contacts_name
+			color: #59778c
+		.contacts_bureau
+			color: #59778c		
+		.contacts_tel
+			color: #59778c
 
-
-
-
+	.contacts_row
+		+contacts_table
+		&:nth-child(odd)
+			background: #fafafa
+		
 
 
 
