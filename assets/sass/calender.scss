@@ -1,0 +1,164 @@
+$color1: #48A9A6;
+$color2: rgba(255, 255, 255, 1);
+$color3: rgba(230, 232, 230, 1);
+$color4: rgba(206, 208, 206, 1);
+$color5: #303633;
+$color_success: #23C057;
+$color_text: $color5;
+$color_text_light: rgba(lighten($color5, 10%), .85);
+$color_border: rgba(lighten($color1, 40%), .5);
+$color_bg: #C8D9E7;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+.content-wrapper {
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  // box-shadow: 2px 2px 20px 0 rgba(black, .15);
+  transition: all 0.195s ease;
+  transform-style: preserve-3d;
+  &.is-rotated-left {
+    transform: translate(-50%, -50%) rotateY(-4deg);
+  }
+  &.is-rotated-right {
+    transform: translate(-50%, -50%) rotateY(4deg);
+  }
+  .left-wrapper,
+  .right-wrapper {
+    background-color: white;
+    width: 100%;
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .header {
+    padding: 15px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #444;
+    i {
+      padding: 0 5px;
+      cursor: pointer;
+    }
+    span {
+      display: inline-block;
+      margin: 0 3px;
+      font-weight: 700;
+    }
+  }
+  .right-wrapper {
+    background-color: $color1;
+    color: #222;
+    transform-origin: left center;
+    transform: rotateY(110deg);
+    transition: all 0.5s;
+    &.is-active {
+      transform: rotateY(0deg);
+    }
+    .header {
+      text-align: left;
+      justify-content: center;
+    }
+    .day {
+      font-size: 12em;
+      text-indent: -12px;
+      display: block;
+    }
+    .month {
+      font-size: 2.5em;
+    }
+  }
+  .left-wrapper {
+    .showDate {
+      color: white;
+      text-align: right;
+      width: 100%;
+      i {
+        cursor: pointer;
+        background: $color1;
+        border-radius: 4px;
+        padding: 8px 12px;
+        transform: scale(1);
+        transition: all 0.3s;
+        &.is-active {
+          transform: scale(-1);
+        }
+      }
+    }
+    table {
+      text-align: center;
+      font-family: "Open Sans";
+      width: 90%;
+      margin: 30px auto 0;
+      table-layout: fixed;
+      border-collapse: collapse;
+      tbody:before {
+        content: "-";
+        display: block;
+        line-height: 0.75em;
+        color: transparent;
+      }
+      th {
+        color: $color1;
+        font-size: 0.75em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      td {
+        padding: 11px 5px;
+        color: $color4;
+        font-size: 0.90em;
+        transition: all 0.3s;
+        position: relative;
+        //border-radius: 100%;
+        &::before {
+          content: "";
+          display: none;
+          width: 50%;
+          height: 2px;
+          //border-radius: 100%;
+          position: absolute;
+          left: 50%;
+          top: 100%;
+          transform: translate(-50%, -8px);
+          background-color: $color1;
+        }
+        &.currentDay {
+          &::before {
+            display: block;
+          }
+        }
+        &.selectable {
+          color: $color_text;
+          cursor: pointer;
+          &:hover {
+            background: $color1;
+            color: white;
+          }
+        }
+        &.between {
+          background: rgba($color1, .65);
+          color: white;
+        }
+        &.active,
+        &.hover {
+          background: $color1;
+          color: white;
+        }
+      }
+    }
+  }
+}

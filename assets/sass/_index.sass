@@ -1,5 +1,6 @@
 
 @import _map.scss
+@import calender.scss
 
 
 
@@ -296,8 +297,68 @@ $page_width: 1044px
 
 
 .index_calender
-	+block_style 
+	+block_style
+	.index_calender_wrapper
+		width: 100%
+		height: 100%
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.index_calender_detail
+			width: 50%
+			height: 100%
+			// background: #282
+			position: relative
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+		.index_calender_info
+			width: 50%
+			height: 100%
+			// background: #289
+			padding: 20px
+			overflow-y: scroll
+			.info_event
+				border-bottom: 1px solid #ddd
+				padding-bottom: 10px
+				margin-bottom: 15px
+				.info_event_date
+					color: #999999
+					font-size: 12px
+					margin-bottom: 13px
 
+				.info_event_text
+					color: #444
+					font-size: 16px	
+					margin-bottom: 13px
+					line-height: 21px
+
+				.info_event_situation	
+					.s-blue
+						background: #419fe3
+						padding: 5px 10px
+						border-radius: 20px
+						float: left
+						margin-right: 10px
+						font-size: 12px
+
+					.s-grey
+						background: #CCC
+						padding: 5px 10px
+						border-radius: 20px
+						float: left
+						margin-right: 10px
+						font-size: 12px
+
+					.s-orange
+						background: #f5a623
+						padding: 5px 10px
+						border-radius: 20px
+						float: left
+						margin-right: 10px
+						font-size: 12px
 
 
 .index_attendance_records
@@ -339,6 +400,30 @@ $page_width: 1044px
 			flex-direction: row
 			justify-content: center
 			align-items: center
+
+	.index_attendance_records_data
+		width: 100%
+		padding: 0 20px
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		.records_item_title
+			font-size: 18px
+			color: #59778c
+			margin-right: 30px
+
+		.records_item
+			font-size: 18px
+			color: #444
+			font-weight: 700
+		.records_lll
+			width: 1px
+			height: 18px
+			background: #ddd
+			margin: 0 14px
+
+
 
 .index_news
 	+block_style 
@@ -397,6 +482,25 @@ $page_width: 1044px
 				width: 25%
 				color: #444
 				font-size: 16px
+
+
+
+
+
+.index_schedule
+	+block_style 
+	background: #FFF
+	.index_schedule_content
+		width: 100%
+		margin-top: 20px
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+
+
+
+
 
 
 .search_section
@@ -461,16 +565,15 @@ $page_width: 1044px
 
 
 .and_more
-	width: 100px
+	width: 100%
 	display: block
 	float: right
-
+	padding-right: 20px
 	color: #419fe3
 	font-size: 14px
 	font-weight: 700
 	margin-top: 16px
 	text-align: right
-	margin-right: 30px
 	
 
 

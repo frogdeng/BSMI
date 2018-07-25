@@ -18,6 +18,17 @@
 
 <script type="text/javascript" src='js/gridstack.min.js'></script>
 <script type="text/javascript" src='js/gridstack.jQueryUI.min.js'></script>
+<script type="text/javascript" src='js/calender.js'></script>
+
+
+<!-- calender-->
+<link rel="stylesheet" href="css/fullcalendar.min.css">
+<link rel="stylesheet" href="css/fullcalendar.print.min.css" rel='stylesheet' media='print'>
+<script type="text/javascript" src='js/moment.min.js'></script>
+<script type="text/javascript" src='js/fullcalendar.min.js'></script>
+
+
+
 
 
 <link rel="stylesheet" href="css/gridstack.css">
@@ -31,6 +42,92 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
 <link rel="stylesheet" href="css/module.css">
+
+	<script>
+
+  $(document).ready(function() {
+
+    $('#calendar').fullCalendar({
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay,listWeek'
+      },
+      defaultDate: '2018-03-12',
+      navLinks: true, // can click day/week names to navigate views
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+      events: [
+        {
+          title: 'All Day Event',
+          start: '2018-03-01',
+        },
+        {
+          title: 'Long Event',
+          start: '2018-03-07',
+          end: '2018-03-10'
+        },
+        {
+          id: 999,
+          title: 'Repeating Event',
+          start: '2018-03-09T16:00:00'
+        },
+        {
+          id: 999,
+          title: 'Repeating Event',
+          start: '2018-03-16T16:00:00'
+        },
+        {
+          title: 'Conference',
+          start: '2018-03-11',
+          end: '2018-03-13'
+        },
+        {
+          title: 'Meeting',
+          start: '2018-03-12T10:30:00',
+          end: '2018-03-12T12:30:00'
+        },
+        {
+          title: 'Lunch',
+          start: '2018-03-12T12:00:00'
+        },
+        {
+          title: 'Meeting',
+          start: '2018-03-12T14:30:00'
+        },
+        {
+          title: 'Happy Hour',
+          start: '2018-03-12T17:30:00'
+        },
+        {
+          title: 'Dinner',
+          start: '2018-03-12T20:00:00'
+        },
+        {
+          title: 'Birthday Party',
+          start: '2018-03-13T07:00:00'
+        },
+        {
+          title: 'Click for Google',
+          url: 'http://google.com/',
+          start: '2018-03-28'
+        }
+      ]
+    });
+
+  });
+
+</script>
+	<style>
+  #calendar {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+</style>
+
+
+
 
 </head>
 
@@ -169,8 +266,127 @@
 				</div>
 			</div>
 			<!-- block_content -->
+			<div class="index_calender_wrapper">
+			<div class="index_calender_detail">
+					<div class="content-wrapper">
+				  <div class="left-wrapper">
+				    <div class="header"><i class="fa fa-angle-left" aria-hidden="true"></i><span><span class="month"> </span><span class="year"></span></span><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+				    <div class="calender">
+				      <table>
+				        <thead>
+				          <tr class="weedays">
+				            <th data-weekday="sun" data-column="0">日</th>
+				            <th data-weekday="mon" data-column="1">一</th>
+				            <th data-weekday="tue" data-column="2">二</th>
+				            <th data-weekday="wed" data-column="3">三</th>
+				            <th data-weekday="thu" data-column="4">四</th>
+				            <th data-weekday="fri" data-column="5">五</th>
+				            <th data-weekday="sat" data-column="6">六</th>
+				          </tr>
+				        </thead>
+				        <tbody>
+				          <tr class="days" data-row="0">
+				            <td data-column="0"></td>
+				            <td data-column="1"></td>
+				            <td data-column="2"></td>
+				            <td data-column="3"></td>
+				            <td data-column="4"></td>
+				            <td data-column="5"></td>
+				            <td data-column="6"></td>
+				          </tr>
+				          <tr class="days" data-row="1">
+				            <td data-column="0"></td>
+				            <td data-column="1"></td>
+				            <td data-column="2"></td>
+				            <td data-column="3"></td>
+				            <td data-column="4"></td>
+				            <td data-column="5"></td>
+				            <td data-column="6"></td>
+				          </tr>
+				          <tr class="days" data-row="2">
+				            <td data-column="0"></td>
+				            <td data-column="1"></td>
+				            <td data-column="2"></td>
+				            <td data-column="3"></td>
+				            <td data-column="4"></td>
+				            <td data-column="5"></td>
+				            <td data-column="6"></td>
+				          </tr>
+				          <tr class="days" data-row="3">
+				            <td data-column="0"></td>
+				            <td data-column="1"></td>
+				            <td data-column="2"></td>
+				            <td data-column="3"></td>
+				            <td data-column="4"></td>
+				            <td data-column="5"></td>
+				            <td data-column="6"></td>
+				          </tr>
+				          <tr class="days" data-row="4">
+				            <td data-column="0"></td>
+				            <td data-column="1"></td>
+				            <td data-column="2"></td>
+				            <td data-column="3"></td>
+				            <td data-column="4"></td>
+				            <td data-column="5"></td>
+				            <td data-column="6"></td>
+				          </tr>
+				          <tr class="days" data-row="5">
+				            <td data-column="0"></td>
+				            <td data-column="1"></td>
+				            <td data-column="2"></td>
+				            <td data-column="3"></td>
+				            <td data-column="4"></td>
+				            <td data-column="5"></td>
+				            <td data-column="6"></td>
+				          </tr>
+				        </tbody>
+				      </table>
+				    </div>
+				    <!-- <div class="showDate"><i class="fa fa-angle-double-right" aria-hidden="true"></i></div> -->
+				  </div>
+				  
+				</div>
+			</div>
+
+			<div class="index_calender_info">
+
+				<div class="info_event">
+					<div class="info_event_date">107-07-15</div>
+					<div class="info_event_text">「看不見的尺度～探索傳輸的物理世界」度量衡教育體驗活動</div>
+					<div class="info_event_situation">
+						<div class="s-blue">活動</div>		
+						<div class="s-grey">差假</div>		
+						<div class="s-orange">差假</div>
+						<div class="clear"></div>		
+					</div>
+				</div>
+
+				<div class="info_event">
+					<div class="info_event_date">107-07-15</div>
+					<div class="info_event_text">「看不見的尺度～探索傳輸的物理世界」度量衡教育體驗活動</div>
+					<div class="info_event_situation">
+						<div class="s-blue">活動</div>		
+						<div class="s-grey">差假</div>		
+						<div class="s-orange">差假</div>
+						<div class="clear"></div>		
+					</div>
+				</div>
+				<div class="info_event">
+					<div class="info_event_date">107-07-15</div>
+					<div class="info_event_text">「看不見的尺度～探索傳輸的物理世界」度量衡教育體驗活動</div>
+					<div class="info_event_situation">
+						<div class="s-blue">活動</div>		
+						<div class="s-grey">差假</div>		
+						<div class="s-orange">差假</div>
+						<div class="clear"></div>		
+					</div>
+				</div>
 
 
+			</div>
+		</div>
+
+			
 
         </div>
     </div>
@@ -199,7 +415,6 @@
 					<div class="i-year">107年</div>
 					<div class="i-today">8月29日</div>
 					<div class="i-week">星期四 下午</div>
-					
 				</div>
 
 				<!-- clock -->
@@ -278,8 +493,22 @@
 								}
 						</script>
 				</div>
+
 			</div>
-        	
+
+			<div class="index_attendance_records_data">
+				<div class="records_item_title">刷卡紀錄：</div>
+				<div class="records_item">08:31</div>
+				<div class="records_lll"></div>
+				<div class="records_item">08:31</div>
+				<div class="records_lll"></div>				
+				<div class="records_item">08:31</div>
+				<div class="records_lll"></div>
+				<div class="records_item">08:31</div>
+				<div class="records_lll"></div>
+				
+			</div>		
+        	<a href="" class="and_more">連至差勤系統</a>
 
 		
 
@@ -359,8 +588,8 @@
 					<div class="cos_c">台北總局資訊室</div>
 				</div>
 				
-				<a href="" class="and_more">更多...</a>
 			</div>
+				<a href="" class="and_more">更多...</a>
 
 			
         </div>
@@ -432,8 +661,8 @@
 					<div class="link_bureau">總局</div>
 				</div>
 	
-				<a href="" class="and_more">更多...</a>
 			</div>
+				<a href="" class="and_more">更多...</a>
         </div>
     </div>
 
@@ -502,10 +731,10 @@
 					<div class="contacts_tel">02-2343-1808</div>
 				</div>
 
-				
+		
 	
+			</div>
 				<a href="" class="and_more">更多...</a>
-			</div>s
 
 
 
@@ -517,19 +746,22 @@
 
   <div class="grid-stack-item"
         data-gs-x="8" data-gs-y="20"
-        data-gs-width="12" data-gs-height="6">
-        <div class="grid-stack-item-content index_news">
+        data-gs-width="12" data-gs-height="12">
+        <div class="grid-stack-item-content index_schedule">
         	 <!-- block_title -->
 			<div class="block_title">
 				<div class="front">
 					<i class="far fa-calendar-alt"></i> <h6>部門行事曆</h6>
 				</div>
-				<!-- <div class="fun_icons">
+				<div class="fun_icons">
 					<i class="fas fa-trash-alt"></i>
-				</div> -->
+				</div>
 			</div>
 			<!-- block_content -->
-        
+			<div class="index_schedule_content">
+				<div id='calendar'></div>
+			</div>
+   
         </div>
     </div>
 
@@ -571,28 +803,8 @@ $(function () {
 <br>
 <br>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
-<!-- comic_bg -->
+
 
 
 
