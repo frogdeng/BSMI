@@ -7,6 +7,7 @@
 <div class="index_setting">
 	<a href="" class="setting_btn"><i class="fas fa-cog"></i> 版面設定</a>
 </div>
+
 <div class="fun_item_wrapper">
 
 	<div class="fun_item">
@@ -69,7 +70,7 @@
 					<i class="far fa-calendar-alt"></i> <h6>個人活動暨差假資訊</h6>
 				</div>
 				<div class="fun_icons">
-					<i class="fas fa-trash-alt"></i>
+					<i class="fas fa-times-circle"></i>
 				</div>
 			</div>
 			<!-- block_content -->
@@ -213,7 +214,7 @@
 					<i class="far fa-calendar-alt"></i> <h6>個人差勤紀錄</h6>
 				</div>
 				<div class="fun_icons">
-					<i class="fas fa-trash-alt"></i>
+					<i class="fas fa-times-circle"></i>
 				</div>
 			</div>
 			<!-- block_content -->
@@ -333,40 +334,52 @@
         data-gs-x="8" data-gs-y="6"
         data-gs-width="12" data-gs-height="5" data-gs-no-resize="yes">
         <div class="grid-stack-item-content index_news">
-			<div class="tab_section">
-				<div class="tab_btn on_self">
-					<i class="fas fa-bullhorn"></i> <h6>消息公告</h6>
+        	<div class="tab_wrapper">
+
+				<div class="tab_section">
+					<div class="tab_unit">
+						<div class="tab_btn on_self">
+							<i class="fas fa-bullhorn"></i> <h6>消息公告</h6>
+						</div>
+						<div class="tab_btn">
+							<i class="far fa-file-alt"></i><h6>最新及熱門文件</h6>
+						</div>
+						<div class="tab_btn">
+							<i class="far fa-comments"></i><h6>最新及熱門討論</h6>
+						</div>
+						<div class="tab_btn">
+							<i class="fas fa-tag"></i><h6>個人訂閱及收藏</h6>
+						</div>
+					</div>
+				
+					<div class="fun_icons">
+						<div class="fun_edit">
+						<i class="fas fa-cog"></i>
+						</div> 
+						| 
+						<div class="fun_delete">
+							<i class="fas fa-times-circle"></i>
+						</div>
+					</div>
+
 				</div>
-				<div class="tab_btn">
-					<i class="far fa-file-alt"></i><h6>最新及熱門文件</h6>
-				</div>
-				<div class="tab_btn">
-					<i class="far fa-comments"></i><h6>最新及熱門討論</h6>
-				</div>
-				<div class="tab_btn">
-					<i class="fas fa-tag"></i><h6>個人訂閱及收藏</h6>
-				</div>
-				<div class="tab_btn">
-					<i class="far fa-calendar"></i><h6>活動預告</h6>
-				</div>
-				<div class="tab_btn">
-					<i class="far fa-list-alt"></i><h6>待辦資訊儀表板</h6>
+
+				<div class="search_section">
+					<div class="i-input">
+						<input type="text" class="index_news_input" placeholder="搜尋...">
+						<i class="fas fa-search"></i>
+					</div>
+					<div class="i-select">
+						<select name="" id="" class="index_news_select">
+							<option value="">所有公告</option>
+							<option value="">所有公告</option>
+							<option value="">所有公告</option>
+							<option value="">所有公告</option>
+						</select>
+					</div>
 				</div>
 			</div>
-			<div class="search_section">
-				<div class="i-input">
-					<input type="text" class="index_news_input" placeholder="搜尋...">
-					<i class="fas fa-search"></i>
-				</div>
-				<div class="i-select">
-					<select name="" id="" class="index_news_select">
-						<option value="">所有公告</option>
-						<option value="">所有公告</option>
-						<option value="">所有公告</option>
-						<option value="">所有公告</option>
-					</select>
-				</div>
-			</div>
+
 
 			<div class="index_news_content">
 				<div class="content_row">
@@ -419,7 +432,13 @@
 					<i class="far fa-calendar-alt"></i> <h6>常用連結</h6>
 				</div>
 				<div class="fun_icons">
-					<i class="fas fa-trash-alt"></i>
+					<div class="fun_edit">
+					<i class="fas fa-cog"></i>
+					</div> 
+					| 
+					<div class="fun_delete">
+						<i class="fas fa-times-circle"></i>
+					</div>
 				</div>
 			</div>
 			<!-- block_search -->
@@ -486,7 +505,7 @@
 					<i class="far fa-calendar-alt"></i> <h6>通訊錄</h6>
 				</div>
 				<div class="fun_icons">
-					<i class="fas fa-trash-alt"></i>
+					<i class="fas fa-times-circle"></i>
 				</div>
 			</div>
 			<!-- block_search -->
@@ -561,7 +580,7 @@
 					<i class="far fa-calendar-alt"></i> <h6>部門行事曆</h6>
 				</div>
 				<div class="fun_icons">
-					<i class="fas fa-trash-alt"></i>
+					<i class="fas fa-times-circle"></i>
 				</div>
 			</div>
 			<!-- block_content -->

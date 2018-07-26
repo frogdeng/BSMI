@@ -95,11 +95,48 @@ $page_width: 1044px
 				align-items: center
 				right: -15px
 				top: -12px
+			.alert_message
+				display: none
+				
+				position: absolute
+				width: 239px
+				// height: 120px
+				background: #FFF
+				border-radius: 3px
+				z-index: 1000
+				box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2)
+				right: -20px
+				top: 30px
+				.message_list
+					display: block
+					padding: 0 16px
+					height: 36px
+					color: #444
+					border-bottom: 1px solid #DDD
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					align-items: center
+					.branch
+					.plop
+						span
+							color: #f5a623
+							font-size: 16px
+							font-weight: 900
+							margin-left: 20px
+					&:hover
+						background: rgba(65, 159, 227, 0.1)
+
+				
+
 		.member
 			margin-left: 40px
 			cursor: pointer
 			i 
 				font-size: 14px
+
+.alert_message_show
+	display: block !important
 
 .footer_wrapper
 	background: #444
@@ -193,13 +230,13 @@ $page_width: 1044px
 	justify-content: center
 	align-items: center
 	ul
-		
 		margin: 0 auto
 		display: flex
 		flex-direction: row
 		justify-content: flex-start
 		align-items: center
 		li
+			position: relative
 			display: flex
 			flex-direction: row
 			justify-content: flex-start
@@ -227,7 +264,42 @@ $page_width: 1044px
 				&:hover
 					// background: #222
 					.bottom_line
-						opacity: 1	
+						opacity: 1
+			ul
+				position: absolute
+				display: block
+				width: 140px
+				background: #FFF
+				border-radius: 3px
+				padding: 5px 0
+				z-index: 1000
+				visibility: hidden
+				box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2)
+				opacity: 0
+				top: 60px
+				left: 0px
+				transition: all .3s
+				li
+					a
+						display: block
+						height: auto
+						width: 140px
+						color: #27669c
+						height: 39px
+						font-size: 16px
+						background: #FFF
+						border-bottom: 1px solid #dddddd
+						line-height: 1.5
+						padding: 10px 0
+						text-align: center
+						transition: all .3s
+						&:hover
+							background: #27669c
+							color: #FFF
+			&:hover
+				ul
+					visibility: visible
+					opacity: 1	
 					
 .menu_self
 	color: #419fe3 !important	
@@ -363,9 +435,23 @@ $page_width: 1044px
 		h6
 			font-size: 16px
 			color: #59778c
-	.fun_icons
-		i
-			color: #ddd
+.fun_icons
+	width: 80px
+	display: flex
+	flex-direction: row
+	justify-content: flex-end
+	align-items: flex-end
+	color: #ddd
+	.fun_edit
+		margin-right: 12px
+	.fun_delete
+		margin-left: 12px
+	i
+		color: #ddd
+		cursor: pointer
+		transition: all .3s
+		&:hover
+			color: #888
 
 
 
@@ -507,34 +593,50 @@ $page_width: 1044px
 .index_news
 	+block_style 
 	background: #FFF
-	.tab_section
+	.tab_wrapper
 		width: 100%
-		height: 46px
-		background: #FFF
-		padding: 0 24px
-		border-bottom: 1px solid #DDD
 		display: flex
-		flex-direction: row
-		justify-content: flex-start
+		flex-direction: column
+		justify-content: space-between
 		align-items: center
-		color: #59778c
-		font-weight: 700
-		.tab_btn
-			// width: 99px
+		.tab_section
+			width: 100%
 			height: 46px
+			background: #FFF
+			padding: 0 24px
+			border-bottom: 1px solid #DDD
 			display: flex
 			flex-direction: row
-			justify-content: center
+			justify-content: space-between
 			align-items: center
-			margin: 0 15px
-			position: relative
-			// background: #289
-			h6
-				font-size: 16px
-			i
-				margin-right: 3px
-		
-
+			color: #59778c
+			font-weight: 700
+			.tab_unit
+				width: 100%
+				height: 46px
+				background: #FFF
+				padding: 0 24px
+				border-bottom: 1px solid #DDD
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: center
+				color: #59778c
+				font-weight: 700
+				.tab_btn
+					// width: 99px
+					height: 46px
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					margin: 0 15px
+					position: relative
+					// background: #289
+					h6
+						font-size: 16px
+					i
+						margin-right: 3px
 	
 	.index_news_content
 		width: 100%
