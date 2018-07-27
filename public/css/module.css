@@ -698,7 +698,7 @@ a {
   width: 140px;
   color: #27669c;
   height: 39px;
-  font-size: 16px;
+  font-size: 14px;
   background: #FFF;
   border-bottom: 1px solid #dddddd;
   line-height: 1.5;
@@ -737,6 +737,50 @@ a {
   color: #419fe3;
   font-size: 12px;
   margin-right: 10px; }
+
+.index_setting .setting_mockup {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.index_setting .setting_mockup .edit_btn {
+  display: block;
+  width: 96px;
+  height: 38px;
+  background: #83bc49;
+  color: #FFF;
+  border-radius: 3px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 12px; }
+
+.index_setting .setting_mockup .add_btn {
+  display: block;
+  width: 96px;
+  height: 38px;
+  background: #419fe3;
+  color: #FFF;
+  border-radius: 3px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 12px; }
 
 .fun_item_wrapper {
   width: 1024px;

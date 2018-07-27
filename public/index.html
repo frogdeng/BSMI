@@ -27,10 +27,10 @@
 <script type="text/javascript" src='js/moment.min.js'></script>
 <script type="text/javascript" src='js/fullcalendar.min.js'></script>
 
+<script type="text/javascript" src='js/jquery.magnific-popup.min.js'></script>
 <script type="text/javascript" src='js/ui.js'></script>
 
-
-
+<link rel="stylesheet" href="css/magnific-popup.css">
 
 
 <link rel="stylesheet" href="css/gridstack.css">
@@ -242,16 +242,54 @@
 	</div>
 
 
-		
+	
 
 
 
 
+
+
+<script>
+	$(function(){
+		$('.open-popup-link').magnificPopup({
+		  type:'inline',
+		  midClick: true 
+		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
+	});
+</script>
 
 
 <div class="index_setting">
 	<a href="" class="setting_btn"><i class="fas fa-cog"></i> 版面設定</a>
+	<div class="setting_mockup">
+		<a href="" class="edit_btn open-popup-link">儲存設定</a>
+		<a href="#popup_1" class="add_btn open-popup-link">新增板塊</a>
+	</div>
 </div>
+
+
+
+<!-- Magnific-Popup #1 for login  -->
+<div id="popup_1" class="open-popup-link show_contnet_01 mfp-hide">
+	
+	<div class="titile"><h4>會員登入</h4></div>
+	<div class="login_item"><p>帳號</p> <input type="text"></div>
+	<div class="login_item"><p>密碼</p> <input type="text"></div>
+	<div class="login_item">
+		<div class="employer"><label for=""><input type="checkbox"></label>一般會員</div>
+		<div class="employer"><label for=""><input type="checkbox"></label>局內員工</div>
+	</div>
+	<a href="" class="submit">登入</a>
+	<a href="" class="forgotpsw">忘記密碼</a>
+
+	<div class="socialmedia">
+		<a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+		<a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+	</div>
+</div>
+
+
 
 <div class="fun_item_wrapper">
 	<div class="w_fun_item">
