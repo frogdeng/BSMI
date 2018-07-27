@@ -396,7 +396,37 @@ a {
 
 .top_header .top_mention .font_size {
   margin-left: 40px;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
+
+.top_header .top_mention .font_size .font_size_message {
+  display: none;
+  position: absolute;
+  width: 100px;
+  background: #FFF;
+  border-radius: 3px;
+  z-index: 1000;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  right: -20px;
+  top: 30px; }
+
+.top_header .top_mention .font_size .font_size_message .font_size_list {
+  display: block;
+  padding: 0 16px;
+  height: 36px;
+  color: #444;
+  border-bottom: 1px solid #DDD;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.top_header .top_mention .font_size .font_size_message .font_size_list:hover {
+  background: rgba(65, 159, 227, 0.1); }
 
 .top_header .top_mention .alert {
   margin-left: 40px;
@@ -467,7 +497,7 @@ a {
 .top_header .top_mention .member i {
   font-size: 14px; }
 
-.alert_message_show {
+.show_show {
   display: block !important; }
 
 .footer_wrapper {
@@ -709,10 +739,57 @@ a {
   margin-right: 10px; }
 
 .fun_item_wrapper {
-  width: 1044px;
+  width: 1024px;
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 0 10px;
+  background: #FFF;
+  border-radius: 3px;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative; }
+
+.fun_item_wrapper .w_fun_item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.fun_item_wrapper .main_fun_edit {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0px;
+  top: 10px;
+  color: #666666; }
+
+.fun_item_wrapper .main_edit_dropdown {
+  display: none;
+  position: absolute;
+  width: 212px;
+  background: #FFF;
+  border-radius: 3px;
+  z-index: 1000;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  right: 10px;
+  top: 30px; }
+
+.fun_item_wrapper .main_edit_dropdown .dropdown_list {
+  display: block;
+  padding: 0 16px;
+  height: 36px;
+  border-bottom: 1px solid #DDD;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -722,10 +799,13 @@ a {
   -ms-flex-align: center;
   align-items: center; }
 
-.fun_item_wrapper p {
+.fun_item_wrapper .main_edit_dropdown .dropdown_list span {
+  color: #444;
   font-size: 16px;
-  margin-top: 10px;
-  text-align: center; }
+  font-weight: 400; }
+
+.fun_item_wrapper .main_edit_dropdown .dropdown_list:hover {
+  background: rgba(65, 159, 227, 0.1); }
 
 .fun_item_wrapper .fun_item {
   background: #FFF;
@@ -745,6 +825,11 @@ a {
   transition: all .3s;
   position: relative; }
 
+.fun_item_wrapper .fun_item p {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center; }
+
 .fun_item_wrapper .fun_item:after {
   content: "";
   position: absolute;
@@ -760,6 +845,10 @@ a {
 .fun_item_wrapper .fun_item:hover {
   background: #fafafa;
   transform: scale(1.08); }
+
+.fun_item_wrapper .fun_item:nth-last-child(1):after {
+  content: "";
+  display: none; }
 
 .fun_item_wrapper .fun_item_add {
   background: #FFF;
@@ -831,7 +920,8 @@ a {
   justify-content: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
-  color: #ddd; }
+  color: #ddd;
+  position: relative; }
 
 .fun_icons .fun_edit {
   margin-right: 12px; }
@@ -846,6 +936,39 @@ a {
 
 .fun_icons i:hover {
   color: #888; }
+
+.fun_icons .edit_dropdown {
+  display: none;
+  position: absolute;
+  width: 212px;
+  background: #FFF;
+  border-radius: 3px;
+  z-index: 1000;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  right: 0px;
+  top: 30px; }
+
+.fun_icons .edit_dropdown .dropdown_list {
+  display: block;
+  padding: 0 16px;
+  height: 36px;
+  border-bottom: 1px solid #DDD;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.fun_icons .edit_dropdown .dropdown_list span {
+  color: #444;
+  font-size: 16px;
+  font-weight: 400; }
+
+.fun_icons .edit_dropdown .dropdown_list:hover {
+  background: rgba(65, 159, 227, 0.1); }
 
 .index_calender {
   background: #f6f8fa;

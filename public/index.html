@@ -128,14 +128,8 @@
 
 </style>
 
-
-
-
 </head>
-
 <body>
-
-
 	<div class="top_header_wrapper">
 		<div class="top_header">
 			<div class="logo"><img src="img/KKBox_Logo.png" alt=""></div>
@@ -148,7 +142,16 @@
 			</div>
 
 			<div class="top_mention">
-				<div class="font_size">字級：中 <i class="fas fa-caret-down"></i> </div>
+				<div class="font_size">
+					字級：中 
+					<i class="fas fa-caret-down"></i>
+					<div class="font_size_message">
+						<a href="" class="font_size_list">大</a>
+						<a href="" class="font_size_list">中</a>
+						<a href="" class="font_size_list">小</a>
+					</div>
+				 </div>
+				
 				<div class="alert">
 					<div class="num">23</div>
 					<i class="fas fa-bell"></i> 
@@ -251,50 +254,90 @@
 </div>
 
 <div class="fun_item_wrapper">
+	<div class="w_fun_item">
+		<div class="fun_item">
+			<i class="fas fa-edit"></i>
+			<p>公文線上簽核管理系統</p>
+		</div>
 
-	<div class="fun_item">
-		<i class="fas fa-edit"></i>
-		<p>公文線上簽核管理系統</p>
-	</div>
-	<div class="lll"></div>
+		<div class="fun_item">
+			<i class="fas fa-dollar-sign"></i>
+			<p>個人薪資查詢</p>
+		</div>
+		<div class="fun_item">
+			<i class="far fa-calendar-alt"></i>
+			<p>差勤、領物、費用系統</p>
+		</div>
+		<div class="fun_item">
+			<i class="fas fa-building"></i>
+			<p>本局郵件系統</p>
+		</div>	
 
-	<div class="fun_item">
-		<i class="fas fa-dollar-sign"></i>
-		<p>個人薪資查詢</p>
+		<div class="fun_item">
+			<i class="fas fa-desktop"></i>
+			<p>應用系統 單一登錄平台</p>
+		</div>
+		<div class="fun_item">
+			<i class="fas fa-globe-asia"></i>
+			<p>本局 全球資訊網</p>
+		</div>
+		<div class="fun_item">
+			<i class="fas fa-chart-area"></i>
+			<p>國家標準檢驗系統</p>
+		</div>
 	</div>
-	<div class="lll"></div>
-	<div class="fun_item">
-		<i class="far fa-calendar-alt"></i>
-		<p>差勤、領物、費用系統</p>
+	<div class="main_fun_edit">
+		<i class="fas fa-cog"></i> 
 	</div>
-	<div class="lll"></div>
-	<div class="fun_item">
-		<i class="fas fa-building"></i>
-		<p>本局郵件系統</p>
-	</div>	
 
-	<div class="lll"></div>
-	<div class="fun_item">
-		<i class="fas fa-desktop"></i>
-		<p>應用系統 單一登錄平台</p>
+	<div class="main_edit_dropdown">
+		<div class="dropdown_list">
+			<label for="fun1">
+				<input type="radio" id="fun1">
+				<span>公文線上簽核管理系統</span>
+			</label>
+		</div>				
+		<div class="dropdown_list">
+			<label for="fun2">
+				<input type="radio" id="fun2">
+				<span>個人薪資查詢</span>
+			</label>
+		</div>
+		<div class="dropdown_list">
+			<label for="fun3">
+				<input type="radio" id="fun3">
+				<span>差勤、領物、費用系統</span>
+			</label>
+		</div>
+		<div class="dropdown_list">
+			<label for="fun4">
+				<input type="radio" id="fun4">
+				<span>本局郵件系統</span>
+			</label>
+		</div>
+		<div class="dropdown_list">
+			<label for="fun4">
+				<input type="radio" id="fun4">
+				<span>應用系統 單一登錄平台</span>
+			</label>
+		</div>
+		<div class="dropdown_list">
+			<label for="fun4">
+				<input type="radio" id="fun4">
+				<span>本局 全球資訊網</span>
+			</label>
+		</div>
+		<div class="dropdown_list">
+			<label for="fun4">
+				<input type="radio" id="fun4">
+				<span>國家標準檢驗系統</span>
+			</label>
+		</div>
+		
 	</div>
-	<div class="lll"></div>
-	<div class="fun_item">
-		<i class="fas fa-globe-asia"></i>
-		<p>本局 全球資訊網</p>
-	</div>
-	<div class="lll"></div>
-	<div class="fun_item">
-		<i class="fas fa-chart-area"></i>
-		<p>國家標準檢驗系統</p>
-	</div>
-	<div class="fun_item_add">
-		<i class="fas fa-plus "></i>
-		<p>新增</p>
-	</div>
-	
+
+
 </div>
-
 
 
 
@@ -436,7 +479,6 @@
 			</div>
 		</div>
 
-			
 
         </div>
     </div>
@@ -570,7 +612,6 @@
 
 
 
-
 	<!-- index_news -->
     <div class="grid-stack-item"
         data-gs-x="8" data-gs-y="6"
@@ -596,12 +637,40 @@
 				
 					<div class="fun_icons">
 						<div class="fun_edit">
-						<i class="fas fa-cog"></i>
+							<i class="fas fa-cog"></i>
 						</div> 
 						| 
 						<div class="fun_delete">
 							<i class="fas fa-times-circle"></i>
 						</div>
+
+							<div class="edit_dropdown">
+								<div class="dropdown_list">
+									<label for="ck1">
+										<input type="radio" id="ck1">
+										<span>消息公告</span>
+									</label>
+								</div>				
+								<div class="dropdown_list">
+									<label for="ck2">
+										<input type="radio" id="ck2">
+										<span>最新及熱門文件</span>
+									</label>
+								</div>
+								<div class="dropdown_list">
+									<label for="ck3">
+										<input type="radio" id="ck3">
+										<span>最新及熱門討論</span>
+									</label>
+								</div>
+								<div class="dropdown_list">
+									<label for="ck4">
+										<input type="radio" id="ck4">
+										<span>個人訂閱及收藏</span>
+									</label>
+								</div>
+								
+							</div>
 					</div>
 
 				</div>
@@ -849,23 +918,6 @@ $(function () {
 </script>
 
 
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
@@ -880,14 +932,6 @@ $(function () {
 <div class="clear"></div>
 
 		
-
-
-
-
-
-
-
-
 
 
 
