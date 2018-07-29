@@ -331,7 +331,8 @@ a {
   -ms-flex-pack: start;
   justify-content: flex-start;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .top_header .search_w .advance_search {
   display: block;
@@ -496,6 +497,161 @@ a {
 
 .top_header .top_mention .member i {
   font-size: 14px; }
+
+.advance_search_dropdown {
+  position: absolute;
+  width: 550px;
+  border-radius: 3px;
+  background: #f2f2f2;
+  box-shadow: 2px 6px 13px 0 rgba(0, 0, 0, 0.2);
+  top: 45px;
+  left: 0;
+  z-index: 5000; }
+
+.advance_search_dropdown .search_duration {
+  padding: 20px 24px;
+  background: #FFF; }
+
+.advance_search_dropdown .search_duration .period {
+  width: 100%;
+  height: 38px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  color: #444;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: flex-satrt;
+  justify-content: flex-satrt;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.advance_search_dropdown .search_duration .calender_period {
+  height: 250px; }
+
+.advance_search_dropdown .advance_search_title {
+  height: 28px;
+  font-size: 14px;
+  padding: 0 24px;
+  color: #444;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: flex-satrt;
+  justify-content: flex-satrt;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.advance_search_dropdown .advance_search_row {
+  background: #FFF;
+  padding: 7px 24px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: flex-satrt;
+  justify-content: flex-satrt;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.advance_search_dropdown .advance_search_row .checkbox_item {
+  margin: 7px 0;
+  margin-right: 18px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.advance_search_dropdown .advance_search_row .checkbox_item label {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.advance_search_dropdown .advance_search_row .checkbox_item label .select_type {
+  margin-right: 4px;
+  width: 16px;
+  width-height: 16px; }
+
+.advance_search_dropdown .advance_search_row .checkbox_item label p {
+  font-size: 16px;
+  color: #2e2e2e; }
+
+.advance_search_dropdown .dropdown_fun_row {
+  background: #FFF;
+  height: 58px;
+  padding: 0 24px;
+  box-shadow: 0 -6px 13px 0 rgba(0, 0, 0, 0.2);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.advance_search_dropdown .dropdown_fun_row .dropdown_reset {
+  width: 30%;
+  cursor: pointer;
+  color: #419fe3; }
+
+.advance_search_dropdown .dropdown_fun_row .dropdown_btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 70%; }
+
+.advance_search_dropdown .dropdown_fun_row .dropdown_btn .cancle {
+  width: 96px;
+  height: 38px;
+  background: #eee;
+  color: #444;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 3px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.advance_search_dropdown .dropdown_fun_row .dropdown_btn .submit {
+  width: 96px;
+  height: 38px;
+  background: #419fe3;
+  color: #FFF;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 3px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .show_show {
   display: block !important; }
