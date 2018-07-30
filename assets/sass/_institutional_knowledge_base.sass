@@ -46,7 +46,7 @@ $page_width: 1044px
 	// background: #eee
 	transition: all .3s
 	padding: 32px
-
+	
 
 
 .institutional_knowledge_base_right
@@ -254,14 +254,6 @@ $page_width: 1044px
 
 
 
-
-
-
-
-
-
-
-
 .bread_crumbs
 	width: 100%
 	margin-bottom: 20px
@@ -286,21 +278,313 @@ $page_width: 1044px
 	display: none !important
 	
 
+@mixin table_cos
+	.cos_a
+		width: 7%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		i 
+			font-size: 20px
+		input[type="checkbox"]
+			// zoom: 1.5
+	.cos_b
+		width: 35%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	.cos_c
+		width: 5%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		i 
+			font-size: 20px
+		input[type="checkbox"]
+			// zoom: 1.5
+	.cos_d
+		width: 10%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	.cos_e
+		width: 15%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+
+.o_title
+	font-size: 24px
+	color: #444
+	margin-top: 20px
+	margin-bottom: 10px
+	font-weight: 700
+.doclist
+	min-width: 900px
+	background: #FFF
+	border-radius: 3px
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1)
+	.doclist_fun
+		height: 54px
+		padding: 0 16px
+		border-bottom: 1px solid #eee
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		.doclist_search
+			width: 400px
+			height: 32px
+			border-radius: 4px
+			border: 1px solid #ddd
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			.i_search
+				width: 360px
+				border: none
+				outline: 0
+				padding-left: 10px
+				&::placeholder
+					color: #cccccc
+
+			i
+				color: #419FE4
+				margin-left: 10px
+				cursor: pointer
+
+		.doclist_fun_row
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			.doclist_fun_btn
+				color: #419fe3
+				border: 1px solid #419fe3
+				padding: 8px 20px
+				border-radius: 4px
+				font-size: 14px
+				margin-left: 10px
+				cursor: pointer
+				transition: all .3s
+				&:hover
+					background: #419fe3
+					color: #FFF
+	
+	.doclist_table
+		.table_row_th
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			padding: 0px 20px
+			height: 36px
+			color: #59778c
+			font-weight: 900
+			border-top: 1px solid #eeeeee
+			border-bottom: 1px solid #eeeeee
+			+table_cos
+			.cos_c
+				i 
+					font-size: 14px
+					margin-left: 5px
+
+		.table_row
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			padding: 0px 20px
+			height: 36px
+			color: #444
+			transition: all .3s
+			+table_cos
+			&:nth-child(even)
+				background: rgba(89, 119, 140, 0.1)
+			&:hover
+				background: rgba(89, 119, 140, 0.3)
+			
+
+.folder
+	color: #f5a623
+.word
+	color: #1f87d2
+.excel
+	color: #83bc49
+.code
+	color: #6674af
+.others
+	color: #aaaaaa
+.ppt
+	color: #f5a623
+.text
+	color: #000000
+.pdf
+	color: #e75541
+.zip
+	color: #c59e5d
+.iimg
+	color: #77b9c4
+.video
+	color: #6e8b9f
+.audio
+	color: #6db5ea
 
 
 
+.btn_group
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+	padding: 32px 0
+	.i_cancel
+		width: 96px
+		height: 38px
+		border: 1px solid #419fe3
+		color: #419fe3
+		border-radius: 4px
+		margin: 0 10px
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+	.i_summit
+		width: 96px
+		height: 38px
+		background: #419fe3
+		color: #FFF
+		border-radius: 4px
+		margin: 0 10px
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+
+.batch_upload_step_1
+	width: 90%
+	padding: 30px 20px
+	margin: 0 auto
+	border-bottom: 1px solid #eee
+	.step_row
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: flex-start
+		margin-bottom: 30px
+		.upload_subject
+			width: 15%
+			margin-right: 30px
+			margin-top: 10px
+			color: #444
+			display: flex
+			flex-direction: row
+			justify-content: flex-end
+			align-items: center
+		.upload_content
+			width: 85%
+			.upload_list
+				width: 100%
+				border: 1px solid #ddd
+				height: 300px
+				border-radius: 4px
+				padding: 10px
+				p 
+					font-size: 16px
+					font-weight: 400
+					margin-bottom: 5px
+					color: #444
+			.upload_btn
+				width: 96px
+				height: 38px
+				background-color: #419fe3
+				color: #FFF
+				border-radius: 4px
+				margin-bottom: 10px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+			p 
+				font-size: 12px
+				color: #999999
+
+.pages
+	height: 48px
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	padding: 0 16px
+	.page_front
+		width: 50%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		.num_page
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			margin-right: 30px
+			.num_page_link
+				display: block
+				width: 32px
+				height: 32px
+				margin: 0 5px
+				border: 1px solid #ccc
+				color: #444
+				border-radius: 4px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+
+		.jump_to-page
+			font-size: 14px
+			color: #444
+			select
+				width: 68px
+				height: 32px
+				margin: 0 5px
+				border-radius: 4px
+				background-color: #ffffff
+				border: solid 1px #cccccc
 
 
+	.page_back
+		width: 50%
+		display: flex
+		flex-direction: row
+		justify-content: flex-end
+		align-items: center
+		.this_page
+			font-size: 14px
+			color: #444
+			select
+				width: 68px
+				height: 32px
+				margin: 0 5px
+				border-radius: 4px
+				background-color: #ffffff
+				border: solid 1px #cccccc
+		.page_info
+			font-size: 14px
+			color: #444
+			margin-left: 30px
 
 
-
-
-
-
-
-
-
-
+.page_on
+	background: #419fe3 !important
+	color: #FFF !important
 
 
 

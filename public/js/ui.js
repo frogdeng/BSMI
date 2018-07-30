@@ -53,7 +53,7 @@ $(function(){
     $('.institutional_knowledge_base_left').height(pillar_h)
     $('.institutional_knowledge_base_right').height(pillar_h)
 
-      $('.unit_block').click(function(){
+    $('.unit_block').click(function(){
       $(this).siblings().slideToggle( "slideToggle")
     });
 

@@ -382,7 +382,8 @@ a {
 
 .top_header .search_w .top_search i {
   color: #419fe3;
-  margin-right: 10px; }
+  margin-right: 10px;
+  cursor: pointer; }
 
 .top_header .top_mention {
   height: 50px;
@@ -2416,6 +2417,491 @@ a {
 
 .disapear {
   display: none !important; }
+
+.o_title {
+  font-size: 24px;
+  color: #444;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 700; }
+
+.doclist {
+  min-width: 900px;
+  background: #FFF;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); }
+
+.doclist .doclist_fun {
+  height: 54px;
+  padding: 0 16px;
+  border-bottom: 1px solid #eee;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist .doclist_fun .doclist_search {
+  width: 400px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist .doclist_fun .doclist_search .i_search {
+  width: 360px;
+  border: none;
+  outline: 0;
+  padding-left: 10px; }
+
+.doclist .doclist_fun .doclist_search .i_search:-ms-input-placeholder {
+  color: #cccccc; }
+
+.doclist .doclist_fun .doclist_search .i_search::placeholder {
+  color: #cccccc; }
+
+.doclist .doclist_fun .doclist_search i {
+  color: #419FE4;
+  margin-left: 10px;
+  cursor: pointer; }
+
+.doclist .doclist_fun .doclist_fun_row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist .doclist_fun .doclist_fun_row .doclist_fun_btn {
+  color: #419fe3;
+  border: 1px solid #419fe3;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all .3s; }
+
+.doclist .doclist_fun .doclist_fun_row .doclist_fun_btn:hover {
+  background: #419fe3;
+  color: #FFF; }
+
+.doclist .doclist_table .table_row_th {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 20px;
+  height: 36px;
+  color: #59778c;
+  font-weight: 900;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee; }
+
+.doclist .doclist_table .table_row_th .cos_a {
+  width: 7%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist .doclist_table .table_row_th .cos_a i {
+  font-size: 20px; }
+
+.doclist .doclist_table .table_row_th .cos_b {
+  width: 35%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist .doclist_table .table_row_th .cos_c {
+  width: 5%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist .doclist_table .table_row_th .cos_c i {
+  font-size: 20px; }
+
+.doclist .doclist_table .table_row_th .cos_d {
+  width: 10%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist .doclist_table .table_row_th .cos_e {
+  width: 15%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist .doclist_table .table_row_th .cos_c i {
+  font-size: 14px;
+  margin-left: 5px; }
+
+.doclist .doclist_table .table_row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 20px;
+  height: 36px;
+  color: #444;
+  transition: all .3s; }
+
+.doclist .doclist_table .table_row .cos_a {
+  width: 7%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist .doclist_table .table_row .cos_a i {
+  font-size: 20px; }
+
+.doclist .doclist_table .table_row .cos_b {
+  width: 35%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist .doclist_table .table_row .cos_c {
+  width: 5%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist .doclist_table .table_row .cos_c i {
+  font-size: 20px; }
+
+.doclist .doclist_table .table_row .cos_d {
+  width: 10%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist .doclist_table .table_row .cos_e {
+  width: 15%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist .doclist_table .table_row:nth-child(even) {
+  background: rgba(89, 119, 140, 0.1); }
+
+.doclist .doclist_table .table_row:hover {
+  background: rgba(89, 119, 140, 0.3); }
+
+.folder {
+  color: #f5a623; }
+
+.word {
+  color: #1f87d2; }
+
+.excel {
+  color: #83bc49; }
+
+.code {
+  color: #6674af; }
+
+.others {
+  color: #aaaaaa; }
+
+.ppt {
+  color: #f5a623; }
+
+.text {
+  color: #000000; }
+
+.pdf {
+  color: #e75541; }
+
+.zip {
+  color: #c59e5d; }
+
+.iimg {
+  color: #77b9c4; }
+
+.video {
+  color: #6e8b9f; }
+
+.audio {
+  color: #6db5ea; }
+
+.btn_group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 32px 0; }
+
+.btn_group .i_cancel {
+  width: 96px;
+  height: 38px;
+  border: 1px solid #419fe3;
+  color: #419fe3;
+  border-radius: 4px;
+  margin: 0 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.btn_group .i_summit {
+  width: 96px;
+  height: 38px;
+  background: #419fe3;
+  color: #FFF;
+  border-radius: 4px;
+  margin: 0 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.batch_upload_step_1 {
+  width: 90%;
+  padding: 30px 20px;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee; }
+
+.batch_upload_step_1 .step_row {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 30px; }
+
+.batch_upload_step_1 .step_row .upload_subject {
+  width: 15%;
+  margin-right: 30px;
+  margin-top: 10px;
+  color: #444;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.batch_upload_step_1 .step_row .upload_content {
+  width: 85%; }
+
+.batch_upload_step_1 .step_row .upload_content .upload_list {
+  width: 100%;
+  border: 1px solid #ddd;
+  height: 300px;
+  border-radius: 4px;
+  padding: 10px; }
+
+.batch_upload_step_1 .step_row .upload_content .upload_list p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #444; }
+
+.batch_upload_step_1 .step_row .upload_content .upload_btn {
+  width: 96px;
+  height: 38px;
+  background-color: #419fe3;
+  color: #FFF;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.batch_upload_step_1 .step_row .upload_content p {
+  font-size: 12px;
+  color: #999999; }
+
+.pages {
+  height: 48px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 16px; }
+
+.pages .page_front {
+  width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.pages .page_front .num_page {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 30px; }
+
+.pages .page_front .num_page .num_page_link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  color: #444;
+  border-radius: 4px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.pages .page_front .jump_to-page {
+  font-size: 14px;
+  color: #444; }
+
+.pages .page_front .jump_to-page select {
+  width: 68px;
+  height: 32px;
+  margin: 0 5px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #cccccc; }
+
+.pages .page_back {
+  width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.pages .page_back .this_page {
+  font-size: 14px;
+  color: #444; }
+
+.pages .page_back .this_page select {
+  width: 68px;
+  height: 32px;
+  margin: 0 5px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #cccccc; }
+
+.pages .page_back .page_info {
+  font-size: 14px;
+  color: #444;
+  margin-left: 30px; }
+
+.page_on {
+  background: #419fe3 !important;
+  color: #FFF !important; }
 
 body {
   font-family: Microsoft JhengHei;
