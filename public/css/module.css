@@ -500,6 +500,7 @@ a {
 
 .advance_search_dropdown {
   position: absolute;
+  display: none;
   width: 550px;
   border-radius: 3px;
   background: #f2f2f2;
@@ -1833,6 +1834,95 @@ a {
 
 .contacts .contacts_row:nth-child(odd) {
   background: #fafafa; }
+
+.edit_layout {
+  width: 764px;
+  height: 530px;
+  background: #FFF;
+  margin: 0 auto;
+  position: relative;
+  overflow: scroll; }
+
+.edit_layout .edit_layout_title {
+  height: 54px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #444;
+  font-weight: 900;
+  padding-left: 25px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.edit_layout .edit_layout_row {
+  width: 92%;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.edit_layout .edit_layout_row .edit_layout_item {
+  width: 23%;
+  margin: 0 1.55%; }
+
+.edit_layout .edit_layout_row .edit_layout_item .thunmnail {
+  border: 1px solid #ddd;
+  margin-bottom: 12px; }
+
+.edit_layout .edit_layout_row .edit_layout_item h6 {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 12px; }
+
+.edit_layout .edit_layout_row .edit_layout_item p {
+  font-size: 12px;
+  color: 666px;
+  margin-bottom: 12px;
+  color: #666; }
+
+.edit_layout .edit_layout_row .edit_layout_item .add_fun {
+  width: 96px;
+  height: 38px;
+  border-radius: 3px;
+  background: #419fe3;
+  color: #FFF;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.edit_layout .edit_layout_row .edit_layout_item .cancel_fun {
+  width: 96px;
+  height: 38px;
+  border-radius: 3px;
+  background: #dddddd;
+  color: #FFF;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 body {
   font-family: Microsoft JhengHei;

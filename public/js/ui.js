@@ -30,6 +30,11 @@ $('.main_fun_edit').click(function(){
   return false
 });
 
+$('.advance_search').click(function(){
+  $('.advance_search_dropdown').toggleClass( "show_show" )
+  return false
+});
+
 
 
 
