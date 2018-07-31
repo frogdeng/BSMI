@@ -102,7 +102,7 @@ $page_width: 1044px
 		align-items: center
 		
 		.unit_block
-			padding: 15px 20px 
+			padding: 10px 20px 
 			width: 100%
 			display: flex
 			flex-direction: row
@@ -120,7 +120,7 @@ $page_width: 1044px
 			display: none
 			.subitem
 				width: 100%
-				padding: 10px 20px 10px 30px
+				padding: 8px 20px 8px 30px
 				background: #cee1f1
 				display: flex
 				flex-direction: row
@@ -783,6 +783,116 @@ $page_width: 1044px
 .page_on
 	background: #419fe3 !important
 	color: #FFF !important
+
+
+
+
+
+.add_keyword
+	height: 46px
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: center
+	padding: 0 20px
+	font-size: 14px
+	color: #444
+	border-bottom: 1px solid #eee
+	.i-add-keyword
+		width: 257px
+		height: 30px
+		margin-left: 5px
+	.add_btn
+		width: 60px
+		height: 30px
+		border-radius: 4px
+		background-color: #419fe3
+		border: solid 1px #419fe3
+		color: #FFF
+		margin-left: 5px
+		cursor: pointer
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+
+
+
+
+
+
+@mixin add_keyword_mixin
+	.cos_a
+		width: 50%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	
+	.cos_b
+		width: 30%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	.cos_c
+		width: 20%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		i 
+			font-size: 20px
+	
+
+
+.addkeyword_table
+	.table_row_th
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 0px 20px
+		height: 46px
+		color: #59778c
+		font-weight: 900
+		background: #fafafa
+		border-bottom: 1px solid #eeeeee
+		+add_keyword_mixin
+		.cos_c
+			i 
+				font-size: 14px
+				margin-left: 5px
+
+	.table_row
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 0px 20px
+		height: 36px
+		color: #444
+		transition: all .3s
+		+add_keyword_mixin
+		&:nth-child(even)
+			background: rgba(89, 119, 140, 0.1)
+		&:hover
+			background: rgba(89, 119, 140, 0.3)
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
