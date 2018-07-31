@@ -42,7 +42,7 @@ $page_width: 1044px
 
 
 .institutional_knowledge_base_content
-	flex: 5 0 auto
+	flex: 5 0 0
 	// background: #eee
 	transition: all .3s
 	padding: 32px
@@ -324,8 +324,76 @@ $page_width: 1044px
 	margin-top: 20px
 	margin-bottom: 10px
 	font-weight: 700
+
+.inside_title
+	font-size: 24px
+	color: #444
+	margin-top: 20px
+	margin-bottom: 10px
+	margin-left: 20px
+	font-weight: 700
+.inside_descript
+	padding: 20px
+	.notes
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: flex-start
+		margin-bottom: 20px
+		.file_note
+			font-size: 14px
+			font-weight: 300
+			color: #888
+			margin-right: 10px
+	.file_keyword
+		font-size: 14px
+		color: #444
+		font-weight: 300
+		margin-bottom: 15px
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: flex-start
+		.file_keyword_front
+			width: 8%
+
+		.file_keyword_back
+			width: 80%
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: flex-start
+			align-items: center
+			.file_tag
+				font-size: 12px
+				padding: 4px 12px
+				color: #444
+				background: #eeeeee
+				border-radius: 50px
+				margin-right: 12px
+				margin-bottom: 10px
+				i 
+					font-size: 10px
+					color: #999
+			.add_tag
+				font-size: 12px
+				color: #419fe3
+				font-weight: 700
+				// padding: 4px 12px
+				// background: #eeeeee
+				border-radius: 50px
+				margin-right: 12px
+				margin-bottom: 10px
+
+
+.pdf_file
+	width: 100%
+	height: 500px
+	border: 1px solid #c0c0c0
+
+
 .doclist
-	min-width: 900px
+	// min-width: 900px
 	background: #FFF
 	border-radius: 3px
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1)
@@ -358,6 +426,7 @@ $page_width: 1044px
 				color: #419FE4
 				margin-left: 10px
 				cursor: pointer
+
 
 		.doclist_fun_row
 			display: flex
@@ -571,6 +640,9 @@ $page_width: 1044px
 			align-items: center
 			color: #444
 			font-size: 16px
+			input[type="radio"]
+	
+				margin-right: 5px
 			p 
 				font-size: 12px
 				margin-left: 10px
@@ -581,6 +653,9 @@ $page_width: 1044px
 				border-radius: 4px
 				border: solid 1px #cccccc
 				margin-right: 10px
+				padding: 0 10px
+				&::placeholder
+					color: #c0c0c0
 			.radio_group
 				margin-right: 20px
 				font-size: 16px
