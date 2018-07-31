@@ -437,6 +437,81 @@ $page_width: 1044px
 	color: #6db5ea
 
 
+.cross
+	color: #e75541
+.pen
+	color: #419fe3
+.check
+	color: #87b540
+
+
+@mixin table_batch_cos
+	.cos_a
+		width: 4%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		i 
+			font-size: 20px
+		input[type="checkbox"]
+			// zoom: 1.5
+	.cos_b
+		width: 60%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	.cos_c
+		width: 10%
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		i 
+			font-size: 20px
+		input[type="checkbox"]
+			// zoom: 1.5
+	
+
+.batch_update_table
+	border-bottom: 1px solid #eeeeee
+	.table_row_th
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 0px 20px
+		height: 36px
+		color: #59778c
+		font-weight: 900
+		border-top: 1px solid #eeeeee
+		border-bottom: 1px solid #eeeeee
+		+table_batch_cos
+		.cos_c
+			i 
+				font-size: 14px
+				margin-left: 5px
+
+	.table_row
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 0px 20px
+		height: 36px
+		color: #444
+		transition: all .3s
+		+table_batch_cos
+		&:nth-child(even)
+			background: rgba(89, 119, 140, 0.1)
+		&:hover
+			background: rgba(89, 119, 140, 0.3)
+
+
+.bgbg
+	background: rgba(89, 119, 140, 0.3) !important
+
 
 .btn_group
 	display: flex
@@ -468,7 +543,7 @@ $page_width: 1044px
 		align-items: center
 
 .batch_upload_step_1
-	width: 90%
+	width: 95%
 	padding: 30px 20px
 	margin: 0 auto
 	border-bottom: 1px solid #eee
@@ -488,33 +563,81 @@ $page_width: 1044px
 			flex-direction: row
 			justify-content: flex-end
 			align-items: center
-		.upload_content
-			width: 85%
-			.upload_list
-				width: 100%
-				border: 1px solid #ddd
-				height: 300px
-				border-radius: 4px
-				padding: 10px
-				p 
-					font-size: 16px
-					font-weight: 400
-					margin-bottom: 5px
-					color: #444
-			.upload_btn
-				width: 96px
-				height: 38px
-				background-color: #419fe3
-				color: #FFF
-				border-radius: 4px
-				margin-bottom: 10px
-				display: flex
-				flex-direction: row
-				justify-content: center
-				align-items: center
+		.upload_select_edit
+			height: 40px
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			color: #444
+			font-size: 16px
 			p 
 				font-size: 12px
-				color: #999999
+				margin-left: 10px
+				color: #888
+			.upload_pdf
+				width: 300px
+				height: 38px
+				border-radius: 4px
+				border: solid 1px #cccccc
+				margin-right: 10px
+			.radio_group
+				margin-right: 20px
+				font-size: 16px
+				color: #444
+
+		.upload_content
+			width: 85%
+			.text_unedit
+				width: 678px
+				background: #f2f2f2
+				border: solid 1px #cccccc
+				padding: 10px
+				border-radius: 4px
+				color: #444
+			textarea
+				background: #FFF
+				border: solid 1px #cccccc
+				padding: 10px
+				border-radius: 4px
+				color: #444
+				&::placeholder
+					color: #c0c0c0
+
+
+
+
+.upload_list
+	width: 100%
+	border: 1px solid #ddd
+	height: 300px
+	border-radius: 4px
+	padding: 10px
+	p 
+		font-size: 16px
+		font-weight: 400
+		margin-bottom: 5px
+		color: #444
+.upload_btn
+	width: 96px
+	height: 38px
+	background-color: #419fe3
+	color: #FFF
+	border-radius: 4px
+	// margin-bottom: 10px
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+
+
+
+
+
+
+
+
+
 
 .pages
 	height: 48px
