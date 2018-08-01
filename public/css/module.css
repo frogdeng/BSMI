@@ -3629,6 +3629,185 @@ a {
   border-radius: 50px;
   color: #FFF; }
 
+.independent_page {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 32px 0; }
+
+.switch_page {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 25px 0; }
+
+.switch_page .switch_page_block {
+  display: block;
+  width: 128px;
+  height: 120px;
+  color: #77b9c4;
+  border-radius: 4px;
+  margin: 0 5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  transition: all .3s; }
+
+.switch_page .switch_page_block i {
+  font-size: 30px;
+  margin-bottom: 5px; }
+
+.switch_page .switch_page_block:hover {
+  background: #FFF;
+  border: solid 1px rgba(119, 185, 196, 0.6); }
+
+.knowledge_ranking {
+  background: #FFF;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.on_this {
+  background: #FFF;
+  border: solid 1px rgba(119, 185, 196, 0.6); }
+
+.subscriiption_table {
+  border-bottom: 1px solid #eeeeee; }
+
+.subscriiption_table .table_row_th {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 20px;
+  height: 46px;
+  color: #59778c;
+  font-weight: 900;
+  background: #fafafa;
+  border-bottom: 1px solid #eeeeee; }
+
+.subscriiption_table .table_row_th .cos_a {
+  width: 6%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.subscriiption_table .table_row_th .cos_b {
+  width: 40%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.subscriiption_table .table_row_th .cos_d {
+  width: 55%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.subscriiption_table .table_row_th .cos_c {
+  width: 15%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.subscriiption_table .table_row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 20px;
+  height: 36px;
+  color: #444;
+  transition: all .3s; }
+
+.subscriiption_table .table_row .cos_a {
+  width: 6%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.subscriiption_table .table_row .cos_b {
+  width: 40%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.subscriiption_table .table_row .cos_d {
+  width: 55%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.subscriiption_table .table_row .cos_c {
+  width: 15%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.subscriiption_table .table_row:nth-child(even) {
+  background: rgba(89, 119, 140, 0.1); }
+
+.subscriiption_table .table_row:hover {
+  background: rgba(89, 119, 140, 0.3); }
+
 body {
   font-family: Microsoft JhengHei;
   -webkit-font-smoothing: antialiased;
