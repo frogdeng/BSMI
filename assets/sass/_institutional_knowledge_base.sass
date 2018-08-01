@@ -104,6 +104,7 @@ $page_width: 1044px
 		.unit_block
 			padding: 10px 20px 
 			width: 100%
+			cursor: pointer
 			display: flex
 			flex-direction: row
 			justify-content: space-between
@@ -397,6 +398,12 @@ $page_width: 1044px
 	background: #FFF
 	border-radius: 3px
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1)
+	span
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+
 	.doclist_fun
 		height: 54px
 		padding: 0 16px
@@ -405,6 +412,20 @@ $page_width: 1044px
 		flex-direction: row
 		justify-content: space-between
 		align-items: center
+
+		.select_keyword
+			font-size: 14px
+			color: #444
+			select
+				width: 208px
+				height: 32px
+				margin: 0 5px
+				color: #444
+				border-radius: 4px
+				background-color: #ffffff
+				border: solid 1px #cccccc
+
+
 		.doclist_search
 			width: 400px
 			height: 32px
@@ -446,7 +467,10 @@ $page_width: 1044px
 					background: #419fe3
 					color: #FFF
 	
+
 	.doclist_table
+		border-bottom: 1px solid #eeeeee
+
 		.table_row_th
 			display: flex
 			flex-direction: row
@@ -715,7 +739,7 @@ $page_width: 1044px
 
 
 .pages
-	height: 48px
+	height: 52px
 	display: flex
 	flex-direction: row
 	justify-content: space-between
@@ -847,6 +871,7 @@ $page_width: 1044px
 
 
 .addkeyword_table
+	border-bottom: 1px solid #eeeeee
 	.table_row_th
 		display: flex
 		flex-direction: row
@@ -884,10 +909,146 @@ $page_width: 1044px
 
 
 
+@mixin myupload_mixin
+	.cos_a
+		width: 5%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	
+	.cos_b
+		width: 30%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	.cos_c
+		width: 20%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		i 
+			font-size: 20px
+			cursor: pointer
+
+
+.myupload_table
+	border-bottom: 1px solid #eeeeee
+	.table_row_th
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 0px 20px
+		height: 46px
+		color: #59778c
+		font-weight: 900
+		background: #fafafa
+		border-bottom: 1px solid #eeeeee
+		+myupload_mixin
 
 
 
+	.table_row
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 0px 20px
+		height: 36px
+		color: #444
+		transition: all .3s
+		+myupload_mixin
+		i
+			font-size: 20px
+		&:nth-child(even)
+			background: rgba(89, 119, 140, 0.1)
+		&:hover
+			background: rgba(89, 119, 140, 0.3)
 
+
+
+@mixin subscriiption_mixin
+	.cos_a
+		width: 5%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	
+	.cos_b
+		width: 30%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	
+	.cos_d
+		width: 45%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+
+	.cos_c
+		width: 15%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		i 
+			font-size: 20px
+			cursor: pointer
+
+.subscriiption_table
+	border-bottom: 1px solid #eeeeee
+	.table_row_th
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 0px 20px
+		height: 46px
+		color: #59778c
+		font-weight: 900
+		background: #fafafa
+		border-bottom: 1px solid #eeeeee
+		+subscriiption_mixin
+
+	.table_row
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 0px 20px
+		height: 36px
+		color: #444
+		transition: all .3s
+		+subscriiption_mixin
+		i
+			font-size: 20px
+		&:nth-child(even)
+			background: rgba(89, 119, 140, 0.1)
+		&:hover
+			background: rgba(89, 119, 140, 0.3)
+			
+
+
+.i-add_doc
+	font-size: 12px
+	background: #87b540
+	padding: 3px 15px
+	border-radius: 50px
+	color: #FFF
+
+.i-move_doc
+	font-size: 12px
+	background: #f5a623
+	padding: 3px 15px
+	border-radius: 50px
+	color: #FFF
 
 
 
