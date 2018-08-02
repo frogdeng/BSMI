@@ -1,0 +1,263 @@
+{# index.twig #}
+{% extends "/_template/layout.twig" %}
+
+{% block page %}
+
+
+
+	
+	
+
+	<div class="independent_page">
+		
+		<div class="bread_crumbs">
+			<a href="">首頁</a> / <a href="">知識管理</a> / <p>知識排行榜</p>
+		</div>
+
+
+		<div class="switch_view">
+			<div class="switch_view_l">使用情境</div>
+			<div class="switch_view_r switch_view_on">單位組織</div>
+		</div>
+		
+
+
+		<div class="knowledge_ranking">
+			<div class="doclist_fun">
+
+				<div class="doclist_search">
+					<input type="text" class="i_search" placeholder="檢索知識">
+					<i class="fas fa-search"></i>
+				</div>
+
+				<div class="doclist_fun_row">
+					<div class="doclist_fun_btn"><i class="far fa-heart"></i> 加入收藏</div>
+					<div class="doclist_fun_btn"><i class="fas fa-plus"></i> 新增資料夾</div>
+					<div class="doclist_fun_btn">上傳文件 <i class="fas fa-caret-down"></i></div>
+					<div class="doclist_fun_btn">文件管理 <i class="fas fa-caret-down"></i></div>
+				</div>
+
+			</div>
+
+			<!-- pages -->
+			<div class="pages">
+				<div class="page_front">
+					<div class="num_page">
+						<a href="" class="num_page_link"><i class="fas fa-chevron-left"></i> </a>
+						<a href="" class="num_page_link">1</a>
+						<a href="" class="num_page_link page_on">2</a>
+						<a href="" class="num_page_link">3</a>
+						<a href="" class="num_page_link">4</a>
+						<a href="" class="num_page_link">5</a>
+						<a href="" class="num_page_link"><i class="fas fa-chevron-right"></i></a>
+					</div>
+					<div class="jump_to-page">
+						跳至
+						<select name="" id="">
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+						</select>
+						頁	
+					</div>
+				</div>
+
+				<div class="page_back">
+					<div class="this_page">
+						每頁
+						<select name="" id="">
+							<option value="">20</option>
+							<option value="">30</option>
+							<option value="">40</option>
+							<option value="">50</option>
+						</select>
+						筆
+					</div>
+					<div class="page_info">第2頁，21-40筆，共100筆</div>
+				</div>
+			</div>
+
+
+			<div class="doclist_table">
+				<div class="table_row_th">
+					<div class="cos_c"><input type="checkbox"></div>
+					<div class="cos_c">類型 </div>
+					<div class="cos_b">名稱</div>
+					<div class="cos_a">表單類型</div>
+					<div class="cos_d">建立者</div>
+					<div class="cos_e">建立時間</div>
+					<div class="cos_d">修改者</div>
+					<div class="cos_e">建立時間</div>
+				</div>
+
+				
+
+				<div class="table_row">
+					<div class="cos_c"><input type="checkbox"></div>
+					<div class="cos_c folder"><i class="fas fa-folder"></i></div>
+					<div class="cos_b">台北總局</div>
+					<div class="cos_a"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+				</div>
+				<div class="table_row">
+					<div class="cos_c"><input type="checkbox"></div>
+					<div class="cos_c folder"><i class="fas fa-folder"></i></div>
+					<div class="cos_b">基隆分局</div>
+					<div class="cos_a"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+				</div>
+				<div class="table_row">
+					<div class="cos_c"><input type="checkbox"></div>
+					<div class="cos_c folder"><i class="fas fa-folder"></i></div>
+					<div class="cos_b">新竹分局</div>
+					<div class="cos_a"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+				</div>
+				<div class="table_row">
+					<div class="cos_c"><input type="checkbox"></div>
+					<div class="cos_c folder"><i class="fas fa-folder"></i></div>
+					<div class="cos_b">台南分局</div>
+					<div class="cos_a"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+				</div>
+				<div class="table_row">
+					<div class="cos_c"><input type="checkbox"></div>
+					<div class="cos_c folder"><i class="fas fa-folder"></i></div>
+					<div class="cos_b">高雄分局</div>
+					<div class="cos_a"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+				</div>
+				<div class="table_row">
+					<div class="cos_c"><input type="checkbox"></div>
+					<div class="cos_c folder"><i class="fas fa-folder"></i></div>
+					<div class="cos_b">花蓮分局</div>
+					<div class="cos_a"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+				</div>
+				<div class="table_row">
+					<div class="cos_c"><input type="checkbox"></div>
+					<div class="cos_c folder"><i class="fas fa-folder"></i></div>
+					<div class="cos_b">資訊安全管理委員會</div>
+					<div class="cos_a"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+				</div>
+				<div class="table_row">
+					<div class="cos_c"><input type="checkbox"></div>
+					<div class="cos_c folder"><i class="fas fa-folder"></i></div>
+					<div class="cos_b">資訊安全管理委員會</div>
+					<div class="cos_a"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+				</div>
+				<div class="table_row">
+					<div class="cos_c"><input type="checkbox"></div>
+					<div class="cos_c folder"><i class="fas fa-folder"></i></div>
+					<div class="cos_b">資訊安全管理委員會</div>
+					<div class="cos_a"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+				</div>
+				<div class="table_row">
+					<div class="cos_c"><input type="checkbox"></div>
+					<div class="cos_c folder"><i class="fas fa-folder"></i></div>
+					<div class="cos_b">資訊安全管理委員會</div>
+					<div class="cos_a"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+				</div>
+				<div class="table_row">
+					<div class="cos_c"><input type="checkbox"></div>
+					<div class="cos_c folder"><i class="fas fa-folder"></i></div>
+					<div class="cos_b">資訊安全管理委員會</div>
+					<div class="cos_a"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+					<div class="cos_d"></div>
+					<div class="cos_e"></div>
+				</div>
+
+
+
+
+				
+
+
+			</div>
+
+
+			<div class="pages">
+				<div class="page_front">
+					<div class="num_page">
+						<a href="" class="num_page_link"><i class="fas fa-chevron-left"></i> </a>
+						<a href="" class="num_page_link">1</a>
+						<a href="" class="num_page_link page_on">2</a>
+						<a href="" class="num_page_link">3</a>
+						<a href="" class="num_page_link">4</a>
+						<a href="" class="num_page_link">5</a>
+						<a href="" class="num_page_link"><i class="fas fa-chevron-right"></i></a>
+					</div>
+					<div class="jump_to-page">
+						跳至
+						<select name="" id="">
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+						</select>
+						頁	
+					</div>
+				</div>
+
+				<div class="page_back">
+					<div class="this_page">
+						每頁
+						<select name="" id="">
+							<option value="">20</option>
+							<option value="">30</option>
+							<option value="">40</option>
+							<option value="">50</option>
+						</select>
+						筆
+					</div>
+					<div class="page_info">第2頁，21-40筆，共100筆</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<div class="clear"></div>
+
+		
+
+
+{% endblock %}

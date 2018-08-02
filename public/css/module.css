@@ -2525,7 +2525,7 @@ a {
   -ms-flex-align: center;
   align-items: center; }
 
-.doclist .doclist_fun {
+.doclist_fun {
   height: 54px;
   padding: 0 16px;
   border-bottom: 1px solid #eee;
@@ -2538,12 +2538,11 @@ a {
   -ms-flex-align: center;
   align-items: center; }
 
-.doclist .doclist_fun .select_keyword {
+.doclist_fun .select_keyword {
   font-size: 14px;
   color: #444; }
 
-.doclist .doclist_fun .select_keyword select {
-  width: 208px;
+.doclist_fun .select_keyword select {
   height: 32px;
   margin: 0 5px;
   color: #444;
@@ -2551,7 +2550,7 @@ a {
   background-color: #ffffff;
   border: solid 1px #cccccc; }
 
-.doclist .doclist_fun .doclist_search {
+.doclist_fun .doclist_search {
   width: 400px;
   height: 32px;
   border-radius: 4px;
@@ -2565,24 +2564,24 @@ a {
   -ms-flex-align: center;
   align-items: center; }
 
-.doclist .doclist_fun .doclist_search .i_search {
+.doclist_fun .doclist_search .i_search {
   width: 360px;
   border: none;
   outline: 0;
   padding-left: 10px; }
 
-.doclist .doclist_fun .doclist_search .i_search:-ms-input-placeholder {
+.doclist_fun .doclist_search .i_search:-ms-input-placeholder {
   color: #cccccc; }
 
-.doclist .doclist_fun .doclist_search .i_search::placeholder {
+.doclist_fun .doclist_search .i_search::placeholder {
   color: #cccccc; }
 
-.doclist .doclist_fun .doclist_search i {
+.doclist_fun .doclist_search i {
   color: #419FE4;
   margin-left: 10px;
   cursor: pointer; }
 
-.doclist .doclist_fun .doclist_fun_row {
+.doclist_fun .doclist_fun_row {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -2592,7 +2591,7 @@ a {
   -ms-flex-align: center;
   align-items: center; }
 
-.doclist .doclist_fun .doclist_fun_row .doclist_fun_btn {
+.doclist_fun .doclist_fun_row .doclist_fun_btn {
   color: #419fe3;
   border: 1px solid #419fe3;
   padding: 8px 20px;
@@ -2602,14 +2601,14 @@ a {
   cursor: pointer;
   transition: all .3s; }
 
-.doclist .doclist_fun .doclist_fun_row .doclist_fun_btn:hover {
+.doclist_fun .doclist_fun_row .doclist_fun_btn:hover {
   background: #419fe3;
   color: #FFF; }
 
-.doclist .doclist_table {
+.doclist_table {
   border-bottom: 1px solid #eeeeee; }
 
-.doclist .doclist_table .table_row_th {
+.doclist_table .table_row_th {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -2618,15 +2617,14 @@ a {
   justify-content: flex-start;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 20px;
-  height: 36px;
+  padding: 8px 20px;
   color: #59778c;
   font-weight: 900;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee; }
 
-.doclist .doclist_table .table_row_th .cos_a {
-  width: 7%;
+.doclist_table .table_row_th .cos_a {
+  width: 9%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -2636,61 +2634,11 @@ a {
   -ms-flex-align: center;
   align-items: center; }
 
-.doclist .doclist_table .table_row_th .cos_a i {
+.doclist_table .table_row_th .cos_a i {
   font-size: 20px; }
 
-.doclist .doclist_table .table_row_th .cos_b {
+.doclist_table .table_row_th .cos_b {
   width: 35%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.doclist .doclist_table .table_row_th .cos_c {
-  width: 5%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.doclist .doclist_table .table_row_th .cos_c i {
-  font-size: 20px; }
-
-.doclist .doclist_table .table_row_th .cos_d {
-  width: 10%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.doclist .doclist_table .table_row_th .cos_e {
-  width: 15%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.doclist .doclist_table .table_row_th .cos_c i {
-  font-size: 14px;
-  margin-left: 5px; }
-
-.doclist .doclist_table .table_row {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -2699,13 +2647,10 @@ a {
   justify-content: flex-start;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 20px;
-  height: 36px;
-  color: #444;
-  transition: all .3s; }
+  padding-right: 20px; }
 
-.doclist .doclist_table .table_row .cos_a {
-  width: 7%;
+.doclist_table .table_row_th .cos_c {
+  width: 4%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -2715,35 +2660,10 @@ a {
   -ms-flex-align: center;
   align-items: center; }
 
-.doclist .doclist_table .table_row .cos_a i {
+.doclist_table .table_row_th .cos_c i {
   font-size: 20px; }
 
-.doclist .doclist_table .table_row .cos_b {
-  width: 35%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.doclist .doclist_table .table_row .cos_c {
-  width: 5%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.doclist .doclist_table .table_row .cos_c i {
-  font-size: 20px; }
-
-.doclist .doclist_table .table_row .cos_d {
+.doclist_table .table_row_th .cos_d {
   width: 10%;
   display: -ms-flexbox;
   display: flex;
@@ -2754,7 +2674,7 @@ a {
   -ms-flex-align: center;
   align-items: center; }
 
-.doclist .doclist_table .table_row .cos_e {
+.doclist_table .table_row_th .cos_e {
   width: 15%;
   display: -ms-flexbox;
   display: flex;
@@ -2765,10 +2685,89 @@ a {
   -ms-flex-align: center;
   align-items: center; }
 
-.doclist .doclist_table .table_row:nth-child(even) {
+.doclist_table .table_row_th .cos_c i {
+  font-size: 14px;
+  margin-left: 5px; }
+
+.doclist_table .table_row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 6px 20px;
+  color: #444;
+  transition: all .3s; }
+
+.doclist_table .table_row .cos_a {
+  width: 9%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist_table .table_row .cos_a i {
+  font-size: 20px; }
+
+.doclist_table .table_row .cos_b {
+  width: 35%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 20px; }
+
+.doclist_table .table_row .cos_c {
+  width: 4%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist_table .table_row .cos_c i {
+  font-size: 20px; }
+
+.doclist_table .table_row .cos_d {
+  width: 10%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist_table .table_row .cos_e {
+  width: 15%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.doclist_table .table_row:nth-child(even) {
   background: rgba(89, 119, 140, 0.1); }
 
-.doclist .doclist_table .table_row:hover {
+.doclist_table .table_row:hover {
   background: rgba(89, 119, 140, 0.3); }
 
 .folder {
@@ -2828,8 +2827,7 @@ a {
   justify-content: flex-start;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 20px;
-  height: 36px;
+  padding: 8px 20px;
   color: #59778c;
   font-weight: 900;
   border-top: 1px solid #eeeeee;
@@ -2889,8 +2887,7 @@ a {
   justify-content: flex-start;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 20px;
-  height: 36px;
+  padding: 6px 20px;
   color: #444;
   transition: all .3s; }
 
@@ -3244,6 +3241,33 @@ a {
   -ms-flex-align: center;
   align-items: center; }
 
+.form_type {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 12px;
+  margin-right: 3px; }
+
+.green {
+  color: #87b540;
+  border: 1px solid #87b540; }
+
+.brown {
+  color: #c59e5d;
+  border: 1px solid #c59e5d; }
+
+.orange {
+  color: #f5a623;
+  border: 1px solid #f5a623; }
+
 .addkeyword_table {
   border-bottom: 1px solid #eeeeee; }
 
@@ -3256,8 +3280,7 @@ a {
   justify-content: flex-start;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 20px;
-  height: 46px;
+  padding: 8px 20px;
   color: #59778c;
   font-weight: 900;
   background: #fafafa;
@@ -3373,8 +3396,7 @@ a {
   justify-content: flex-start;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 20px;
-  height: 46px;
+  padding: 8px 20px;
   color: #59778c;
   font-weight: 900;
   background: #fafafa;
@@ -3489,8 +3511,7 @@ a {
   justify-content: flex-start;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 20px;
-  height: 46px;
+  padding: 8px 20px;
   color: #59778c;
   font-weight: 900;
   background: #fafafa;
@@ -3553,8 +3574,7 @@ a {
   justify-content: flex-start;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 20px;
-  height: 36px;
+  padding: 6px 20px;
   color: #444;
   transition: all .3s; }
 
@@ -3677,6 +3697,16 @@ a {
   max-width: 1024px;
   margin: 0 auto; }
 
+.knowledge_ranking span {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .on_this {
   background: #FFF;
   border: solid 1px rgba(119, 185, 196, 0.6); }
@@ -3693,8 +3723,7 @@ a {
   justify-content: flex-start;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 20px;
-  height: 46px;
+  padding: 8px 20px;
   color: #59778c;
   font-weight: 900;
   background: #fafafa;
@@ -3753,8 +3782,7 @@ a {
   justify-content: flex-start;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 20px;
-  height: 36px;
+  padding: 6px 20px;
   color: #444;
   transition: all .3s; }
 
@@ -3807,6 +3835,39 @@ a {
 
 .subscriiption_table .table_row:hover {
   background: rgba(89, 119, 140, 0.3); }
+
+.switch_view {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 8px; }
+
+.switch_view .switch_view_l {
+  background: #FFF;
+  border: 1px solid #419fe3;
+  color: #419fe3;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 4px 0 0 4px;
+  cursor: pointer; }
+
+.switch_view .switch_view_r {
+  background: #FFF;
+  border: 1px solid #419fe3;
+  color: #419fe3;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer; }
+
+.switch_view_on {
+  background: #419fe3 !important;
+  color: #FFF !important; }
 
 body {
   font-family: Microsoft JhengHei;
