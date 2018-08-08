@@ -1215,6 +1215,144 @@ $page_width: 1044px
 
 
 
+// discuss_line_mixin
+@mixin discuss_line_mixin
+	.cos_a
+		width: 5%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	
+	.cos_b
+		width: 35%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	
+
+
+	.cos_c
+		width: 15%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		i 
+			font-size: 20px
+			cursor: pointer
+
+.discuss_line_table
+	border-bottom: 1px solid #eeeeee
+	.table_row_th
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 8px 20px
+		color: #59778c
+		font-weight: 900
+		background: #fafafa
+		border-bottom: 1px solid #eeeeee
+		+discuss_line_mixin
+
+	.table_row
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 6px 20px
+		color: #444
+		transition: all .3s
+		+discuss_line_mixin
+		i
+			font-size: 20px
+		&:nth-child(even)
+			background: rgba(89, 119, 140, 0.1)
+		&:hover
+			background: rgba(89, 119, 140, 0.3)
+			
+
+
+
+.discuss_detail
+	.discuss_question
+		padding: 12px 20px
+		border-bottom: 1px solid #eee
+		h3
+			font-size: 20px
+			color: #444
+			margin-bottom: 10px
+		.discuss_question_info
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			font-size: 14px
+			color: #888
+			span
+				margin-right: 20px
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: center
+				i 
+					margin-right: 5px
+	.discuss_description
+		padding: 12px 20px
+		border-bottom: 1px solid #eee
+		p 
+			color: #000
+
+	.discuss_attached
+		padding: 12px 20px
+		border-bottom: 1px solid #eee
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		.attatched_file
+			border: 1px solid #ddd
+			border-radius: 4px
+			padding: 10px
+			float: left
+			margin-right: 10px
+			font-size: 12px
+			color: #444
+			cursor: pointer
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			i 
+				font-size: 20px
+				margin-right: 5px
+				color: #1f87d2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
