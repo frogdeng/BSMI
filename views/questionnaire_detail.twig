@@ -1,0 +1,440 @@
+{# index.twig #}
+{% extends "/_template/layout.twig" %}
+
+{% block page %}
+
+
+
+<div class="institutional_knowledge_base_wrapper">
+	
+	<!-- left_pillar -->
+	<div class="institutional_knowledge_base_left">
+		<div class="switch_foldup_icon left_burger">
+			<i class="fas fa-bars"></i>
+		</div>
+
+		<div class="left_pillar">
+			<div class="left-title">
+				<h6>個人知識庫</h6>
+			</div>
+
+			<div class="left_pillar_item">
+				<div class="unit_block">
+					<h6>我所上傳的文件</h6>
+					<i class="fas fa-angle-down"></i>
+				</div>
+
+				<div class="inside_item">
+					<div class="subitem">第一組</div>
+					<div class="subitem">第二組</div>
+					<div class="subitem">第三組</div>
+					<div class="subitem">第四組</div>
+					<div class="subitem">法務室</div>
+					<div class="subitem">資料中心</div>
+					<div class="subitem">總局商品安全諮詢中心</div>
+				</div>
+
+			</div>
+
+			<div class="left_pillar_item">
+				<div class="unit_block">
+					<h6>個人訂閱</h6>
+					<i class="fas fa-angle-down"></i>
+				</div>
+				<div class="inside_item">
+					<div class="subitem">第一組</div>
+					<div class="subitem">第二組</div>
+					<div class="subitem">第三組</div>
+					<div class="subitem">第四組</div>
+					<div class="subitem">法務室</div>
+					<div class="subitem">資料中心</div>
+					<div class="subitem">總局商品安全諮詢中心</div>
+				</div>
+			</div>
+			<div class="left_pillar_item">
+				<div class="unit_block">
+					<h6>個人收藏</h6>
+					<i class="fas fa-angle-down"></i>
+				</div>
+			</div>
+			
+		</div>	
+	</div>
+
+
+
+
+	<!-- center -->
+
+	<div class="institutional_knowledge_base_content">
+		
+		<div class="bread_crumbs">
+			<a href="">首頁</a> / <a href="">知識管理</a> / <a href="">台北總局</a>  / <a href="">第一組</a> / <p>第一科 </p>
+		</div>
+
+		<div class="doclist">
+			<div class="doclist_fun">
+				<div class="doclist_fun_row">
+					<div class="doclist_fun_btn"><i class="fas fa-arrow-left"></i> 回問卷列表</div>
+				</div>
+				<div class="doclist_fun_row">
+					<div class="doclist_fun_btn"><i class="fas fa-eye"></i> 預覽問卷</div>
+					<div class="doclist_fun_btn"><i class="far fa-copy"></i> 複製問卷</div>
+					<div class="doclist_fun_btn delete"><i class="fas fa-trash-alt"></i> 刪除問卷</div>
+				</div>
+			</div>
+
+			<div class="questionnaire">
+				
+				<div class="questionnaire_subject">
+					<div class="subject_row">
+						<div class="qq_title">主題：</div>
+						<div class="qq_content">
+							<input type="text" class="qq_input">
+							<div class="text_mode">草稿</div>
+						</div>
+					</div>
+					<div class="subject_row">
+						<div class="qq_title">調查時間：</div>
+						<div class="qq_content">
+							<select name="" id="">
+								<option value="">107-10-30 10:08 </option>
+								<option value="">107-10-30 10:08 </option>
+								<option value="">107-10-30 10:08 </option>
+								<option value="">107-10-30 10:08 </option>
+							</select>
+							<span>至</span>
+							<select name="" id="">
+								<option value="">107-10-30 10:08 </option>
+								<option value="">107-10-30 10:08 </option>
+								<option value="">107-10-30 10:08 </option>
+								<option value="">107-10-30 10:08 </option>
+							</select>
+						</div>
+					</div>
+
+					<div class="subject_row">
+						<div class="qq_title">說明：</div>
+						<div class="qq_content">
+							<div class="qq_descripton">
+								<p>親愛的長官、同仁，您好：為了瞭解局內同仁對於雲端應用及其應用風險的認知，本團隊設計了這份問卷，敬請根據您的實際經驗填答，本問卷所得資料僅供研究分析，個人資料會進行匿名與保密處理，不會對外公開，敬請安心填答。非常感謝您撥冗填寫，使得本研究能順利進行！</p>
+								<br>
+								<p>敬祝</p>
+								<p>工作順利 萬事如意</p>
+								<p style="text-align: right">資安團隊 敬啟</p>
+								<p style="text-align: right">中華民國107年4月</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="questionnaire_question_unit">
+					<div class="unit_section">
+						<div class="num">1</div>
+						<div class="unit_layer">
+							<div class="unit_row">
+								<input type="text" class="input_a">
+								<select name="" id="">
+									<option value="">單選 </option>
+									<option value="">單選 </option>
+								</select>
+							</div>
+
+							<div class="unit_row">
+								<input type="radio">
+								<input type="text" class="input_b">
+								<div class="unit_delete"><i class="fas fa-times-circle"></i></div>
+							</div>
+
+							<div class="unit_row">
+								<input type="radio">
+								<input type="text" class="input_b">
+								<div class="unit_delete"><i class="fas fa-times-circle"></i></div>
+							</div>
+
+							<div class="unit_row b-b">
+								<input type="radio">
+								<div class="unit_text">
+									<a href="">新增選項</a> <span>或</span> <a href="">新增「其他」</a>
+								</div>
+								
+							</div>
+							<div class="bottom_fun">
+								<span>
+								<div class="fun_row"><input type="checkbox">必填</div>
+								<div class="fun_row"><input type="checkbox">跳題</div>
+								</span>
+								<span>
+									<div class="bottom_fun_todo"><i class="far fa-copy"></i> 複製</div>
+									<div class="bottom_fun_todo"><i class="fas fa-trash-alt"></i> 刪除</div>
+								</span>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="unit_section">
+						<div class="num">2</div>
+						<div class="unit_layer">
+							<div class="unit_row">
+								<input type="text" class="input_a">
+								<select name="" id="">
+									<option value="">單選 </option>
+									<option value="">單選 </option>
+								</select>
+							</div>
+
+							<div class="unit_row">
+								<input type="radio">
+								<input type="text" class="input_b">
+								<div class="unit_delete"><i class="fas fa-times-circle"></i></div>
+								<select name="" id="">
+									<option value="">前往... </option>
+									<option value="">前往... </option>
+								</select>
+							</div>
+
+							<div class="unit_row">
+								<input type="radio">
+								<input type="text" class="input_b">
+								<div class="unit_delete"><i class="fas fa-times-circle"></i></div>
+								<select name="" id="">
+									<option value="">前往... </option>
+									<option value="">前往... </option>
+								</select>
+							</div>
+
+							<div class="unit_row">
+								<input type="radio">
+								<div class="unit_text">
+									其他
+								</div>
+							</div>
+
+							<div class="unit_row b-b">
+								<input type="radio">
+								<div class="unit_text">
+									<a href="">新增選項</a> <span>或</span> <a href="">新增「其他」</a>
+								</div>
+							</div>
+							<div class="bottom_fun">
+								<span>
+								<div class="fun_row"><input type="checkbox">必填</div>
+								<div class="fun_row"><input type="checkbox">跳題</div>
+								</span>
+								<span>
+									<div class="bottom_fun_todo"><i class="far fa-copy"></i> 複製</div>
+									<div class="bottom_fun_todo"><i class="fas fa-trash-alt"></i> 刪除</div>
+								</span>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="unit_section">
+						<div class="num">3</div>
+						<div class="unit_layer">
+							<div class="unit_row">
+								<input type="text" class="input_a">
+								<select name="" id="">
+									<option value="">單選 </option>
+									<option value="">單選 </option>
+								</select>
+							</div>
+
+							<div class="unit_row">
+								<input type="radio">
+								<input type="text" class="input_b">
+								<div class="unit_delete"><i class="fas fa-times-circle"></i></div>
+							</div>
+
+							<div class="unit_row">
+								<input type="radio">
+								<input type="text" class="input_b">
+								<div class="unit_delete"><i class="fas fa-times-circle"></i></div>
+							</div>
+
+							<div class="unit_row">
+								<input type="radio">
+								<div class="unit_text">
+									其他
+								</div>
+							</div>
+
+							<div class="unit_row b-b">
+								<input type="radio">
+								<div class="unit_text">
+									<a href="">新增選項</a> <span>或</span> <a href="">新增「其他」</a>
+								</div>
+							</div>
+							<div class="bottom_fun">
+								<span>
+								<div class="fun_row"><input type="checkbox">必填</div>
+								<div class="fun_row"><input type="checkbox">跳題</div>
+								</span>
+								<span>
+									<div class="bottom_fun_todo"><i class="far fa-copy"></i> 複製</div>
+									<div class="bottom_fun_todo"><i class="fas fa-trash-alt"></i> 刪除</div>
+								</span>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="unit_section">
+						<div class="num">4</div>
+						<div class="unit_layer">
+							<div class="unit_row">
+								<input type="text" class="input_a">
+								<select name="" id="">
+									<option value="">單選 </option>
+									<option value="">單選 </option>
+								</select>
+							</div>
+
+							<div class="unit_row">
+								<input type="radio">
+								<input type="text" class="input_b">
+								<div class="unit_delete"><i class="fas fa-times-circle"></i></div>
+							</div>
+
+							<div class="unit_row">
+								<input type="radio">
+								<input type="text" class="input_b">
+								<div class="unit_delete"><i class="fas fa-times-circle"></i></div>
+							</div>
+
+							<div class="unit_row">
+								<input type="radio">
+								<div class="unit_text">
+									其他
+								</div>
+							</div>
+
+							<div class="unit_row b-b">
+								<input type="radio">
+								<div class="unit_text">
+									<a href="">新增選項</a> <span>或</span> <a href="">新增「其他」</a>
+								</div>
+							</div>
+							<div class="bottom_fun">
+								<span>
+								<div class="fun_row"><input type="checkbox">必填</div>
+								<div class="fun_row"><input type="checkbox">跳題</div>
+								</span>
+								<span>
+									<div class="bottom_fun_todo"><i class="far fa-copy"></i> 複製</div>
+									<div class="bottom_fun_todo"><i class="fas fa-trash-alt"></i> 刪除</div>
+								</span>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="unit_section blue-frame">
+						<div class="add-icon"><i class="fas fa-plus"></i></div>
+						<div class="num">5</div>
+						<div class="unit_layer">
+							
+							<div class="unit_row b-b" style="padding-bottom: 12px">
+								<input type="text" class="input_b">
+								<select name="" id="">
+									<option value="">單選 </option>
+									<option value="">單選 </option>
+								</select>
+							</div>
+
+							<div class="bottom_fun">
+								<span>
+								<div class="fun_row"><input type="checkbox">必填</div>
+								</span>
+								<span>
+									<div class="bottom_fun_todo"><i class="far fa-copy"></i> 複製</div>
+									<div class="bottom_fun_todo"><i class="fas fa-trash-alt"></i> 刪除</div>
+								</span>
+							</div>
+						</div>
+					</div>
+
+				<div class="submit_area">
+					<div class="submit_btn">儲存</div>
+					<div class="review_btn">送出審核</div>
+				</div>
+
+				</div>
+			</div>
+		</div>
+			
+
+	</div>
+
+	
+
+
+	<!-- right_pillar -->
+	<!-- <div class="institutional_knowledge_base_right">
+		<div class="switch_foldup_icon right_burger">
+			<i class="fas fa-bars"></i>
+		</div>
+		<div class="right_pillar">
+
+			<div class="statistics">
+				<h5>知識建立時間統計</h5>
+				<div class="right_pillar_data">
+					<h6>2018</h6>
+					<p>183</p>
+				</div>
+				<div class="right_pillar_data">
+					<h6>2018</h6>
+					<p>183</p>
+				</div>
+				<div class="right_pillar_data">
+					<h6>2018</h6>
+					<p>183</p>
+				</div>
+				<div class="right_pillar_data">
+					<h6>2018</h6>
+					<p>183</p>
+				</div>
+			</div>
+			<div class="statistics">
+				<h5>知識建立時間統計</h5>
+				<div class="right_pillar_data">
+					<h6>2018</h6>
+					<p>183</p>
+				</div>
+				<div class="right_pillar_data">
+					<h6>2018</h6>
+					<p>183</p>
+				</div>
+				<div class="right_pillar_data">
+					<h6>2018</h6>
+					<p>183</p>
+				</div>
+				<div class="right_pillar_data">
+					<h6>2018</h6>
+					<p>183</p>
+				</div>
+			</div>
+
+
+		</div>
+
+	</div> -->
+
+
+
+</div>
+
+
+
+
+
+<div class="clear"></div>
+
+		
+
+
+{% endblock %}

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>BSMI</title>
+
+<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.js'></script>
+<script type="text/javascript" src='https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js'></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src='js/gridstack.min.js'></script>
+<script type="text/javascript" src='js/gridstack.jQueryUI.min.js'></script>
+<script type="text/javascript" src='js/calender.js'></script>
+
+
+<!-- calender-->
+<link rel="stylesheet" href="css/fullcalendar.min.css">
+<link rel="stylesheet" href="css/fullcalendar.print.min.css" rel='stylesheet' media='print'>
+<script type="text/javascript" src='js/moment.min.js'></script>
+<script type="text/javascript" src='js/fullcalendar.min.js'></script>
+
+<script type="text/javascript" src='js/jquery.magnific-popup.min.js'></script>
+<script type="text/javascript" src='js/ui.js'></script>
+
+<link rel="stylesheet" href="css/magnific-popup.css">
+
+
+<link rel="stylesheet" href="css/gridstack.css">
+<link rel="stylesheet" href="css/gridstack-extra.css">
+
+
+
+<!-- fontawesome -->
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> -->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/module.css">
+
+	<script>
+
+  $(document).ready(function() {
+
+    $('#calendar').fullCalendar({
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay,listWeek'
+      },
+      defaultDate: '2018-03-12',
+      navLinks: true, // can click day/week names to navigate views
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+      events: [
+        {
+          title: 'All Day Event',
+          start: '2018-03-01',
+        },
+        {
+          title: 'Long Event',
+          start: '2018-03-07',
+          end: '2018-03-10'
+        },
+        {
+          id: 999,
+          title: 'Repeating Event',
+          start: '2018-03-09T16:00:00'
+        },
+        {
+          id: 999,
+          title: 'Repeating Event',
+          start: '2018-03-16T16:00:00'
+        },
+        {
+          title: 'Conference',
+          start: '2018-03-11',
+          end: '2018-03-13'
+        },
+        {
+          title: 'Meeting',
+          start: '2018-03-12T10:30:00',
+          end: '2018-03-12T12:30:00'
+        },
+        {
+          title: 'Lunch',
+          start: '2018-03-12T12:00:00'
+        },
+        {
+          title: 'Meeting',
+          start: '2018-03-12T14:30:00'
+        },
+        {
+          title: 'Happy Hour',
+          start: '2018-03-12T17:30:00'
+        },
+        {
+          title: 'Dinner',
+          start: '2018-03-12T20:00:00'
+        },
+        {
+          title: 'Birthday Party',
+          start: '2018-03-13T07:00:00'
+        },
+        {
+          title: 'Click for Google',
+          url: 'http://google.com/',
+          start: '2018-03-28'
+        }
+      ]
+    });
+
+  });
+
+</script>
+	<style>
+  #calendar {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+</style>
+
+</head>
+<body>
+	<div class="top_header_wrapper">
+		<div class="top_header">
+			<div class="logo"><img src="img/KKBox_Logo.png" alt=""></div>
+
+			<div class="search_w">
+				<div class="top_search">
+					<input type="text" class="mainsearch" placeholder="檢索知識"> <i class="fas fa-search"></i>
+				</div>
+				<a href="" class="advance_search">進階搜尋</a>
+	
+				<div class="advance_search_dropdown">
+					<!-- 知識類型 -->
+					<div class="advance_search_title">
+						知識類型
+					</div>
+					<div class="advance_search_row">
+						<div class="checkbox_item">
+							<label for="ss1">
+								<input type="radio" id="ss1" class="select_type">
+								<p>知識管理</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss2">
+								<input type="radio" id="ss2" class="select_type">
+								<p>知識管理</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss3">
+								<input type="radio" id="ss3" class="select_type">
+								<p>知識管理</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss4">
+								<input type="radio" id="ss4" class="select_type">
+								<p>知識管理</p>
+							</label>
+						</div>
+					</div>
+					<!-- 修改時間 -->
+					<div class="advance_search_title">
+						修改時間
+					</div>
+					<div class="advance_search_row">
+						<div class="checkbox_item">
+							<label for="ss5">
+								<input type="radio" id="ss5" class="select_type">
+								<p>不限時間</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss6">
+								<input type="radio" id="ss6" class="select_type">
+								<p>7日內</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss6">
+								<input type="radio" id="ss6" class="select_type">
+								<p>30日內</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss7">
+								<input type="radio" id="ss7" class="select_type">
+								<p>1年內</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss8">
+								<input type="radio" id="ss8" class="select_type">
+								<p>指定時間區間</p>
+							</label>
+						</div>
+					</div>
+					<div class="search_duration">
+						<div class="period">2018/07/15 -2018/08/02 </div>	
+						<div class="calender_period">
+							
+						</div>
+					</div>	
+
+					<!-- 單位 -->
+					<div class="advance_search_title">
+						單位
+					</div>
+					<div class="advance_search_row">
+						
+						<div class="checkbox_item">
+							<label for="ss5">
+								<input type="radio" id="ss5" class="select_type">
+								<p>不限單位</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss6">
+								<input type="radio" id="ss6" class="select_type">
+								<p>台北總局</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss7">
+								<input type="radio" id="ss7" class="select_type">
+								<p>基隆分局</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss8">
+								<input type="radio" id="ss8" class="select_type">
+								<p>新竹分局</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss8">
+								<input type="radio" id="ss8" class="select_type">
+								<p>新竹分局</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss8">
+								<input type="radio" id="ss8" class="select_type">
+								<p>新竹分局</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss8">
+								<input type="radio" id="ss8" class="select_type">
+								<p>新竹分局</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss8">
+								<input type="radio" id="ss8" class="select_type">
+								<p>新竹分局</p>
+							</label>
+						</div>
+					</div>
+
+					<!-- 文件類型 -->
+					<div class="advance_search_title">
+						文件類型
+					</div>
+					<div class="advance_search_row">
+						<div class="checkbox_item">
+							<label for="ss5">
+								<input type="radio" id="ss5" class="select_type">
+								<p>不限類型</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss6">
+								<input type="radio" id="ss6" class="select_type">
+								<p>知識文件</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss6">
+								<input type="radio" id="ss6" class="select_type">
+								<p>常用業務文件</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss7">
+								<input type="radio" id="ss7" class="select_type">
+								<p>業務文件</p>
+							</label>
+						</div>
+					</div>
+
+					<!-- 檔案格式 -->
+					<div class="advance_search_title">
+						檔案格式
+					</div>
+					<div class="advance_search_row">
+						<div class="checkbox_item">
+							<label for="ss5">
+								<input type="radio" id="ss5" class="select_type">
+								<p>不限格式</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss6">
+								<input type="radio" id="ss6" class="select_type">
+								<p>PDF</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss6">
+								<input type="radio" id="ss6" class="select_type">
+								<p>Word</p>
+							</label>
+						</div>
+						<div class="checkbox_item">
+							<label for="ss7">
+								<input type="radio" id="ss7" class="select_type">
+								<p>Excel</p>
+							</label>
+						</div>
+					</div>
+
+					<div class="dropdown_fun_row">
+						<div class="dropdown_reset">重設</div>
+						<div class="dropdown_btn">
+							<div class="cancle">取消</div>
+							<div class="submit">確定</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+			<div class="top_mention">
+				<div class="font_size">
+					字級：中 
+					<i class="fas fa-caret-down"></i>
+					<div class="font_size_message">
+						<a href="" class="font_size_list">大</a>
+						<a href="" class="font_size_list">中</a>
+						<a href="" class="font_size_list">小</a>
+					</div>
+				 </div>
+				
+				<div class="alert">
+					<div class="num">23</div>
+					<i class="fas fa-bell"></i> 
+					<div class="alert_message">
+						<a href="" class="message_list">
+							<span class="branch">機關知識庫</span> 
+							<div class="plop"><span>5</span> 筆待審</div>
+						</a>
+						<a href="" class="message_list">
+							<span class="branch">問卷調查</span> 
+							<div class="plop"><span>28</span> 筆待審</div>
+						</a>
+						<a href="" class="message_list">
+							<span class="branch">線上報名</span> 
+							<div class="plop"><span>9</span> 筆待審</div>
+						</a>
+						<a href="" class="message_list">
+							<span class="branch">消息公告</span> 
+							<div class="plop"><span>175</span> 筆待審</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="member"><i class="fas fa-user"></i> 陳組長</div>
+				
+			</div>		
+		</div>
+	</div>
+
+
+	<div class="top_header_menu">
+		<ul>
+			<li>
+				<a href="" class="menu_self">首頁
+					<div class="bottom_line"></div>
+				</a>
+			</li>
+
+			<li>
+				<a href="">知識管理
+					<div class="bottom_line"></div>
+				</a>
+				<ul class="dropdown ">
+					<li><a href="#">機關知識庫</a></li>
+					<li><a href="#">個人知識庫</a></li>
+					<li><a href="#">出版品專區</a></li>
+					<li><a href="#">知識排行榜</a></li>
+					<li><a href="#">文件暫存區</a></li>
+					<li><a href="#">局（分局）務會議</a></li>
+					<li><a href="#">新進員工訓練</a></li>
+					<li><a href="#">局大事紀</a></li>
+					<li><a href="#">線上學習</a></li>
+					<li><a href="#">部門行事曆</a></li>
+					<li><a href="#">表單專區</a></li>
+				</ul>
+			</li>
+
+			<li>
+				<a href="">討論區
+					<div class="bottom_line"></div>
+				</a>
+			</li>
+			<li>
+				<a href="">問卷調查
+					<div class="bottom_line"></div>
+				</a>
+			</li>
+			<li>
+				<a href="">線上報名
+					<div class="bottom_line"></div>
+				</a>
+			</li>
+			<li>
+				<a href="">個人設定
+					<div class="bottom_line"></div>
+				</a>
+			</li>
+				<li>
+					<a href="">系統設定	
+						<div class="bottom_line"></div>
+					</a>
+				</li>
+			
+		</ul>
+	</div>
+
+
+	
+
+
+
+
+
+
+
+<div class="institutional_knowledge_base_wrapper">
+	
+	<!-- left_pillar -->
+	<div class="institutional_knowledge_base_left">
+		<div class="switch_foldup_icon left_burger">
+			<i class="fas fa-bars"></i>
+		</div>
+
+		<div class="left_pillar">
+			<div class="left-title">
+				<h6>個人知識庫</h6>
+			</div>
+
+			<div class="left_pillar_item">
+				<div class="unit_block">
+					<h6>我所上傳的文件</h6>
+					<i class="fas fa-angle-down"></i>
+				</div>
+
+				<div class="inside_item">
+					<div class="subitem">第一組</div>
+					<div class="subitem">第二組</div>
+					<div class="subitem">第三組</div>
+					<div class="subitem">第四組</div>
+					<div class="subitem">法務室</div>
+					<div class="subitem">資料中心</div>
+					<div class="subitem">總局商品安全諮詢中心</div>
+				</div>
+
+			</div>
+
+			<div class="left_pillar_item">
+				<div class="unit_block">
+					<h6>個人訂閱</h6>
+					<i class="fas fa-angle-down"></i>
+				</div>
+				<div class="inside_item">
+					<div class="subitem">第一組</div>
+					<div class="subitem">第二組</div>
+					<div class="subitem">第三組</div>
+					<div class="subitem">第四組</div>
+					<div class="subitem">法務室</div>
+					<div class="subitem">資料中心</div>
+					<div class="subitem">總局商品安全諮詢中心</div>
+				</div>
+			</div>
+			<div class="left_pillar_item">
+				<div class="unit_block">
+					<h6>個人收藏</h6>
+					<i class="fas fa-angle-down"></i>
+				</div>
+			</div>
+			
+		</div>	
+	</div>
+
+
+
+
+	<!-- center -->
+
+	<div class="institutional_knowledge_base_content">
+		
+		<div class="bread_crumbs">
+			<a href="">首頁</a> / <a href="">知識管理</a> / <a href="">台北總局</a>  / <a href="">第一組</a> / <p>第一科 </p>
+		</div>
+
+		<div class="doclist">
+			<div class="doclist_fun">
+				<span>
+					<div class="doclist_search">
+						<input type="text" class="i_search" placeholder="檢索知識">
+						<i class="fas fa-search"></i>
+					</div>
+				</span>
+			</div>
+			
+
+			<!-- pages -->
+			<div class="pages">
+				<div class="page_front">
+					<div class="num_page">
+						<a href="" class="num_page_link"><i class="fas fa-chevron-left"></i> </a>
+						<a href="" class="num_page_link">1</a>
+						<a href="" class="num_page_link page_on">2</a>
+						<a href="" class="num_page_link">3</a>
+						<a href="" class="num_page_link">4</a>
+						<a href="" class="num_page_link">5</a>
+						<a href="" class="num_page_link"><i class="fas fa-chevron-right"></i></a>
+					</div>
+					<div class="jump_to-page">
+						跳至
+						<select name="" id="">
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+						</select>
+						頁	
+					</div>
+				</div>
+
+				<div class="page_back">
+					<div class="this_page">
+						每頁
+						<select name="" id="">
+							<option value="">20</option>
+							<option value="">30</option>
+							<option value="">40</option>
+							<option value="">50</option>
+						</select>
+						筆
+					</div>
+					<div class="page_info">第2頁，21-40筆，共100筆</div>
+				</div>
+			</div>
+
+			
+			<div class="questionnaire_table">
+				<div class="table_row_th">
+					<div class="cos_a">主題</div>
+					<div class="cos_b"></div>
+					<div class="cos_b">調查開始時間 </div>
+					<div class="cos_b">調查結束時間 </div>
+					<div class="cos_b"></div>
+				</div>
+
+				<div class="table_row">
+					<div class="cos_a">請問現行一定要完成的玩具檢驗項目有哪些？</div>
+					<div class="cos_b"></div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b"><span><i class="fas fa-cog"></i> 管理</span></div>
+				</div>				
+				
+				<div class="table_row">
+					<div class="cos_a">請問現行一定要完成的玩具檢驗項目有哪些？</div>
+					<div class="cos_b close"></div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b"><span><i class="fas fa-cog"></i> 管理</span></div>
+				</div>				
+				
+				<div class="table_row">
+					<div class="cos_a">請問現行一定要完成的玩具檢驗項目有哪些？</div>
+					<div class="cos_b pdf"></div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b"><span><i class="fas fa-cog"></i> 管理</span></div>
+				</div>				
+				
+				<div class="table_row">
+					<div class="cos_a">請問現行一定要完成的玩具檢驗項目有哪些？</div>
+					<div class="cos_b folder"></div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b"><span><i class="fas fa-cog"></i> 管理</span></div>
+				</div>				
+				
+				<div class="table_row">
+					<div class="cos_a">請問現行一定要完成的玩具檢驗項目有哪些？</div>
+					<div class="cos_b close"></div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b"><span><i class="fas fa-cog"></i> 管理</span></div>
+				</div>				
+				
+				<div class="table_row">
+					<div class="cos_a">請問現行一定要完成的玩具檢驗項目有哪些？</div>
+					<div class="cos_b check"></div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b"><span><i class="fas fa-cog"></i> 管理</span></div>
+				</div>				
+				
+				<div class="table_row">
+					<div class="cos_a">請問現行一定要完成的玩具檢驗項目有哪些？</div>
+					<div class="cos_b zip"></div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b"><span><i class="fas fa-cog"></i> 管理</span></div>
+				</div>				
+				
+				<div class="table_row">
+					<div class="cos_a">請問現行一定要完成的玩具檢驗項目有哪些？</div>
+					<div class="cos_b close"></div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b"><span><i class="fas fa-cog"></i> 管理</span></div>
+				</div>				
+				
+				<div class="table_row">
+					<div class="cos_a">請問現行一定要完成的玩具檢驗項目有哪些？</div>
+					<div class="cos_b check"></div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b"><span><i class="fas fa-cog"></i> 管理</span></div>
+				</div>				
+				
+				<div class="table_row">
+					<div class="cos_a">請問現行一定要完成的玩具檢驗項目有哪些？</div>
+					<div class="cos_b zip"></div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b">107-04-25 11:00 </div>
+					<div class="cos_b"><span><i class="fas fa-cog"></i> 管理</span></div>
+				</div>				
+				
+								
+				
+								
+				
+			</div>
+
+			
+			<!-- pages -->
+			<div class="pages">
+				<div class="page_front">
+					<div class="num_page">
+						<a href="" class="num_page_link"><i class="fas fa-chevron-left"></i> </a>
+						<a href="" class="num_page_link">1</a>
+						<a href="" class="num_page_link page_on">2</a>
+						<a href="" class="num_page_link">3</a>
+						<a href="" class="num_page_link">4</a>
+						<a href="" class="num_page_link">5</a>
+						<a href="" class="num_page_link"><i class="fas fa-chevron-right"></i></a>
+					</div>
+					<div class="jump_to-page">
+						跳至
+						<select name="" id="">
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+						</select>
+						頁	
+					</div>
+				</div>
+
+				<div class="page_back">
+					<div class="this_page">
+						每頁
+						<select name="" id="">
+							<option value="">20</option>
+							<option value="">30</option>
+							<option value="">40</option>
+							<option value="">50</option>
+						</select>
+						筆
+					</div>
+					<div class="page_info">第2頁，21-40筆，共100筆</div>
+				</div>
+			</div>
+
+
+				
+			
+			
+
+
+
+
+		</div>
+	</div>
+	
+
+
+	<!-- right_pillar -->
+	<!-- <div class="institutional_knowledge_base_right">
+		<div class="switch_foldup_icon right_burger">
+			<i class="fas fa-bars"></i>
+		</div>
+		<div class="right_pillar">
+
+			<div class="statistics">
+				<h5>知識建立時間統計</h5>
+				<div class="right_pillar_data">
+					<h6>2018</h6>
+					<p>183</p>
+				</div>
+				<div class="right_pillar_data">
+					<h6>2018</h6>
+					<p>183</p>
+				</div>
+				<div class="right_pillar_data">
+					<h6>2018</h6>
+					<p>183</p>
+				</div>
+				<div class="right_pillar_data">
+					<h6>2018</h6>
+					<p>183</p>
+				</div>
+			</div>
+			<div class="statistics">
+				<h5>知識建立時間統計</h5>
+				<div class="right_pillar_data">
+					<h6>2018</h6>
+					<p>183</p>
+				</div>
+				<div class="right_pillar_data">
+					<h6>2018</h6>
+					<p>183</p>
+				</div>
+				<div class="right_pillar_data">
+					<h6>2018</h6>
+					<p>183</p>
+				</div>
+				<div class="right_pillar_data">
+					<h6>2018</h6>
+					<p>183</p>
+				</div>
+			</div>
+
+
+		</div>
+
+	</div> -->
+
+
+
+</div>
+
+
+
+
+
+<div class="clear"></div>
+
+		
+
+
+
+
+<div class="footer_wrapper">
+	<footer>
+		<div class="footer_switch">
+			<div class="footer_switch_btn"><i class="fas fa-angle-double-up"></i> 收合</div>
+		</div>
+
+		<div class="f_list">
+			<div class="f_list_item">
+				<div class="f_list_item_title">首頁</div>
+				<div class="f_list_item_column">
+				</div>
+			</div>
+			<div class="f_list_item">
+				<div class="f_list_item_title">知識管理</div>
+				<div class="f_list_item_column">
+					<a href="" class="f_list_item_link">機關知識庫</a>
+					<a href="" class="f_list_item_link">個人知識庫</a>
+					<a href="" class="f_list_item_link">新聞稿</a>
+					<a href="" class="f_list_item_link">出版品專區</a>
+					<a href="" class="f_list_item_link">知識排行榜</a>
+					<a href="" class="f_list_item_link">文件暫存區</a>
+					<a href="" class="f_list_item_link">局（分局）務會議</a>
+					<a href="" class="f_list_item_link">新進員工訓練</a>
+					<a href="" class="f_list_item_link">局大事紀</a>
+					<a href="" class="f_list_item_link">線上學習</a>
+					<a href="" class="f_list_item_link">部門行事曆</a>
+					<a href="" class="f_list_item_link">表單專區</a>
+				</div>
+			</div>
+
+			<div class="f_list_item">
+				<div class="f_list_item_title">討論區</div>
+				<div class="f_list_item_column">
+					<a href="" class="f_list_item_link">討論區</a>
+					<a href="" class="f_list_item_link">心得分享</a>
+				</div>
+			</div>			
+
+			<div class="f_list_item">
+				<div class="f_list_item_title">問卷調查</div>
+				<div class="f_list_item_column">
+					<a href="" class="f_list_item_link">問卷填寫</a>
+					<a href="" class="f_list_item_link">問卷管理</a>
+				</div>
+			</div>	
+			<div class="f_list_item">
+				<div class="f_list_item_title">線上報名</div>
+				<div class="f_list_item_column">
+					<a href="" class="f_list_item_link">活動報名</a>
+					<a href="" class="f_list_item_link">活動管理</a>
+				</div>
+			</div>			
+
+			<div class="f_list_item">
+				<div class="f_list_item_title">個人設定</div>
+				<div class="f_list_item_column">
+					<a href="" class="f_list_item_link">個人儀表板設定</a>
+					<a href="" class="f_list_item_link">個人資料維護</a>
+				</div>
+			</div>	
+			<div class="f_list_item">
+				<div class="f_list_item_title">系統設定</div>
+				<div class="f_list_item_column">
+					<a href="" class="f_list_item_link">帳號權限管理</a>
+					<a href="" class="f_list_item_link">系統設定及維護</a>
+					<a href="" class="f_list_item_link">消息公告</a>
+					<a href="" class="f_list_item_link">統計報表</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer_bottom">
+			<div class="footer-a">
+				<img src="img/logo_w.png" alt="">
+				<p>聯絡地址：10051 臺北市中正區濟南路一段4號</p>
+				<p>電話：02-23431700</p>
+			</div>
+			<div class="footer-a">
+				<a href="">網站地圖</a>
+				<a href="">操作手冊</a>
+				<p>更新日期：2018-04-27</p>
+				<p>瀏覽人次：44513041</p>
+			</div>
+		</div>
+		<div class="copy_right">
+			經濟部標準檢驗局 版權所有©2018
+		</div>
+	</footer>
+		
+
+</div>
+
+</body>
+</html>

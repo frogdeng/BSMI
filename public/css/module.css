@@ -2816,6 +2816,9 @@ a {
 .check {
   color: #87b540; }
 
+.close {
+  color: #999; }
+
 .batch_update_table {
   border-bottom: 1px solid #eeeeee; }
 
@@ -4210,10 +4213,409 @@ a {
   cursor: pointer;
   margin-right: 10px; }
 
+.review_btn {
+  width: 96px;
+  height: 38px;
+  font-size: 14px;
+  color: #FFF;
+  background: #87b540;
+  border-radius: 4px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px; }
+
 .aaaa {
   border: 1px solid #c0c0c0;
   width: 100%;
   height: 300px; }
+
+.questionnaire_table {
+  border-bottom: 1px solid #eeeeee; }
+
+.questionnaire_table .table_row_th {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 20px;
+  color: #59778c;
+  font-weight: 900;
+  background: #fafafa;
+  border-bottom: 1px solid #eeeeee; }
+
+.questionnaire_table .table_row_th .cos_a {
+  width: 55%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.questionnaire_table .table_row_th .cos_b {
+  width: 18%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.questionnaire_table .table_row_th .cos_b span {
+  color: #419fe3;
+  font-size: 12px;
+  cursor: pointer; }
+
+.questionnaire_table .table_row_th .cos_b span i {
+  font-size: 12px;
+  margin-right: 5px; }
+
+.questionnaire_table .table_row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 6px 20px;
+  color: #444;
+  transition: all .3s; }
+
+.questionnaire_table .table_row .cos_a {
+  width: 55%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.questionnaire_table .table_row .cos_b {
+  width: 18%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.questionnaire_table .table_row .cos_b span {
+  color: #419fe3;
+  font-size: 12px;
+  cursor: pointer; }
+
+.questionnaire_table .table_row .cos_b span i {
+  font-size: 12px;
+  margin-right: 5px; }
+
+.questionnaire_table .table_row i {
+  font-size: 20px; }
+
+.questionnaire_table .table_row:nth-child(even) {
+  background: rgba(89, 119, 140, 0.1); }
+
+.questionnaire_table .table_row:hover {
+  background: rgba(89, 119, 140, 0.3); }
+
+.delete {
+  color: #e75541 !important;
+  border: 1px solid #e75541 !important; }
+
+.questionnaire {
+  background: #fafafa; }
+
+.questionnaire .thanks {
+  height: 500px;
+  bakground: #fafafa;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.questionnaire .thanks .i-check {
+  font-size: 90px;
+  color: #87b540; }
+
+.questionnaire .thanks h6 {
+  font-size: 26px;
+  color: #444;
+  margin-bottom: 20px; }
+
+.questionnaire .thanks p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px; }
+
+.questionnaire .questionnaire_subject {
+  padding: 20px 0; }
+
+.questionnaire .questionnaire_subject .subject_row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #444;
+  margin-bottom: 10px; }
+
+.questionnaire .questionnaire_subject .subject_row .qq_title {
+  width: 20%;
+  text-align: right; }
+
+.questionnaire .questionnaire_subject .subject_row .qq_content {
+  width: 80%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.questionnaire .questionnaire_subject .subject_row .qq_content span {
+  margin: 0 10px; }
+
+.questionnaire .questionnaire_subject .subject_row .qq_content select {
+  height: 32px;
+  margin: 0 5px;
+  border-radius: 4px;
+  background-color: #FFF;
+  border: solid 1px #CCC; }
+
+.questionnaire .questionnaire_subject .subject_row .qq_content .qq_input {
+  display: block;
+  width: 70%;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #FFF;
+  border: solid 1px #CCC; }
+
+.questionnaire .questionnaire_subject .subject_row .qq_content .text_mode {
+  font-size: 12px;
+  margin-left: 10px; }
+
+.questionnaire .questionnaire_subject .subject_row .qq_content textarea, .questionnaire .questionnaire_subject .subject_row .qq_content .qq_descripton {
+  width: 70%;
+  border-radius: 4px;
+  background-color: #FFF;
+  border: solid 1px #CCC;
+  padding: 10px; }
+
+.questionnaire .questionnaire_subject .subject_row .qq_content textarea p, .questionnaire .questionnaire_subject .subject_row .qq_content .qq_descripton p {
+  font-size: 16px;
+  color: #444; }
+
+.questionnaire .questionnaire_question_unit {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #FFF;
+  padding: 30px 0; }
+
+.questionnaire .questionnaire_question_unit .unit_section {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.questionnaire .questionnaire_question_unit .unit_section .num {
+  width: 24px;
+  height: 24px;
+  margin-top: 4px;
+  background: #77b9c4;
+  border-radius: 50%;
+  color: #FFF;
+  margin-right: 10px;
+  font-size: 12px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer .unit_row {
+  width: 100%;
+  margin-bottom: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer .unit_row a {
+  color: #419fe3; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer .unit_row .input_a {
+  display: block;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #FFF;
+  border: solid 1px #CCC;
+  width: 87%; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer .unit_row .input_b {
+  display: block;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #FFF;
+  border: solid 1px #CCC;
+  width: 74%; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer .unit_row input[type="radio"] {
+  margin-right: 10px; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer .unit_row input[type="checkbox"] {
+  margin-right: 10px; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer .unit_row select {
+  height: 38px;
+  margin: 0 5px;
+  border-radius: 4px;
+  background-color: #FFF;
+  border: solid 1px #CCC;
+  width: 13%;
+  font-size: 15px; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer .unit_row .unit_delete {
+  margin: 0 3px; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer .unit_row .unit_delete i {
+  font-size: 20px;
+  color: #CCC;
+  margin-left: 5px; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer .unit_row .unit_text {
+  height: 38px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #999; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer .unit_row .unit_text span {
+  margin: 0 10px;
+  color: #999; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer .bottom_fun {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #444; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer .bottom_fun .fun_row {
+  margin-right: 15px;
+  color: #444; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer .bottom_fun .fun_row input[type="checkbox"] {
+  margin-right: 5px; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer .bottom_fun .bottom_fun_todo {
+  margin-left: 20px;
+  color: #444; }
+
+.questionnaire .questionnaire_question_unit .unit_section .unit_layer .bottom_fun .bottom_fun_todo i {
+  font-size: 15px; }
+
+.b-b {
+  border-bottom: 1px solid #DDD; }
+
+.blue-frame {
+  border: 1px solid #dbe9f5;
+  padding: 30px 20px;
+  border-radius: 4px;
+  position: relative; }
+
+.blue-frame .add-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #419fe3;
+  bottom: -12px;
+  left: 50%;
+  margin-left: -12px;
+  background: #FFF;
+  color: #419fe3;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer; }
+
+.blue-frame .add-icon i {
+  font-size: 12px; }
 
 body {
   font-family: Microsoft JhengHei;

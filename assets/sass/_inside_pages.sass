@@ -537,6 +537,10 @@ $page_width: 1044px
 .check
 	color: #87b540
 
+.close
+	color: #999
+
+
 
 @mixin table_batch_cos
 	.cos_a
@@ -1444,6 +1448,20 @@ $page_width: 1044px
 	align-items: center
 	cursor: pointer
 	margin-right: 10px
+.review_btn
+	width: 96px
+	height: 38px
+	font-size: 14px
+	color: #FFF
+	// border: 1px solid #419fe3
+	background: #87b540
+	border-radius: 4px
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+	cursor: pointer
+	margin-right: 10px
 
 .aaaa
 	border: 1px solid #c0c0c0
@@ -1452,6 +1470,281 @@ $page_width: 1044px
 
 
 
+
+
+
+
+
+// discuss_line_mixin
+@mixin questionnaire_mixin
+	.cos_a
+		width: 55%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	
+	.cos_b
+		width: 18%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		span
+			color: #419fe3
+			font-size: 12px
+			cursor: pointer
+			i 
+				font-size: 12px
+				margin-right: 5px
+
+
+.questionnaire_table
+	border-bottom: 1px solid #eeeeee
+	.table_row_th
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 8px 20px
+		color: #59778c
+		font-weight: 900
+		background: #fafafa
+		border-bottom: 1px solid #eeeeee
+		+questionnaire_mixin
+
+	.table_row
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 6px 20px
+		color: #444
+		transition: all .3s
+		+questionnaire_mixin
+		i
+			font-size: 20px
+		&:nth-child(even)
+			background: rgba(89, 119, 140, 0.1)
+		&:hover
+			background: rgba(89, 119, 140, 0.3)
+	
+
+.delete
+	color: #e75541 !important
+	border: 1px solid #e75541 !important
+
+
+@mixin i-input_mixin
+	display: block
+	height: 38px
+	border-radius: 4px
+	background-color: #FFF
+	border: solid 1px #CCC
+
+@mixin i-select_mixin	
+	height: 38px
+	margin: 0 5px
+	border-radius: 4px
+	background-color: #FFF
+	border: solid 1px #CCC
+
+
+
+.questionnaire
+	background: #fafafa
+	.thanks
+		height: 500px
+		bakground: #fafafa
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		.i-check
+			font-size: 90px
+			color: #87b540
+		h6 
+			font-size: 26px
+			color: #444
+			margin-bottom: 20px
+		p 
+			font-size: 14px
+			color: #444
+			margin-bottom: 20px
+
+	.questionnaire_subject
+		padding: 20px 0
+		.subject_row
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			color: #444
+			margin-bottom: 10px
+			.qq_title
+				width: 20%
+				text-align: right
+
+
+			.qq_content
+				width: 80%
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: center
+				span
+					margin: 0 10px
+				select
+					height: 32px
+					margin: 0 5px
+					border-radius: 4px
+					background-color: #FFF
+					border: solid 1px #CCC
+				.qq_input
+					display: block
+					width: 70%
+					height: 38px
+					border-radius: 4px
+					background-color: #FFF
+					border: solid 1px #CCC
+				.text_mode
+					font-size: 12px
+					margin-left: 10px
+				textarea, .qq_descripton
+					width: 70%
+					border-radius: 4px
+					background-color: #FFF
+					border: solid 1px #CCC
+					padding: 10px
+					p 
+						font-size: 16px
+						color: #444
+
+
+	.questionnaire_question_unit
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		background: #FFF
+		padding: 30px 0
+		.unit_section
+			width: 60%
+			margin: 0 auto
+			margin-bottom: 50px
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: flex-start
+			.num
+				width: 24px
+				height: 24px
+				margin-top: 4px
+				background: #77b9c4
+				border-radius: 50%
+				color: #FFF
+				margin-right: 10px
+				font-size: 12px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+			.unit_layer
+				width: 100%
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				.unit_row
+					width: 100%
+					margin-bottom: 10px
+					display: flex
+					flex-direction: row
+					justify-content: flex-start
+					align-items: center
+					a 
+						color: #419fe3
+						
+					.input_a
+						+i-input_mixin
+						width: 87%
+					.input_b
+						+i-input_mixin
+						width: 74%
+					input[type="radio"]
+						margin-right: 10px
+					input[type="checkbox"]
+						margin-right: 10px
+
+					select
+						+i-select_mixin
+						width: 13%
+						font-size: 15px
+					.unit_delete
+						margin: 0 3px
+						i 
+							font-size: 20px
+							color: #CCC
+							margin-left: 5px
+					.unit_text
+						height: 38px
+						display: flex
+						flex-direction: row
+						justify-content: flex-start
+						align-items: center
+						color: #999
+						span
+							margin: 0 10px
+							color: #999
+				.bottom_fun
+					width: 100%
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					align-items: center
+					color: #444
+					.fun_row
+						margin-right: 15px
+						color: #444
+						input[type="checkbox"]
+							margin-right: 5px
+
+					.bottom_fun_todo
+						margin-left: 20px
+						color: #444
+						i 
+							font-size: 15px
+
+
+.b-b
+	border-bottom: 1px solid #DDD
+
+
+
+.blue-frame
+	border: 1px solid #dbe9f5
+	padding: 30px 20px
+	border-radius: 4px
+	position: relative
+
+	.add-icon
+		position: absolute
+		width: 24px
+		height: 24px
+		border-radius: 50%
+		border: 1px solid #419fe3
+		bottom: -12px
+		left: 50%
+		margin-left: -12px
+		background: #FFF
+		color: #419fe3
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		cursor: pointer
+		i 
+			font-size: 12px
 
 
 
