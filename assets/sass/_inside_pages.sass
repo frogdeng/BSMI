@@ -468,6 +468,30 @@ $page_width: 1044px
 			&:hover
 				background: #419fe3
 				color: #FFF
+		.doclist_fun_go_btn
+			background: #419fe3
+			border: 1px solid #419fe3
+			color: #FFF
+			padding: 8px 20px
+			border-radius: 4px
+			font-size: 14px
+			margin-left: 10px
+			cursor: pointer
+			transition: all .3s
+		.doclist_fun_dele_btn
+			color: #e75541
+			background: #FFF
+			border: 1px solid #e75541
+			padding: 8px 20px
+			border-radius: 4px
+			font-size: 14px
+			margin-left: 10px
+			cursor: pointer
+			transition: all .3s
+			
+
+
+
 
 
 .doclist_table
@@ -1310,65 +1334,65 @@ $page_width: 1044px
 		p 
 			color: #000
 
-	.discuss_attached
-		padding: 12px 20px
+.discuss_attached
+	padding: 12px 20px
+	color: #444
+	display: flex
+	flex-wrap: wrap
+	flex-direction: row
+	justify-content: flex-start
+	align-items: center
+	p 
+		color: #666666
+		font-size: 12px
+		margin-right: 10px
+	.attatched_file
+		border: 1px solid #ddd
+		border-radius: 4px
+		padding: 10px
+		float: left
+		margin-right: 10px
+		margin-bottom: 10px
+		font-size: 12px
 		color: #444
+		background: #FFF
+		cursor: pointer
 		display: flex
-		flex-wrap: wrap
 		flex-direction: row
-		justify-content: flex-start
+		justify-content: center
 		align-items: center
-		p 
-			color: #666666
-			font-size: 12px
-			margin-right: 10px
-		.attatched_file
-			border: 1px solid #ddd
-			border-radius: 4px
-			padding: 10px
-			float: left
-			margin-right: 10px
-			margin-bottom: 10px
-			font-size: 12px
-			color: #444
-			background: #FFF
-			cursor: pointer
+		i 
+			font-size: 20px
+			margin-right: 5px
+			margin-left: 15px
+			color: #1f87d2
+
+.discuss_comment
+	background: #f2f2f2
+	padding: 12px 20px
+	border-bottom: 1px solid #eee
+	.discuss_comment_item
+		margin-bottom: 30px
+		.discuss_comment_person
 			display: flex
 			flex-direction: row
-			justify-content: center
+			justify-content: space-between
 			align-items: center
-			i 
-				font-size: 20px
-				margin-right: 5px
-				margin-left: 15px
-				color: #1f87d2
+			margin-bottom: 5px
+			margin-left: 4px
+			p
+				font-size: 14px
+				color: #666
+				margin-right: 20px
+			.discuss_comment_delete
+				color: #e75541
+				font-size: 14px
+				margin-right: 4px
 
-	.discuss_comment
-		background: #f2f2f2
-		padding: 12px 20px
-		border-bottom: 1px solid #eee
-		.discuss_comment_item
-			margin-bottom: 30px
-			.discuss_comment_person
-				display: flex
-				flex-direction: row
-				justify-content: space-between
-				align-items: center
-				margin-bottom: 5px
-				margin-left: 4px
-				p
-					font-size: 14px
-					color: #666
-					margin-right: 20px
-				.discuss_comment_delete
-					color: #e75541
-					font-size: 14px
-					margin-right: 4px
-
-			.discuss_comment_content
-				background: #FFF
-				padding: 10px
-				color: #666666
+		.discuss_comment_content
+			background: #FFF
+			padding: 10px
+			color: #666666
 
 
 
@@ -1386,43 +1410,54 @@ $page_width: 1044px
 		i 
 			margin-right: 5px
 
-	.edit_row
+.edit_section
+	background: #FFF
+.edit_row
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: flex-start
+	padding: 0 32px
+	margin-top: 20px
+	margin-bottom: 20px
+	.e-title
+		width: 10%
+		color: #444
 		display: flex
 		flex-direction: row
 		justify-content: flex-start
 		align-items: flex-start
-		padding: 0 32px
-		margin-top: 20px
-		margin-bottom: 20px
-		.e-title
-			width: 10%
-			color: #444
-			display: flex
-			flex-direction: row
-			justify-content: flex-start
-			align-items: flex-start
 
-		.edit_content
-			width: 80%
-			input[type="text"]
-				display: block
-				width: 100%
-				background: #FFF
-				border: solid 1px #cccccc
-				padding: 10px
-				border-radius: 4px
-				color: #444
+	.edit_content
+		width: 80%
+		input[type="text"]
+			display: block
+			width: 100%
+			background: #FFF
+			border: solid 1px #cccccc
+			padding: 10px
+			border-radius: 4px
+			color: #444
+
+
+
+
+
+
+
 .submit_area
 	display: flex
 	flex-direction: row
 	justify-content: center
 	align-items: center
 	padding: 30px 0
+	// border-top: 1px solid #eee
 
 
 
 .submit_btn
-	width: 96px
+	// width: 96px
+	padding: 0 20px
 	height: 38px
 	font-size: 14px
 	color: #FFF
@@ -1434,8 +1469,11 @@ $page_width: 1044px
 	align-items: center
 	cursor: pointer
 	margin-right: 10px
+	i 
+		margin-right: 5px
 .cancel_btn
-	width: 96px
+	// width: 96px
+	padding: 0 20px
 	height: 38px
 	font-size: 14px
 	color: #419fe3
@@ -1448,8 +1486,11 @@ $page_width: 1044px
 	align-items: center
 	cursor: pointer
 	margin-right: 10px
+	i 
+		margin-right: 5px
 .review_btn
-	width: 96px
+	// width: 96px
+	padding: 0 20px
 	height: 38px
 	font-size: 14px
 	color: #FFF
@@ -1462,6 +1503,67 @@ $page_width: 1044px
 	align-items: center
 	cursor: pointer
 	margin-right: 10px
+	i 
+		margin-right: 5px
+
+.submit_btn_border
+	// width: 96px
+	padding: 0 20px
+	height: 38px
+	font-size: 14px
+	color: #FFF
+	// background: #419fe3
+	border: 1px solid #419fe3
+	color: #419fe3
+	border-radius: 4px
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+	cursor: pointer
+	margin-right: 10px
+	i 
+		margin-right: 5px
+.cancel_btn_border
+	// width: 96px
+	padding: 0 20px
+	height: 38px
+	font-size: 14px
+	color: #419fe3
+	border: 1px solid #419fe3
+	background: #FFF
+	border-radius: 4px
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+	cursor: pointer
+	margin-right: 10px
+	i 
+		margin-right: 5px
+.review_btn_border
+	// width: 96px
+	padding: 0 20px
+	height: 38px
+	font-size: 14px
+	color: #87b540
+	border: 1px solid #87b540
+	// background: #87b540
+	border-radius: 4px
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+	cursor: pointer
+	margin-right: 10px
+	i 
+		margin-right: 5px
+
+
+
+
+
+
 
 .aaaa
 	border: 1px solid #c0c0c0
@@ -1607,6 +1709,16 @@ $page_width: 1044px
 					border-radius: 4px
 					background-color: #FFF
 					border: solid 1px #CCC
+				.qq_input_short
+					display: block
+					width: 18%
+					height: 38px
+					border-radius: 4px
+					background-color: #FFF
+					border: solid 1px #CCC
+
+
+
 				.text_mode
 					font-size: 12px
 					margin-left: 10px
@@ -1745,6 +1857,218 @@ $page_width: 1044px
 		cursor: pointer
 		i 
 			font-size: 12px
+
+
+
+
+
+
+
+
+// discuss_line_mixin
+@mixin online_registration_mixin
+	.cos_a
+		width: 40%
+		padding-right: 20px
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	.cos_b
+		width: 15%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	.cos_c
+		width: 5%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		span
+			color: #419fe3
+			font-size: 12px
+			cursor: pointer
+			i 
+				font-size: 12px
+				margin-right: 5px
+
+
+.online_registration_table
+	border-bottom: 1px solid #eeeeee
+	.table_row_th
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 8px 20px
+		color: #59778c
+		font-weight: 900
+		background: #fafafa
+		border-bottom: 1px solid #eeeeee
+		+online_registration_mixin
+
+	.table_row
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 6px 20px
+		color: #444
+		transition: all .3s
+		+online_registration_mixin
+		i
+			font-size: 20px
+		&:nth-child(even)
+			background: rgba(89, 119, 140, 0.1)
+		&:hover
+			background: rgba(89, 119, 140, 0.3)
+	
+
+
+.online_registration_w
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	align-items: center
+	h2
+		font-size: 24px
+		color: #444
+		margin-bottom: 20px
+	h6
+		font-size: 16px
+		color: #444
+		margin-bottom: 5px
+	p
+		font-size: 16px
+		color: #444
+		margin-bottom: 10px
+	.event_bg-grey
+		background: #fafafa
+		width: 100%
+		padding: 30px 0
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: center
+	.event_bg-w
+		background: #FFF
+		width: 100%
+		padding: 30px 0
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: center
+	.event_summary
+		width: 60%
+		margin-bottom: 30px
+
+	.event_content
+		width: 60%
+		margin-bottom: 30px
+		h6
+			font-size: 24px
+			color: #444
+			margin-left: 10px
+
+
+
+		.event_attached_file
+			width: 100%
+			border-top: 1px solid #eee
+			margin-top: 20px
+			font-size: 12px
+			padding: 20px 0
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			color: #444
+
+		.attached_file
+			border: 1px solid #ddd
+			border-radius: 4px
+			padding: 10px 15px
+			float: left
+			margin-right: 10px
+			font-size: 12px
+			color: #444
+			background: #FFF
+			cursor: pointer
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			i 
+				font-size: 20px
+				margin-right: px
+				margin-left: 5px
+				color: #1f87d2
+
+
+
+
+.lll--line
+	height: 1px
+	width: 100%
+	background: #ddd
+	margin-bottom: 30px
+
+
+
+
+@mixin registration_mixin
+	.cos_a
+		width: 5%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	
+	.cos_b
+		width: 23%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	
+	
+
+.registration_table
+	border-bottom: 1px solid #eeeeee
+	.table_row_th
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 8px 20px
+		color: #59778c
+		font-weight: 900
+		background: #fafafa
+		border-bottom: 1px solid #eeeeee
+		+registration_mixin
+
+	.table_row
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 6px 20px
+		color: #444
+		transition: all .3s
+		+registration_mixin
+		i
+			font-size: 20px
+		&:nth-child(even)
+			background: rgba(89, 119, 140, 0.1)
+		&:hover
+			background: rgba(89, 119, 140, 0.3)
+			
+
+
+
+
 
 
 
