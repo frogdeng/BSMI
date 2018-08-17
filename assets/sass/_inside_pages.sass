@@ -477,7 +477,7 @@ $page_width: 1044px
 			font-size: 14px
 			margin-left: 10px
 			cursor: pointer
-			transition: all .3s
+			
 		.doclist_fun_dele_btn
 			color: #e75541
 			background: #FFF
@@ -487,7 +487,28 @@ $page_width: 1044px
 			font-size: 14px
 			margin-left: 10px
 			cursor: pointer
-			transition: all .3s
+			
+		.doclist_fun_cancel_btn
+			color: #FFF
+			background: #e75541
+			border: 1px solid #e75541
+			padding: 8px 20px
+			border-radius: 4px
+			font-size: 14px
+			margin-left: 10px
+			cursor: pointer
+			
+			
+		.doclist_fun_full_btn
+			color: #aaa
+			background: #ddd
+			border: 1px solid #ddd
+			padding: 8px 20px
+			border-radius: 4px
+			font-size: 14px
+			margin-left: 10px
+			cursor: pointer
+			
 			
 
 
@@ -1471,6 +1492,44 @@ $page_width: 1044px
 	margin-right: 10px
 	i 
 		margin-right: 5px
+
+.submit_btn-cancel
+	// width: 96px
+	padding: 0 20px
+	height: 38px
+	font-size: 14px
+	color: #FFF
+	background: #e75541
+	border-radius: 4px
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+	cursor: pointer
+	margin-right: 10px
+	i 
+		margin-right: 5px
+
+.submit_btn-full
+	// width: 96px
+	padding: 0 20px
+	height: 38px
+	font-size: 14px
+	color: #aaa
+	background: #ddd
+	border-radius: 4px
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+	cursor: pointer
+	margin-right: 10px
+	i 
+		margin-right: 5px
+
+
+
+
 .cancel_btn
 	// width: 96px
 	padding: 0 20px
@@ -1947,7 +2006,7 @@ $page_width: 1044px
 	.event_bg-grey
 		background: #fafafa
 		width: 100%
-		padding: 30px 0
+		padding: 20px 0
 		display: flex
 		flex-direction: column
 		justify-content: flex-start
@@ -1962,7 +2021,7 @@ $page_width: 1044px
 		align-items: center
 	.event_summary
 		width: 60%
-		margin-bottom: 30px
+		margin-bottom: 10px
 
 	.event_content
 		width: 60%
@@ -2002,7 +2061,7 @@ $page_width: 1044px
 			align-items: center
 			i 
 				font-size: 20px
-				margin-right: px
+				margin-right: 8px
 				margin-left: 5px
 				color: #1f87d2
 
@@ -2065,6 +2124,202 @@ $page_width: 1044px
 		&:hover
 			background: rgba(89, 119, 140, 0.3)
 			
+
+
+
+
+
+
+// discuss_line_mixin
+@mixin personal_setting_mixin
+	.cos_a
+		width: 25%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	
+	.cos_b
+		width: 30%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		span
+			color: #419fe3
+			font-size: 12px
+			cursor: pointer
+			i 
+				font-size: 12px
+				margin-right: 5px
+	.cos_c
+		width: 10%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		span
+			color: #419fe3
+			font-size: 12px
+			cursor: pointer
+			i 
+				font-size: 12px
+				margin-right: 5px
+
+
+.personal_setting_table
+	border-bottom: 1px solid #eeeeee
+	.table_row_th
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 8px 20px
+		color: #59778c
+		font-weight: 900
+		background: #fafafa
+		border-bottom: 1px solid #eeeeee
+		+personal_setting_mixin
+
+	.table_row
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 6px 20px
+		color: #444
+		transition: all .3s
+		+personal_setting_mixin
+		i
+			font-size: 20px
+		&:nth-child(even)
+			background: rgba(89, 119, 140, 0.1)
+		&:hover
+			background: rgba(89, 119, 140, 0.3)
+	
+
+
+
+.personal_setting_switch
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: center
+	margin-bottom: 5px
+	.group
+		width: 60px
+		height: 30px
+		border-radius: 4px 0 0 4px
+		border: solid 1px #419fe3
+		color: #419fe3
+		background: #FFF
+		font-size: 12px
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+
+	.person
+		width: 60px
+		height: 30px
+		border-radius: 0 4px 4px 0
+		border: solid 1px #419fe3
+		color: #419fe3
+		background: #FFF
+		font-size: 12px
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+
+
+
+
+.btn_on
+	background: #419fe3 !important
+	color: #FFF !important
+
+
+
+// discuss_line_mixin
+@mixin personal_setting_link_mixin
+	.cos_a
+		width: 4%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	
+	.cos_b
+		width: 30%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		span
+			color: #419fe3
+			font-size: 12px
+			cursor: pointer
+			i 
+				font-size: 12px
+				margin-right: 5px
+	.cos_c
+		width: 60%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		color: #59778c
+	.cos_d
+		width: 6%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		span
+			color: #419fe3
+			font-size: 12px
+			cursor: pointer
+			i 
+				font-size: 12px
+				margin-right: 5px
+
+
+
+
+
+
+.personal_setting_link_table
+	border-bottom: 1px solid #eeeeee
+	.table_row_th
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 8px 20px
+		color: #59778c
+		font-weight: 900
+		background: #fafafa
+		border-bottom: 1px solid #eeeeee
+		+personal_setting_link_mixin
+
+	.table_row
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 6px 20px
+		color: #444
+		transition: all .3s
+		+personal_setting_link_mixin
+		i
+			font-size: 20px
+		&:nth-child(even)
+			background: rgba(89, 119, 140, 0.1)
+		&:hover
+			background: rgba(89, 119, 140, 0.3)
+	
+
 
 
 
