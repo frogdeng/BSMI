@@ -5462,6 +5462,169 @@ a {
 .personal_setting_link_table .table_row:hover {
   background: rgba(89, 119, 140, 0.3); }
 
+.system_setting_table {
+  border-bottom: 1px solid #eeeeee; }
+
+.system_setting_table .table_row_th {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 20px;
+  color: #59778c;
+  font-weight: 900;
+  background: #fafafa;
+  border-bottom: 1px solid #eeeeee; }
+
+.system_setting_table .table_row_th .cos_a {
+  width: 20%;
+  padding-right: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.system_setting_table .table_row_th .cos_b {
+  width: 30%;
+  padding-right: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.system_setting_table .table_row_th .cos_c {
+  width: %;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.system_setting_table .table_row_th .cos_c span {
+  color: #419fe3;
+  font-size: 12px;
+  cursor: pointer; }
+
+.system_setting_table .table_row_th .cos_c span i {
+  font-size: 12px;
+  margin-right: 5px; }
+
+.system_setting_table .table_row_th .cos_d {
+  width: 70%;
+  padding-right: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.system_setting_table .table_row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 6px 20px;
+  color: #444;
+  transition: all .3s; }
+
+.system_setting_table .table_row .cos_a {
+  width: 20%;
+  padding-right: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.system_setting_table .table_row .cos_b {
+  width: 30%;
+  padding-right: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.system_setting_table .table_row .cos_c {
+  width: %;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.system_setting_table .table_row .cos_c span {
+  color: #419fe3;
+  font-size: 12px;
+  cursor: pointer; }
+
+.system_setting_table .table_row .cos_c span i {
+  font-size: 12px;
+  margin-right: 5px; }
+
+.system_setting_table .table_row .cos_d {
+  width: 70%;
+  padding-right: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.system_setting_table .table_row i {
+  font-size: 20px; }
+
+.system_setting_table .table_row:nth-child(even) {
+  background: rgba(89, 119, 140, 0.1); }
+
+.system_setting_table .table_row:hover {
+  background: rgba(89, 119, 140, 0.3); }
+
+.system_setting_role {
+  width: 100%; }
+
+.system_setting_role table {
+  width: 100%; }
+
+.system_setting_role table tr td, .system_setting_role table tr th {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  color: #444; }
+
 body {
   font-family: Microsoft JhengHei;
   -webkit-font-smoothing: antialiased;
