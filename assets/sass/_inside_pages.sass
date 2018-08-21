@@ -2404,10 +2404,23 @@ $page_width: 1044px
 	table
 		width: 100%
 		tr 
-			td,th
+			th
+				padding: 10px 20px
+				border: 1px solid #ddd
+				color: #59778c
+				font-weight: 700
+				text-align: center
+				background: #fafafa
+				vertical-align: middle
+				
+			td
 				padding: 10px 20px
 				border: 1px solid #ddd
 				color: #444
+				text-align: center
+				vertical-align: center
+
+						
 
 
 
@@ -2415,6 +2428,70 @@ $page_width: 1044px
 
 
 
+
+
+@mixin subscriiption_mixin
+	.cos_a
+		width: 5%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	
+	.cos_b
+		width: 30%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	
+	.cos_d
+		width: 45%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+
+	.cos_c
+		width: 15%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		i 
+			font-size: 20px
+			cursor: pointer
+
+.subscriiption_table
+	border-bottom: 1px solid #eeeeee
+	.table_row_th
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 8px 20px
+		color: #59778c
+		font-weight: 900
+		background: #fafafa
+		border-bottom: 1px solid #eeeeee
+		+subscriiption_mixin
+
+	.table_row
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 6px 20px
+		color: #444
+		transition: all .3s
+		+subscriiption_mixin
+		i
+			font-size: 20px
+		&:nth-child(even)
+			background: rgba(89, 119, 140, 0.1)
+		&:hover
+			background: rgba(89, 119, 140, 0.3)
+			
 
 
 
