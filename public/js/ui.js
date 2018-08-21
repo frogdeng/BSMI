@@ -55,7 +55,19 @@ $(function(){
 
     $('.unit_block').click(function(){
       $(this).siblings().slideToggle( "slideToggle")
+    });  
+
+
+    $('.filter_btn').click(function(){
+        $('.filter_btn_dropdown').toggleClass( "show_show" )
+      return false
     });
+    
+    $('.doclist_fun_btn').click(function(){
+        $('.doclist_dropdown').toggleClass( "show_show" )
+      return false
+    });
+
 
 
 
