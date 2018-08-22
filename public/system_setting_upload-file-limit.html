@@ -449,15 +449,7 @@
 
 
 
-<script>
-	$(function(){
-		$('.open-popup-link').magnificPopup({
-		  type:'inline',
-		  midClick: true 
-		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-		});
-	});
-</script>
+
 
 <div class="institutional_knowledge_base_wrapper">
 	
@@ -527,315 +519,126 @@
 		</div>
 
 		<div class="doclist">
-			<div class="doclist_fun">
+			<div class="upload_file_limit">
 
-				<span>
-				<div class="doclist_search">
-					<input type="text" class="i_search" placeholder="檢索知識">
-					<i class="fas fa-search"></i>
+				<div class="tag_row">
+					<div class="tag_item">機關知識庫</div>
+					<div class="tag_item">文件暫存區</div>
+					<div class="tag_item">主題專區</div>
 				</div>
-				<div class="select_keyword">
-					<select name="" id="">
-						<option value="">消息公告</option>
-						<option value="">消息公告</option>
-						<option value="">消息公告</option>
-						<option value="">消息公告</option>
-						<option value="">消息公告</option>
-					</select>
-				</div>
-				</span>
 
+				<div class="upload_file_limit_wrapper">
 
-				<div class="doclist_fun_row">
-					<div class="need_dropdown">
-						<div class="doclist_fun_btn"><i class="fas fa-plus"></i> 新增連結</div>
-						
+					<div class="aside_link">
+						<a href="">台北總局</a>
+						<a href="">基隆分局</a>
+						<a href="">新竹分局</a>
+						<a href="">臺中分局</a>
+						<a href="">臺南分局</a>
+						<a href="">高雄分局</a>
+						<a href="">台北總局</a>
+						<a href="">花蓮分局</a>
 					</div>
-					<div class="doclist_fun_dele_btn"><i class="fas fa-trash-alt"></i> 刪除連結</div>
+
+					<div class="upload_file_limit_setting">
+
+						<div class="unit_t">台北總局</div>
+						<div class="upload_file_limit_row">
+
+							<div class="upload_file_limit_folder">
+								<div class="system_data_row">
+									<div class="t_sysytem">第一組</div>
+									<input type="text" placeholder="100">
+									MB
+								</div>
+								<div class="system_data_row">
+									<div class="t_sysytem">第三組</div>
+									<input type="text" placeholder="100">
+									MB
+								</div>
+								<div class="system_data_row">
+									<div class="t_sysytem">第五組</div>
+									<input type="text" placeholder="100">
+									MB
+								</div>
+								<div class="system_data_row">
+									<div class="t_sysytem">第七組</div>
+									<input type="text" placeholder="100">
+									MB
+								</div>
+								<div class="system_data_row">
+									<div class="t_sysytem">第九組</div>
+									<input type="text" placeholder="100">
+									MB
+								</div>
+								<div class="system_data_row">
+									<div class="t_sysytem">第一組</div>
+									<input type="text" placeholder="100">
+									MB
+								</div>
+								<div class="system_data_row">
+									<div class="t_sysytem">第一組</div>
+									<input type="text" placeholder="100">
+									MB
+								</div>
+
+							</div>
+
+
+							<div class="upload_file_limit_folder">
+								<div class="system_data_row">
+									<div class="t_sysytem">第二組</div>
+									<input type="text" placeholder="100">
+									MB
+								</div>
+								<div class="system_data_row">
+									<div class="t_sysytem">第四組</div>
+									<input type="text" placeholder="100">
+									MB
+								</div>
+								<div class="system_data_row">
+									<div class="t_sysytem">第一組</div>
+									<input type="text" placeholder="100">
+									MB
+								</div>
+								<div class="system_data_row">
+									<div class="t_sysytem">第一組</div>
+									<input type="text" placeholder="100">
+									MB
+								</div>
+								<div class="system_data_row">
+									<div class="t_sysytem">第一組</div>
+									<input type="text" placeholder="100">
+									MB
+								</div>
+								<div class="system_data_row">
+									<div class="t_sysytem">資料中心</div>
+									<input type="text" placeholder="100">
+									MB
+								</div>
+								<div class="system_data_row">
+									<div class="t_sysytem">資料中心</div>
+									<input type="text" placeholder="100">
+									MB
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="submit_area" style=" border-top: 1px solid #eee">
+					<div class="reset_go">全部恢復預設值</div>
+					<div class="submit_btn">儲存</div>
 				</div>
 
 			</div>
-			
-
-			<!-- pages -->
-			<div class="pages">
-				<div class="page_front">
-					<div class="num_page">
-						<a href="" class="num_page_link"><i class="fas fa-chevron-left"></i> </a>
-						<a href="" class="num_page_link">1</a>
-						<a href="" class="num_page_link page_on">2</a>
-						<a href="" class="num_page_link">3</a>
-						<a href="" class="num_page_link">4</a>
-						<a href="" class="num_page_link">5</a>
-						<a href="" class="num_page_link"><i class="fas fa-chevron-right"></i></a>
-					</div>
-					<div class="jump_to-page">
-						跳至
-						<select name="" id="">
-							<option value="">1</option>
-							<option value="">2</option>
-							<option value="">3</option>
-							<option value="">4</option>
-						</select>
-						頁	
-					</div>
-				</div>
-
-				<div class="page_back">
-					<div class="this_page">
-						每頁
-						<select name="" id="">
-							<option value="">20</option>
-							<option value="">30</option>
-							<option value="">40</option>
-							<option value="">50</option>
-						</select>
-						筆
-					</div>
-					<div class="page_info">第2頁，21-40筆，共100筆</div>
-				</div>
-			</div>
-
-			
-			<div class="announcement-manage-list_table">
-				<div class="table_row_th">
-					<div class="cos_a"><input type="checkbox"></div>
-					<div class="cos_b">連結名稱</div>
-					<div class="cos_d">連結URL</div>
-					<div class="cos_c">類別</div>
-					<div class="cos_a"></div>
-				</div>
-
-
-				<div class="table_row">
-					<div class="cos_a"><input type="checkbox"></div>
-					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
-					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
-					<div class="cos_c">總局</div>
-					<div class="cos_a">
-						<span>
-							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
-						</span>
-					</div>
-
-					<div id="popup_edit_link" class="edit_layout mfp-hide">
-						<div class="edit_layout_title">
-							編輯連結
-						</div>
-						<div class="edit_layout_row">
-							名稱： <input type="text">
-						</div>
-						<div class="edit_layout_row">
-							URL： <input type="text">
-						</div>
-						<div class="edit_layout_row">
-							類別： 
-							<select name="" id="">
-								<option value="">分局</option>
-								<option value="">分局</option>
-								<option value="">分局</option>
-								<option value="">分局</option>
-								<option value="">分局</option>
-							</select>
-						</div>
-						<div class="lightbox_btn_section">
-								<div class="filter_btn-cancel">取消</div>
-								<div class="filter_btn-submit">確定</div>
-						</div>
-						
-
-					</div>
-				</div>		
-
-				<div class="table_row">
-					<div class="cos_a"><input type="checkbox"></div>
-					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
-					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
-					<div class="cos_c">總局</div>
-					<div class="cos_a">
-						<span>
-							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
-						</span>
-					</div>
-					
-				</div>		
-				<div class="table_row">
-					<div class="cos_a"><input type="checkbox"></div>
-					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
-					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
-					<div class="cos_c">總局</div>
-					<div class="cos_a">
-						<span>
-							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
-						</span>
-					</div>
-					
-				</div>		
-				<div class="table_row">
-					<div class="cos_a"><input type="checkbox"></div>
-					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
-					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
-					<div class="cos_c">總局</div>
-					<div class="cos_a">
-						<span>
-							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
-						</span>
-					</div>
-					
-				</div>		
-				<div class="table_row">
-					<div class="cos_a"><input type="checkbox"></div>
-					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
-					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
-					<div class="cos_c">總局</div>
-					<div class="cos_a">
-						<span>
-							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
-						</span>
-					</div>
-					
-				</div>		
-				<div class="table_row">
-					<div class="cos_a"><input type="checkbox"></div>
-					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
-					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
-					<div class="cos_c">總局</div>
-					<div class="cos_a">
-						<span>
-							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
-						</span>
-					</div>
-					
-				</div>		
-				<div class="table_row">
-					<div class="cos_a"><input type="checkbox"></div>
-					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
-					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
-					<div class="cos_c">總局</div>
-					<div class="cos_a">
-						<span>
-							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
-						</span>
-					</div>
-					
-				</div>		
-				<div class="table_row">
-					<div class="cos_a"><input type="checkbox"></div>
-					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
-					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
-					<div class="cos_c">總局</div>
-					<div class="cos_a">
-						<span>
-							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
-						</span>
-					</div>
-					
-				</div>		
-				<div class="table_row">
-					<div class="cos_a"><input type="checkbox"></div>
-					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
-					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
-					<div class="cos_c">總局</div>
-					<div class="cos_a">
-						<span>
-							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
-						</span>
-					</div>
-					
-				</div>		
-				<div class="table_row">
-					<div class="cos_a"><input type="checkbox"></div>
-					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
-					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
-					<div class="cos_c">總局</div>
-					<div class="cos_a">
-						<span>
-							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
-						</span>
-					</div>
-					
-				</div>		
-				<div class="table_row">
-					<div class="cos_a"><input type="checkbox"></div>
-					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
-					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
-					<div class="cos_c">總局</div>
-					<div class="cos_a">
-						<span>
-							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
-						</span>
-					</div>
-					
-				</div>		
-				<div class="table_row">
-					<div class="cos_a"><input type="checkbox"></div>
-					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
-					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
-					<div class="cos_c">總局</div>
-					<div class="cos_a">
-						<span>
-							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
-						</span>
-					</div>
-					
-				</div>		
-
-
-
-
-
-			</div>
-
-			
-			<!-- pages -->
-			<div class="pages">
-				<div class="page_front">
-					<div class="num_page">
-						<a href="" class="num_page_link"><i class="fas fa-chevron-left"></i> </a>
-						<a href="" class="num_page_link">1</a>
-						<a href="" class="num_page_link page_on">2</a>
-						<a href="" class="num_page_link">3</a>
-						<a href="" class="num_page_link">4</a>
-						<a href="" class="num_page_link">5</a>
-						<a href="" class="num_page_link"><i class="fas fa-chevron-right"></i></a>
-					</div>
-					<div class="jump_to-page">
-						跳至
-						<select name="" id="">
-							<option value="">1</option>
-							<option value="">2</option>
-							<option value="">3</option>
-							<option value="">4</option>
-						</select>
-						頁	
-					</div>
-				</div>
-
-				<div class="page_back">
-					<div class="this_page">
-						每頁
-						<select name="" id="">
-							<option value="">20</option>
-							<option value="">30</option>
-							<option value="">40</option>
-							<option value="">50</option>
-						</select>
-						筆
-					</div>
-					<div class="page_info">第2頁，21-40筆，共100筆</div>
-				</div>
-			</div>
-
-
-				
-			
-			
-
-
-
-
 		</div>
+			
+
 	</div>
+
 	
 
 

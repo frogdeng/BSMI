@@ -1104,7 +1104,7 @@ $page_width: 1044px
 
 .edit_layout
 	width: 764px
-	height: 530px
+	// height: 530px
 	background: #FFF
 	margin: 0 auto
 	position: relative
@@ -1129,11 +1129,15 @@ $page_width: 1044px
 		flex-direction: row
 		justify-content: flex-start
 		align-items: center
+		color: #444
+		input
+			width: 90%
+		select
+			width: 300px
 		.edit_layout_item	
 			width: 23%
 			margin: 0 1.55%
 			.thunmnail
-				
 				border: 1px solid #ddd
 				margin-bottom: 12px
 
@@ -1170,6 +1174,37 @@ $page_width: 1044px
 				align-items: center
 	
 
+
+.lightbox_btn_section
+	display: flex
+	flex-direction: row
+	justify-content: flex-end
+	align-items: center
+	box-shadow: 0 -6px 13px 0 rgba(0, 0, 0, 0.1)
+	background: #FFF
+	padding: 10px 16px
+	.filter_btn-reset
+		color: #419fe3
+		border-radius: 4px
+		margin: 0 10px
+		cursor: pointer
+		
+	
+	.filter_btn-cancel
+		padding: 8px 30px
+		background: #eee
+		color: #444
+		border-radius: 4px
+		margin: 0 10px
+		cursor: pointer
+
+	.filter_btn-submit
+		padding: 8px 30px
+		background: #419fe3
+		color: #FFF
+		border-radius: 4px
+		margin: 0 5px
+		cursor: pointer
 
 
 

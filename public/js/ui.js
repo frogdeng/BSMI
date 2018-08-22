@@ -68,6 +68,11 @@ $(function(){
       return false
     });
 
+    $('.need_dropdown > .mange_id').click(function(){
+        $(this).siblings().toggleClass( "show_show" )
+      return false
+    });
+
 
 
 

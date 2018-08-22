@@ -3,7 +3,15 @@
 
 {% block page %}
 
-
+<script>
+	$(function(){
+		$('.open-popup-link').magnificPopup({
+		  type:'inline',
+		  midClick: true 
+		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
+	});
+</script>
 
 <div class="institutional_knowledge_base_wrapper">
 	
@@ -158,96 +166,176 @@
 					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
 					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
 					<div class="cos_c">總局</div>
-					<div class="cos_a"><span><i class="fas fa-pencil-alt"></i> 編輯</span></div>
-				</div>				
-				
+					<div class="cos_a">
+						<span>
+							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
+						</span>
+					</div>
+
+					<div id="popup_edit_link" class="edit_layout mfp-hide">
+						<div class="edit_layout_title">
+							編輯連結
+						</div>
+						<div class="edit_layout_row">
+							名稱： <input type="text">
+						</div>
+						<div class="edit_layout_row">
+							URL： <input type="text">
+						</div>
+						<div class="edit_layout_row">
+							類別： 
+							<select name="" id="">
+								<option value="">分局</option>
+								<option value="">分局</option>
+								<option value="">分局</option>
+								<option value="">分局</option>
+								<option value="">分局</option>
+							</select>
+						</div>
+						<div class="lightbox_btn_section">
+								<div class="filter_btn-cancel">取消</div>
+								<div class="filter_btn-submit">確定</div>
+						</div>
+						
+
+					</div>
+				</div>		
+
 				<div class="table_row">
 					<div class="cos_a"><input type="checkbox"></div>
 					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
 					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
 					<div class="cos_c">總局</div>
-					<div class="cos_a"><span><i class="fas fa-pencil-alt"></i> 編輯</span></div>
-				</div>				
-				
+					<div class="cos_a">
+						<span>
+							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
+						</span>
+					</div>
+					
+				</div>		
 				<div class="table_row">
 					<div class="cos_a"><input type="checkbox"></div>
 					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
 					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
 					<div class="cos_c">總局</div>
-					<div class="cos_a"><span><i class="fas fa-pencil-alt"></i> 編輯</span></div>
-				</div>				
-				
+					<div class="cos_a">
+						<span>
+							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
+						</span>
+					</div>
+					
+				</div>		
 				<div class="table_row">
 					<div class="cos_a"><input type="checkbox"></div>
 					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
 					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
 					<div class="cos_c">總局</div>
-					<div class="cos_a"><span><i class="fas fa-pencil-alt"></i> 編輯</span></div>
-				</div>				
-				
+					<div class="cos_a">
+						<span>
+							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
+						</span>
+					</div>
+					
+				</div>		
 				<div class="table_row">
 					<div class="cos_a"><input type="checkbox"></div>
 					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
 					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
 					<div class="cos_c">總局</div>
-					<div class="cos_a"><span><i class="fas fa-pencil-alt"></i> 編輯</span></div>
-				</div>				
-				
+					<div class="cos_a">
+						<span>
+							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
+						</span>
+					</div>
+					
+				</div>		
 				<div class="table_row">
 					<div class="cos_a"><input type="checkbox"></div>
 					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
 					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
 					<div class="cos_c">總局</div>
-					<div class="cos_a"><span><i class="fas fa-pencil-alt"></i> 編輯</span></div>
-				</div>				
-				
+					<div class="cos_a">
+						<span>
+							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
+						</span>
+					</div>
+					
+				</div>		
 				<div class="table_row">
 					<div class="cos_a"><input type="checkbox"></div>
 					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
 					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
 					<div class="cos_c">總局</div>
-					<div class="cos_a"><span><i class="fas fa-pencil-alt"></i> 編輯</span></div>
-				</div>				
-				
+					<div class="cos_a">
+						<span>
+							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
+						</span>
+					</div>
+					
+				</div>		
 				<div class="table_row">
 					<div class="cos_a"><input type="checkbox"></div>
 					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
 					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
 					<div class="cos_c">總局</div>
-					<div class="cos_a"><span><i class="fas fa-pencil-alt"></i> 編輯</span></div>
-				</div>				
-				
+					<div class="cos_a">
+						<span>
+							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
+						</span>
+					</div>
+					
+				</div>		
 				<div class="table_row">
 					<div class="cos_a"><input type="checkbox"></div>
 					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
 					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
 					<div class="cos_c">總局</div>
-					<div class="cos_a"><span><i class="fas fa-pencil-alt"></i> 編輯</span></div>
-				</div>				
+					<div class="cos_a">
+						<span>
+							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
+						</span>
+					</div>
+					
+				</div>		
 				<div class="table_row">
 					<div class="cos_a"><input type="checkbox"></div>
 					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
 					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
 					<div class="cos_c">總局</div>
-					<div class="cos_a"><span><i class="fas fa-pencil-alt"></i> 編輯</span></div>
-				</div>				
-				
+					<div class="cos_a">
+						<span>
+							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
+						</span>
+					</div>
+					
+				</div>		
 				<div class="table_row">
 					<div class="cos_a"><input type="checkbox"></div>
 					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
 					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
 					<div class="cos_c">總局</div>
-					<div class="cos_a"><span><i class="fas fa-pencil-alt"></i> 編輯</span></div>
-				</div>				
-				
+					<div class="cos_a">
+						<span>
+							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
+						</span>
+					</div>
+					
+				</div>		
 				<div class="table_row">
 					<div class="cos_a"><input type="checkbox"></div>
 					<div class="cos_b">事務流程說明事務流程說明事務流程...</div>
 					<div class="cos_d">https://docs.google.com/spreadsheets/d14dNro1zUoQrajklihluYI…</div>
 					<div class="cos_c">總局</div>
-					<div class="cos_a"><span><i class="fas fa-pencil-alt"></i> 編輯</span></div>
-				</div>				
-				
+					<div class="cos_a">
+						<span>
+							<a href="#popup_edit_link" class="open-popup-link"><i class="fas fa-pencil-alt"></i> 編輯</a>
+						</span>
+					</div>
+					
+				</div>		
+
+
+
 
 
 			</div>
