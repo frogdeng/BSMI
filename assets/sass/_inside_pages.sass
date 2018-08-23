@@ -2753,7 +2753,6 @@ $page_width: 1044px
 
 
 
-
 .record-list_table
 	border-bottom: 1px solid #eeeeee
 	.table_row_th
@@ -2812,6 +2811,7 @@ $page_width: 1044px
 			margin: 0 10px
 			padding: 0 10px
 			color: #444
+			height: 38px
 	
 
 
@@ -2825,10 +2825,29 @@ $page_width: 1044px
 		border-bottom: 1px solid #eeeeee
 		margin-bottom: 32px
 		.tag_item
-			margin: 20px 25px
+			height: 46px
+			margin: 0px 25px
+			padding: 0 23px
 			color: #6c94b1
 			font-weight: 700
 			cursor: pointer
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			position: relative
+			.bottom_yello-line
+				position: absolute
+				width: 100%
+				height: 3px
+				background: #f5a623
+				bottom: 0
+				left: 0
+
+
+
+
+
 
 	.upload_file_limit_wrapper
 		width: 100%
@@ -2886,6 +2905,7 @@ $page_width: 1044px
 						input
 							margin: 0 10px
 							padding: 0 10px
+							h38
 
 
 
@@ -2897,6 +2917,7 @@ $page_width: 1044px
 	margin-left: 30px
 	font-size: 12px
 	color: #999
+	cursor: pointer
 	.switch_ball_bg
 		width: 50px
 		height: 26px
@@ -2911,10 +2932,193 @@ $page_width: 1044px
 			background-color: #ffffff
 			border-radius: 50%
 			top: 1px
-			left: 1px
+			transition: all .3s
 
 
 		
+.ball-close
+	left: 1px
+	transition: all .3s
+.ball-open
+	right: 1px
+	transition: all .3s
+
+
+.setting_table
+	width: 100%
+	table
+		width: 100%
+		tr
+			&:nth-child(even)
+				background: rgba(89, 119, 140, 0.1)
+			&:hover
+				background: rgba(89, 119, 140, 0.3)
+	 
+			th
+				text-align: left
+				padding: 10px 20px
+				background: #fafafa
+				vertical: middle
+				font-weight: 700
+				border-bottom: 1px solid #eeeeee
+			td
+				text-align: left
+				padding: 10px 20px
+				border-bottom: 1px solid #eeeeee
+				color: #444
+
+
+
+
+
+.theme_area_management
+	background: #FFF
+	.theme_wrapper
+		padding: 32px
+		
+		.theme_content_row
+			width: 350px
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			i 
+				margin-left: 10px
+			.theme_display
+				width: 20px
+				height: 20px
+				margin-right: 10px
+				cursor: pointer
+				i
+					font-size: 20px
+					color: #444
+			input
+				width: 250px
+				height: 38px
+				&::placeholder
+					color: #cccccc
+
+
+			.item_content
+				width: 250px
+				height: 38px
+				border-radius: 4px
+				background-color: #ffffff
+				border: solid 1px #cccccc
+				padding: 0 20px
+				margin: 20px 0px
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				.i-num
+					width: 20px
+					height: 20px
+					border-radius: 50%
+					background: #419fe3
+					color: #FFF
+					font-size: 12px
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+		.theme_content_add
+			width: 350px
+			height: 38px
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			color: #419fe3
+			cursor: pointer
+			i 
+				margin-right: 5px
+
+.sub_heme_content_wrapper
+	border-left: 1px dashed #ddd
+	margin-left: 80px
+	padding-top: 30px
+	.sub_heme_content_row
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		margin-bottom: 30px
+		i 
+			margin-left: 10px
+		input
+			width: 250px
+			height: 38px
+			&::placeholder
+				color: #cccccc
+
+		.sub_l-l
+			border: 1px dashed #ddd
+			height: 1px
+			width: 40px
+		.item_content
+			width: 250px
+			height: 38px
+			border-radius: 4px
+			background-color: #ffffff
+			border: solid 1px #cccccc
+			padding: 0 20px
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			.i-num
+				width: 20px
+				height: 20px
+				border-radius: 50%
+				background: #419fe3
+				color: #FFF
+				font-size: 12px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+
+	.sub_theme_content_add
+		width: 350px
+		height: 38px
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		color: #419fe3
+		cursor: pointer
+		i 
+			margin-right: 5px
+			margin-left: 10px
+		.sub_l-l
+			border: 1px dashed #ddd
+			height: 1px
+			width: 40px
+		
+
+
+
+
+
+.this_center
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
+
+.this_left
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: flex-start
+
+
+.arrow_down
+	transform: rotate(90deg)
+
+
 
 
 
