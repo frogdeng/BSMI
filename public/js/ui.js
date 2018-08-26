@@ -74,6 +74,10 @@ $(function(){
     });
 
 
+    $('.switch_ball').click(function(){
+        $(this).find(".ball").toggleClass( "ball-open" )
+      return false
+    });
 
 
 

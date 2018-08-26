@@ -2244,7 +2244,11 @@ a {
   align-items: center; }
 
 .left_pillar .left_pillar_item .unit_block h6 {
-  width: 70%; }
+  width: 100%; }
+
+.left_pillar .left_pillar_item .unit_block i {
+  display: block;
+  margin-left: 20px; }
 
 .left_pillar .left_pillar_item .inside_item {
   width: 100%;
@@ -2640,10 +2644,22 @@ a {
   border-radius: 4px;
   font-size: 14px;
   margin-left: 10px;
-  cursor: pointer;
   transition: all .3s; }
 
 .doclist_fun .doclist_fun_row .doclist_fun_btn:hover {
+  background: #419fe3;
+  color: #FFF; }
+
+.doclist_fun .doclist_fun_row .doclist_fun_btn_link {
+  color: #419fe3;
+  border: 1px solid #419fe3;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-left: 10px;
+  transition: all .3s; }
+
+.doclist_fun .doclist_fun_row .doclist_fun_btn_link:hover {
   background: #419fe3;
   color: #FFF; }
 
@@ -6485,6 +6501,7 @@ a {
   background-color: #ffffff;
   border-radius: 50%;
   top: 1px;
+  left: 1px;
   transition: all .3s; }
 
 .ball-close {
@@ -6492,7 +6509,7 @@ a {
   transition: all .3s; }
 
 .ball-open {
-  right: 1px;
+  left: 25px !important;
   transition: all .3s; }
 
 .setting_table {
