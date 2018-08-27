@@ -1081,6 +1081,87 @@ $page_width: 1044px
 
 
 
+
+
+@mixin upcoming_event_table
+	width: 100%
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: center
+	padding: 0 24px
+	.upcoming_event_name
+		height: 36px
+		width: 70%
+		color: #1f87d2
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	.upcoming_event_bureau
+		height: 36px
+		width: 30%
+		color: #444
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+
+	
+.upcoming_event
+	width: 100%
+	
+	.upcoming_event_row
+		+upcoming_event_table
+	
+		&:nth-child(even)
+			background: rgba(65, 159, 227, 0.1)
+
+
+
+
+
+@mixin todo_list_table
+	width: 100%
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: center
+	padding: 0 24px
+	
+	.todo_list_list
+		height: 36px
+		width: 100%
+		color: #444
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		span
+			color: #f5a623
+			margin: 0 5px
+
+	
+.todo_list
+	width: 100%
+	.todo_list_row
+		+todo_list_table
+		&:nth-child(even)
+			background: rgba(245, 166, 35, 0.1)
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
 @mixin links_table
 	width: 100%
 	display: flex
@@ -1294,6 +1375,12 @@ $page_width: 1044px
 
 .index_color-brown
 	color: #c59e5d !important
+
+.index_color-blue
+	color: #1f87d2 !important
+
+.index_color-orange
+	color: #f5a623 !important
 
 
 
