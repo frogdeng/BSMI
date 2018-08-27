@@ -22,7 +22,8 @@
 	<a href="" class="setting_btn"><i class="fas fa-cog"></i> 版面設定</a>
 	<div class="setting_mockup">
 		<a href="" class="edit_btn open-popup-link">儲存設定</a>
-		<a href="#popup_1" class="add_btn open-popup-link">新增板塊</a>
+		<a href="#popup_1" class="add_btn open-popup-link">新增儀表板</a>
+		<div class="cancel_this">退出設定</div>
 	</div>
 </div>
 
@@ -106,6 +107,7 @@
 </div>
 
 
+<!-- fun_item_wrapper -->
 
 <div class="fun_item_wrapper">
 	<div class="w_fun_item">
@@ -113,33 +115,49 @@
 			<i class="fas fa-edit"></i>
 			<p>公文線上簽核管理系統</p>
 		</div>
-
+		<div class="menu_lll"></div>
 		<div class="fun_item">
 			<i class="fas fa-dollar-sign"></i>
 			<p>個人薪資查詢</p>
 		</div>
+		<div class="menu_lll"></div>
 		<div class="fun_item">
 			<i class="far fa-calendar-alt"></i>
 			<p>差勤、領物、費用系統</p>
 		</div>
+		<div class="menu_lll"></div>
 		<div class="fun_item">
 			<i class="fas fa-building"></i>
 			<p>本局郵件系統</p>
 		</div>	
-
+		<div class="menu_lll"></div>
 		<div class="fun_item">
 			<i class="fas fa-desktop"></i>
 			<p>應用系統 單一登錄平台</p>
 		</div>
+		<div class="menu_lll"></div>
 		<div class="fun_item">
 			<i class="fas fa-globe-asia"></i>
 			<p>本局 全球資訊網</p>
 		</div>
-		<div class="fun_item">
-			<i class="fas fa-chart-area"></i>
-			<p>國家標準檢驗系統</p>
+
+		<div class="menu_lll"></div>
+		<div class="fun_item border-dashed">
+			
+		</div>	
+		<div class="menu_lll"></div>
+		<div class="fun_item border-dashed">
+			
 		</div>
+
+		<!-- <div class="fun_item_add"></div> -->
+		<!-- <div class="fun_item_add"></div> -->
+
 	</div>
+
+
+
+
 	<div class="main_fun_edit">
 		<i class="fas fa-cog"></i> 
 	</div>
@@ -150,42 +168,56 @@
 				<input type="radio" id="fun1">
 				<span>公文線上簽核管理系統</span>
 			</label>
+			<i class="fas fa-arrows-alt"></i>
 		</div>				
 		<div class="dropdown_list">
 			<label for="fun2">
 				<input type="radio" id="fun2">
 				<span>個人薪資查詢</span>
 			</label>
+			<i class="fas fa-arrows-alt"></i>
 		</div>
 		<div class="dropdown_list">
 			<label for="fun3">
 				<input type="radio" id="fun3">
 				<span>差勤、領物、費用系統</span>
 			</label>
+			<i class="fas fa-arrows-alt"></i>
 		</div>
 		<div class="dropdown_list">
 			<label for="fun4">
 				<input type="radio" id="fun4">
 				<span>本局郵件系統</span>
 			</label>
+			<i class="fas fa-arrows-alt"></i>
 		</div>
 		<div class="dropdown_list">
 			<label for="fun4">
 				<input type="radio" id="fun4">
 				<span>應用系統 單一登錄平台</span>
 			</label>
+			<i class="fas fa-arrows-alt"></i>
 		</div>
 		<div class="dropdown_list">
 			<label for="fun4">
 				<input type="radio" id="fun4">
 				<span>本局 全球資訊網</span>
 			</label>
+			<i class="fas fa-arrows-alt"></i>
 		</div>
 		<div class="dropdown_list">
 			<label for="fun4">
 				<input type="radio" id="fun4">
 				<span>國家標準檢驗系統</span>
 			</label>
+			<i class="fas fa-arrows-alt"></i>
+		</div>
+		<div class="dropdown_list">
+			<label for="fun4">
+				<input type="radio" id="fun4">
+				<span>國家標準檢驗系統</span>
+			</label>
+			<i class="fas fa-arrows-alt"></i>
 		</div>
 		
 	</div>
@@ -205,8 +237,8 @@
         <div class="grid-stack-item-content index_calender">
 			<!-- block_title -->
 			<div class="block_title">
-				<div class="front">
-					<i class="far fa-calendar-alt"></i> <h6>個人活動暨差假資訊</h6>
+				<div class="front ">
+					<i class="far fa-calendar-alt"></i> <h6 class="index_color-purple">個人活動暨差假資訊</h6>
 				</div>
 				<div class="fun_icons">
 					<i class="fas fa-times-circle"></i>
@@ -349,7 +381,7 @@
         	<!-- block_title -->
 			<div class="block_title">
 				<div class="front">
-					<i class="far fa-calendar-alt"></i> <h6>個人差勤紀錄</h6>
+					<i class="far fa-calendar-alt"></i> <h6 class="index_color-purple">個人差勤紀錄</h6>
 				</div>
 				<div class="fun_icons">
 					<i class="fas fa-times-circle"></i>
@@ -454,7 +486,7 @@
 				<div class="records_lll"></div>
 				
 			</div>		
-        	<a href="" class="and_more">連至差勤系統</a>
+        	<a href="" class="and_more index_color-purple">連至差勤系統</a>
 
 		
 
@@ -478,7 +510,7 @@
 						<div class="tab_btn on_self">
 							<i class="fas fa-bullhorn"></i> <h6>消息公告</h6>
 						</div>
-						<div class="tab_btn">
+						<div class="tab_btn ">
 							<i class="far fa-file-alt"></i><h6>最新及熱門文件</h6>
 						</div>
 						<div class="tab_btn">
@@ -499,12 +531,16 @@
 						</div>
 
 							<div class="edit_dropdown">
+							
 								<div class="dropdown_list">
+
 									<label for="ck1">
 										<input type="radio" id="ck1">
 										<span>消息公告</span>
 									</label>
-								</div>				
+									<i class="fas fa-arrows-alt"></i>
+								</div>	
+
 								<div class="dropdown_list">
 									<label for="ck2">
 										<input type="radio" id="ck2">
@@ -593,8 +629,8 @@
         <div class="grid-stack-item-content index_links" data-gs-no-resize="yes">
         	<!-- block_title -->
 			<div class="block_title">
-				<div class="front">
-					<i class="far fa-calendar-alt"></i> <h6>常用連結</h6>
+				<div class="front index_color-green">
+					<i class="far fa-calendar-alt"></i> <h6 class="index_color-green">常用連結</h6>
 				</div>
 				<div class="fun_icons">
 					<div class="fun_edit">
@@ -610,7 +646,7 @@
 			<div class="search_section">
 				<div class="i-input">
 					<input type="text" class="index_news_input" placeholder="請輸入關鍵字">
-					<i class="fas fa-search"></i>
+					<i class="fas fa-search index_color-green"></i>
 				</div>
 				<div class="i-select">
 					<select name="" id="" class="index_news_select">
@@ -624,7 +660,7 @@
 			<!-- block_content -->
 			<div class="links">
 				<div class="links_title">
-					<div class="link_name">連結名稱</div>
+					<div class="link_name ">連結名稱</div>
 					<div class="link_bureau">分類</div>
 				</div>
 
@@ -653,7 +689,7 @@
 				</div>
 	
 			</div>
-				<a href="" class="and_more">更多...</a>
+				<a href="" class="and_more index_color-green">更多...</a>
         </div>
     </div>
 
@@ -666,10 +702,10 @@
         <div class="grid-stack-item-content index_contacts">
         	 <!-- block_title -->
 			<div class="block_title">
-				<div class="front">
-					<i class="far fa-calendar-alt"></i> <h6>通訊錄</h6>
+				<div class="front index_color-brown">
+					<i class="far fa-calendar-alt"></i> <h6 class="index_color-brown">通訊錄</h6>
 				</div>
-				<div class="fun_icons">
+				<div class="fun_icons index_color-brown">
 					<i class="fas fa-times-circle"></i>
 				</div>
 			</div>
@@ -677,7 +713,7 @@
 			<div class="search_section">
 				<div class="i-input">
 					<input type="text" class="index_news_input" placeholder="請輸入關鍵字">
-					<i class="fas fa-search"></i>
+					<i class="fas fa-search index_color-brown"></i>
 				</div>
 				<div class="i-select">
 					<select name="" id="" class="index_news_select">
@@ -725,7 +761,7 @@
 		
 	
 			</div>
-				<a href="" class="and_more">更多...</a>
+				<a href="" class="and_more index_color-brown">更多...</a>
 
 
 
@@ -741,12 +777,16 @@
         <div class="grid-stack-item-content index_schedule">
         	 <!-- block_title -->
 			<div class="block_title">
-				<div class="front">
-					<i class="far fa-calendar-alt"></i> <h6>部門行事曆</h6>
+				<div class="front index_color-purple">
+					<i class="far fa-calendar-alt"></i> <h6 class="index_color-purple">部門行事曆</h6>
 				</div>
+				<div class="add_new_calender">
+					<i class="fas fa-plus"></i> 新增行事曆
+				</div>
+				<!-- 
 				<div class="fun_icons">
 					<i class="fas fa-times-circle"></i>
-				</div>
+				</div> -->
 			</div>
 			<!-- block_content -->
 			<div class="index_schedule_content">

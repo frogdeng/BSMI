@@ -15,6 +15,14 @@ $(function(){
     });
 
 
+    $('.member').click(function(){
+      $('.member_message').toggleClass( "show_show" )
+      return false
+    });
+
+
+    
+
     $('.font_size').click(function(){
       $('.font_size_message').toggleClass( "show_show" )
       return false
