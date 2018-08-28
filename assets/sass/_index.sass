@@ -9,7 +9,7 @@ $page_width: 1044px
 
 .top_header_wrapper
 	background: #FFF
-	width: 100%
+	min-width: 1312px
 
 .top_header
 	background: #FFF
@@ -331,6 +331,7 @@ $page_width: 1044px
 
 .footer_wrapper
 	background: #444
+	min-width: 1312px
 	footer
 		width: $page_width
 		margin: 0 auto
@@ -411,6 +412,8 @@ $page_width: 1044px
 	text-align: center
 		
 .top_header_menu
+	min-width: 1312px
+	behavior: expression(this.style.width=(document.documentElement.offsetWidth<1200)?"1800px":"100%");
 	background: #27669c
 	height: 54px
 	margin-bottom: 0px
