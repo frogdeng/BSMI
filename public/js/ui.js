@@ -71,10 +71,17 @@ $(function(){
       return false
     });
     
-    $('.doclist_fun_btn').click(function(){
-        $('.doclist_dropdown').toggleClass( "show_show" )
-      return false
+    // $('.doclist_fun_btn').click(function(){
+    //     $('.doclist_dropdown').toggleClass( "show_show" )
+    //   return false
+    // });
+
+
+    $('.doclist_fun_btn').click(function(){        
+      $(this).next().toggleClass( "show_show" )      
+      return false    
     });
+
 
     $('.need_dropdown > .mange_id').click(function(){
         $(this).siblings().toggleClass( "show_show" )
