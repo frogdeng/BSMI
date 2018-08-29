@@ -728,7 +728,7 @@ a {
   margin: 0 auto; }
 
 .footer_wrapper footer .footer_switch {
-  height: 100px;
+  height: 50px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -742,6 +742,7 @@ a {
   width: 80px;
   height: 30px;
   background: #888;
+  cursor: pointer;
   border-radius: 0 0 3px 3px;
   display: -ms-flexbox;
   display: flex;
@@ -758,6 +759,7 @@ a {
   margin-right: 5px; }
 
 .footer_wrapper footer .f_list {
+  height: 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -768,9 +770,11 @@ a {
   align-items: flex-start;
   font-size: 14px;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all .3s; }
 
 .footer_wrapper footer .f_list .f_list_item {
+  display: none;
   width: 12%; }
 
 .footer_wrapper footer .f_list .f_list_item .f_list_item_title {
@@ -823,6 +827,9 @@ a {
 .footer_wrapper footer .footer_bottom .footer-a img {
   display: block;
   margin-bottom: 20px; }
+
+.h455 {
+  height: 455px !important; }
 
 .copy_right {
   width: 100%;
@@ -2726,7 +2733,8 @@ body {
   font-weight: 700;
   border-radius: 50px;
   margin-right: 12px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  cursor: pointer; }
 
 .pdf_file {
   width: 100%;
@@ -2823,6 +2831,8 @@ body {
   border-radius: 4px;
   font-size: 14px;
   margin-left: 10px;
+  cursor: pointer;
+  position: relative;
   transition: all .3s; }
 
 .doclist_fun .doclist_fun_row .doclist_fun_btn:hover {
@@ -2914,6 +2924,12 @@ body {
 
 .doclist_dropdown .dropdown_list:hover {
   background: rgba(65, 159, 227, 0.1); }
+
+.dropdown-mail {
+  width: 250px !important; }
+
+.dropdown-doc {
+  width: 150px !important; }
 
 .enable_dropdown {
   display: none;

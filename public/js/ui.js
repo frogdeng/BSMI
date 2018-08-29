@@ -95,6 +95,22 @@ $(function(){
     });
 
 
+    $('.footer_switch_btn').click(function(){
+        $('.f_list').toggleClass( "h455" )
+        $('.f_list_item').toggleClass( "show_show" )
+    });
+
+    $('.btn-email').click(function(){
+        $('.dropdown-mail').toggleClass( "show_show" )
+    });
+    $('.btn-doc').click(function(){
+        $('.dropdown-doc').toggleClass( "show_show" )
+    });
+    $('.btn-upload').click(function(){
+        $('.dropdown-upload').toggleClass( "show_show" )
+    });
+
+
 
 
 });
