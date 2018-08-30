@@ -111,6 +111,12 @@ $(function(){
     });
 
 
+    
+    $('.text_unedit').click(function(){
+        $('.text_unedit_dropdown').toggleClass( "show_show" )
+    });
+
+
 
 
 });

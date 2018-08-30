@@ -3424,7 +3424,69 @@ body {
   border: solid 1px #cccccc;
   padding: 10px;
   border-radius: 4px;
+  color: #444;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative; }
+
+.batch_upload_step_1 .step_row .upload_content .text_unedit p {
   color: #444; }
+
+.batch_upload_step_1 .step_row .upload_content .text_unedit .text_unedit_dropdown {
+  display: none;
+  position: absolute;
+  width: 600px;
+  background: #FFF;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  top: 50px; }
+
+.batch_upload_step_1 .step_row .upload_content .text_unedit .text_unedit_dropdown .parent_title {
+  height: 30px;
+  color: #444;
+  background: #eee;
+  padding: 18px 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.batch_upload_step_1 .step_row .upload_content .text_unedit .text_unedit_dropdown .text_unedit_dropdown_row .this_t {
+  padding: 10px 16px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  transition: all .3s; }
+
+.batch_upload_step_1 .step_row .upload_content .text_unedit .text_unedit_dropdown .text_unedit_dropdown_row .this_t:hover {
+  background: rgba(65, 159, 227, 0.1); }
+
+.batch_upload_step_1 .step_row .upload_content .text_unedit .text_unedit_dropdown .text_unedit_dropdown_row .this_content {
+  padding: 10px 16px;
+  padding-left: 50px;
+  border-bottom: 1px solid #ddd;
+  transition: all .3s; }
+
+.batch_upload_step_1 .step_row .upload_content .text_unedit .text_unedit_dropdown .text_unedit_dropdown_row .this_content:hover {
+  background: rgba(65, 159, 227, 0.1); }
 
 .batch_upload_step_1 .step_row .upload_content textarea {
   background: #FFF;
