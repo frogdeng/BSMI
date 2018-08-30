@@ -123,6 +123,39 @@ $(function(){
 
 
 
+
+
+    $('.tab_1').click(function(){
+        $('.content-1').removeClass( "show_disable" )
+        $('.content-2').addClass( "show_disable" )
+        $('.content-3').addClass( "show_disable" )
+        $('.yellow-1').addClass('on')
+        $('.yellow-2').removeClass('on')
+        $('.yellow-3').removeClass('on')
+    });
+
+    $('.tab_2').click(function(){
+        $('.content-1').addClass( "show_disable" )
+        $('.content-2').removeClass( "show_disable" )
+        $('.content-3').addClass( "show_disable" )
+        $('.yellow-1').removeClass('on')
+        $('.yellow-2').addClass('on')
+        $('.yellow-3').removeClass('on')
+    });    
+
+
+    $('.tab_3').click(function(){
+        $('.content-1').addClass( "show_disable" )
+        $('.content-2').addClass( "show_disable" )
+        $('.content-3').removeClass( "show_disable" )
+        $('.yellow-1').removeClass('on')
+        $('.yellow-2').removeClass('on')
+        $('.yellow-3').addClass('on')
+    });
+
+
+
+
 });
 
 
