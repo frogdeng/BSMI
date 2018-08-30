@@ -102,7 +102,7 @@
 
 				<div class="doclist_fun_row">
 					<div class="need_dropdown">
-						<div class="doclist_fun_btn"><i class="fas fa-plus"></i> 新增連結</div>
+						<a href="#popup_edit_link" class="doclist_fun_btn open-popup-link"><i class="fas fa-plus"></i> 新增連結</a>
 						
 					</div>
 					<div class="doclist_fun_dele_btn"><i class="fas fa-trash-alt"></i> 刪除連結</div>
@@ -172,33 +172,8 @@
 						</span>
 					</div>
 
-					<div id="popup_edit_link" class="edit_layout mfp-hide">
-						<div class="edit_layout_title">
-							編輯連結
-						</div>
-						<div class="edit_layout_row">
-							名稱： <input type="text">
-						</div>
-						<div class="edit_layout_row">
-							URL： <input type="text">
-						</div>
-						<div class="edit_layout_row">
-							類別： 
-							<select name="" id="">
-								<option value="">分局</option>
-								<option value="">分局</option>
-								<option value="">分局</option>
-								<option value="">分局</option>
-								<option value="">分局</option>
-							</select>
-						</div>
-						<div class="lightbox_btn_section">
-								<div class="filter_btn-cancel">取消</div>
-								<div class="filter_btn-submit">確定</div>
-						</div>
-						
 
-					</div>
+
 				</div>		
 
 				<div class="table_row">
@@ -381,16 +356,63 @@
 			</div>
 
 
-				
-			
-			
-
-
-
-
 		</div>
 	</div>
 	
+	<!-- loghtbox -->
+	<div id="popup_new-link" class="lightbox_go mfp-hide">
+		<div class="edit_layout_title">
+			新增連結
+		</div>
+
+		<div class="edit_layout_row">
+			名稱：
+			<input type="text" >
+		</div>	
+		<div class="edit_layout_row">
+			連結：
+			<input type="text" placeholder="https://medium.com/@irischenblog/%E7%94%A2%E5%93%81%E7%B6%93%…">
+		</div>
+
+		<div class="btn_section">
+			<div class="cancel_fun">取消</div>
+			<div class="add_fun">確定</div>
+		</div>
+	</div>
+
+
+
+
+
+	<!-- lightbox -->
+	<div id="popup_edit_link" class="edit_layout mfp-hide">
+		<div class="edit_layout_title">
+			編輯連結
+		</div>
+		<div class="edit_layout_row">
+			名稱： <input type="text">
+		</div>
+		<div class="edit_layout_row">
+			URL： <input type="text">
+		</div>
+		<div class="edit_layout_row">
+			類別： 
+			<select name="" id="">
+				<option value="">分局</option>
+				<option value="">分局</option>
+				<option value="">分局</option>
+				<option value="">分局</option>
+				<option value="">分局</option>
+			</select>
+		</div>
+		<div class="lightbox_btn_section">
+				<div class="filter_btn-cancel">取消</div>
+				<div class="filter_btn-submit">確定</div>
+		</div>
+	</div>
+
+
+
 
 
 	<!-- right_pillar -->

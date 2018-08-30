@@ -2052,6 +2052,11 @@ a {
   height: 38px;
   margin-left: 10px; }
 
+.lightbox_go .edit_layout_row textarea {
+  margin-left: 10px;
+  width: 80%;
+  border: 1px solid #ddd; }
+
 .lightbox_go .edit_layout_row .find_name {
   width: 80%;
   margin-left: 10px;
@@ -2238,10 +2243,12 @@ a {
   color: #444; }
 
 .edit_layout .edit_layout_row input {
-  width: 90%; }
+  width: 90%;
+  height: 38px; }
 
 .edit_layout .edit_layout_row select {
-  width: 300px; }
+  width: 300px;
+  height: 38px; }
 
 .edit_layout .edit_layout_row .edit_layout_item {
   width: 23%;
