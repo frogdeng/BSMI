@@ -5,6 +5,20 @@
 
 
 
+
+<script>
+	$(function(){
+		$('.open-popup-link').magnificPopup({
+		  type:'inline',
+		  midClick: true 
+		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
+	});
+</script>
+
+
+
+
 <div class="institutional_knowledge_base_wrapper">
 	
 	<!-- left_pillar -->
@@ -102,7 +116,19 @@
 
 				<div class="doclist_fun_row">
 					<div class="doclist_fun_btn"><i class="far fa-heart"></i> 加入收藏</div>
-					<div class="doclist_fun_btn"><i class="fas fa-plus"></i> 新增資料夾</div>
+
+					
+					
+					<a href="#popup_new-folder" class="doclist_fun_btn open-popup-link">
+						<i class="fas fa-plus"></i> 新增資料夾
+					</a>
+					
+
+
+					<!-- <a href="#popup_new-folder" class="add_btn open-popup-link">新增儀表板</a> -->
+
+
+
 					<div class="doclist_fun_btn btn-upload">
 						上傳文件 <i class="fas fa-caret-down"></i>
 						<div class="doclist_dropdown dropdown-upload">
@@ -350,7 +376,6 @@
 
 
 
-
 			<div class="pages">
 				<div class="page_front">
 					<div class="num_page">
@@ -394,6 +419,23 @@
 	</div>
 	
 
+
+
+
+<div id="popup_new-folder" class="lightbox_go mfp-hide">
+	<div class="edit_layout_title">
+		新增資料夾
+	</div>
+
+	<div class="edit_layout_row">
+		資料夾名稱
+		<input type="text">
+	</div>
+	<div class="btn_section">
+		<div class="cancel_fun">取消</div>
+		<div class="add_fun">確定</div>
+	</div>
+</div>
 
 	<!-- right_pillar -->
 	<!-- <div class="institutional_knowledge_base_right">

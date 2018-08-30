@@ -1271,7 +1271,160 @@ $page_width: 1044px
 			background: rgba(197, 158, 93, 0.1)
 
 
+
+
+.lightbox_go
+	width: 764px
+	// height: 530px
+	background: #FFF
+	margin: 0 auto
+	position: relative
+	overflow: scroll
+	
+	.edit_layout_title
+		height: 54px
+		border-bottom: 1px solid #eee
+		margin-bottom: 30px
+		font-size: 16px
+		color: #444
+		font-weight: 900
+		padding-left: 25px
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+
+	.edit_layout_row
+		width: 90%
+		margin: 0 auto
+		margin-bottom: 35px
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		color: #444
+		position: relative
 		
+		p
+			width: 10%
+			color: #444	
+		input, select
+			width: 80%
+			height: 38px
+			margin-left: 10px
+		.find_name
+			width: 80%
+			margin-left: 10px
+			height: 38px
+			border-radius: 4px
+			padding: 0 10px
+			border: solid 1px #dddddd
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+
+		.select_named_group
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			.select_named
+				background: #eee
+				margin-right: 10px
+				padding: 4px 10px 4px 15px
+				color: #444
+				font-size: 12px
+				border-radius: 50px
+				cursor: pointer
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				transition: all .3s
+				.close
+					width: 20px
+					height: 20px
+					
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					
+				&:hover
+					.close
+						transform: scale(1.08)
+			
+
+
+	.btn_section
+		width: 100%
+		margin: 0 auto
+		padding: 20px 0
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		box-shadow: 0 -6px 13px 0 rgba(0, 0, 0, 0.1)
+		.add_fun
+			width: 96px
+			height: 38px
+			border-radius: 3px
+			background: #419fe3
+			color: #FFF
+			margin: 0 5px
+			cursor: pointer
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+		.cancel_fun
+			width: 96px
+			height: 38px
+			border-radius: 3px
+			background: #dddddd
+			color: #FFF
+			margin: 0 5px
+			cursor: pointer
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+
+
+
+.search_member_dropdown
+	display: none
+	position: absolute
+	width: 500px
+	height: 300px
+	overflow-y: auto
+	padding: 20px
+	background: #FFF
+	box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.2)
+	top: 40px
+	left: 110px
+	z-index: 1000
+	.dropdown_search
+		margin-bottom: 20px
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		input
+			width: 96%
+			height: 38px
+
+	.dropdown_row
+		.member_unit
+			padding: 5px 20px
+			background: #eee
+		.member_name
+			padding: 10px 20px
+			color: #444
+			border-bottom: 1px solid #eee
+			&:hover
+				background: rgba(65, 159, 227, 0.1)
 
 
 .edit_layout

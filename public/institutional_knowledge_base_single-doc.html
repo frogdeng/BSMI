@@ -45,88 +45,7 @@
 
 <link rel="stylesheet" href="css/module.css">
 
-	<script>
-
-  $(document).ready(function() {
-
-    $('#calendar').fullCalendar({
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,agendaWeek,agendaDay,listWeek'
-      },
-      defaultDate: '2018-03-12',
-      navLinks: true, // can click day/week names to navigate views
-      editable: true,
-      eventLimit: true, // allow "more" link when too many events
-      events: [
-        {
-          title: 'All Day Event',
-          start: '2018-03-01',
-        },
-        {
-          title: 'Long Event',
-          start: '2018-03-07',
-          end: '2018-03-10'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-03-09T16:00:00'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-03-16T16:00:00'
-        },
-        {
-          title: 'Conference',
-          start: '2018-03-11',
-          end: '2018-03-13'
-        },
-        {
-          title: 'Meeting',
-          start: '2018-03-12T10:30:00',
-          end: '2018-03-12T12:30:00'
-        },
-        {
-          title: 'Lunch',
-          start: '2018-03-12T12:00:00'
-        },
-        {
-          title: 'Meeting',
-          start: '2018-03-12T14:30:00'
-        },
-        {
-          title: 'Happy Hour',
-          start: '2018-03-12T17:30:00'
-        },
-        {
-          title: 'Dinner',
-          start: '2018-03-12T20:00:00'
-        },
-        {
-          title: 'Birthday Party',
-          start: '2018-03-13T07:00:00'
-        },
-        {
-          title: 'Click for Google',
-          url: 'http://google.com/',
-          start: '2018-03-28'
-        }
-      ]
-    });
-
-  });
-
-</script>
-	<style>
-  #calendar {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-</style>
+	
 
 </head>
 <body>
@@ -632,47 +551,7 @@
 				<div class="step_row">
 					<div class="upload_subject">上傳位置</div>
 					<div class="upload_content">
-						<div class="text_unedit">
-							<p>知識管理 > 機關知識庫 > 台北總局 > 第一組 > 第一科 > 05專案計畫文件 </p>
-							<i class="fas fa-sort-down"></i>
-							<div class="text_unedit_dropdown">
-								<div class="parent_title">台北總局第五組</div>
-								<div class="text_unedit_dropdown_row">
-									<div class="this_t">
-										事務流程說明 A
-										<i class="fas fa-sort-down"></i>
-									</div>
-									<div class="this_content">
-										事務流程說明子資料夾 
-									</div>
-									<div class="this_content">
-										事務流程說明子資料夾 
-									</div>
-								</div>
-								<div class="text_unedit_dropdown_row">
-									<div class="this_t">
-										事務流程說明 B
-										<i class="fas fa-sort-down"></i>
-									</div>
-								</div>	
-								<div class="text_unedit_dropdown_row">
-									<div class="this_t">
-										事務流程說明 C
-										<i class="fas fa-sort-down"></i>
-									</div>
-								</div>								
-								<div class="text_unedit_dropdown_row">
-									<div class="this_t">
-										事務流程說明 D
-									</div>
-								</div>
-								<div class="text_unedit_dropdown_row">
-									<div class="this_t">
-										事務流程說明 E
-									</div>
-								</div>
-							</div>
-						</div>
+						<div class="text_unedit">知識管理 > 機關知識庫 > 台北總局 > 第一組 > 第一科 > 05專案計畫文件</div>
 						 <label class="upload_btn" style="margin-top: 10px;">
 					       <input id="" style="display:none;" type="file">
 					       <i class="fa fa-photo"></i> 瀏覽位置

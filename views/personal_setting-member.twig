@@ -3,7 +3,15 @@
 
 {% block page %}
 
-
+<script>
+	$(function(){
+		$('.open-popup-link').magnificPopup({
+		  type:'inline',
+		  midClick: true 
+		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
+	});
+</script>
 
 <div class="institutional_knowledge_base_wrapper">
 	
@@ -163,9 +171,14 @@
 					<div class="cos_a">台北總局第五組</div>
 					<div class="cos_a">02-2343-1808 </div>
 					<div class="cos_b">是誰住在深海的大鳳梨裡 </div>
-					<div class="cos_c"><span><i class="fas fa-cog"></i> 管理</span></div>
+					<div class="cos_c">
+						<a href="#popup_member" class="doclist_fun_btn open-popup-link">
+							<span><i class="fas fa-cog"></i> 管理</span>
+						</a>
+					</div>
 					<div class="cos_c"><span style="color:#e75541"><i class="fas fa-trash-alt"></i> 刪除</span></div>
-				</div>				
+				</div>	
+
 				<div class="table_row">
 					<div class="cos_a">吳東興</div>
 					<div class="cos_a">台北總局第五組</div>
@@ -349,6 +362,125 @@
 		</div>
 	</div>
 	
+
+
+	<div id="popup_edit-group" class="lightbox_go mfp-hide">
+		<div class="edit_layout_title">
+			編輯群組
+		</div>
+
+		<div class="edit_layout_row">
+			<p>群組名稱</p>
+			<input type="text">
+		</div>
+		<div class="edit_layout_row">
+			<p>人員</p>
+			<select name="" id="">
+				<option value="">飄髮哥</option>
+				<option value="">拉布朗</option>
+				<option value="">鈴木一郎</option>
+				<option value="">櫻桃小丸子</option>
+				<option value="">王大明</option>
+				<option value="">大空翼</option>
+			</select>
+			
+		</div>		
+		<div class="edit_layout_row">
+			<div class="select_named_group">
+				<div class="select_named">飄髮哥<div class="close"><i class="fas fa-times"></i></div></div>
+				<div class="select_named">飄髮哥<div class="close"><i class="fas fa-times"></i></div></div>
+				<div class="select_named">飄髮哥<div class="close"><i class="fas fa-times"></i></div></div>
+				<div class="select_named">飄髮哥<div class="close"><i class="fas fa-times"></i></div></div>
+			</div>
+		</div>
+
+		<div class="btn_section">
+			<div class="cancel_fun">取消</div>
+			<div class="add_fun">確定</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<!-- loghtbox -->
+	<div id="popup_member" class="lightbox_go mfp-hide">
+		<div class="edit_layout_title">
+			編輯人員
+		</div>
+
+		<div class="edit_layout_row">
+
+			<p>姓名：</p>
+			<div class="find_name">弗萊迪 <i class="fas fa-caret-down"></i> </div>
+			
+			<div class="search_member_dropdown">
+				<div class="dropdown_search">
+					<i class="fas fa-search"></i><input type="text"> 
+				</div>
+
+
+				<div class="dropdown_row">
+					<div class="member_unit">台北總局第五組</div>
+					<div class="member_name">林美珠</div>
+					<div class="member_name">林美珠</div>
+					<div class="member_name">林美珠</div>
+					<div class="member_name">林美珠</div>
+
+					<div class="member_unit">台北總局第七組</div>
+					<div class="member_name">林美珠</div>
+					<div class="member_name">林美珠</div>
+					<div class="member_name">林美珠</div>
+					<div class="member_name">林美珠</div>
+				</div>			
+				
+			</div>
+
+		</div>
+
+
+
+
+		<div class="edit_layout_row">
+			<p>電話：</p>
+			<input type="text">
+		</div>
+
+		<div class="edit_layout_row">
+			<p>單位：</p>
+			<input type="text">
+		</div>
+
+		<div class="edit_layout_row">
+			<p>群組：</p>
+			<select name="" id="">
+				<option value="">飄髮哥</option>
+				<option value="">拉布朗</option>
+				<option value="">鈴木一郎</option>
+				<option value="">櫻桃小丸子</option>
+				<option value="">王大明</option>
+				<option value="">大空翼</option>
+			</select>
+		</div>
+		<div class="edit_layout_row">
+			<div class="select_named_group">
+				<div class="select_named">復仇者聯盟<div class="close"><i class="fas fa-times"></i></div></div>
+				<div class="select_named">正義群組<div class="close"><i class="fas fa-times"></i></div></div>
+				<div class="select_named">火箭隊<div class="close"><i class="fas fa-times"></i></div></div>
+				<div class="select_named">奧克拉荷馬<div class="close"><i class="fas fa-times"></i></div></div>
+			</div>
+		</div>
+
+		<div class="btn_section">
+			<div class="cancel_fun">取消</div>
+			<div class="add_fun">確定</div>
+		</div>
+	</div>
+
+
 
 
 	<!-- right_pillar -->

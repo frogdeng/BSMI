@@ -45,88 +45,7 @@
 
 <link rel="stylesheet" href="css/module.css">
 
-	<script>
-
-  $(document).ready(function() {
-
-    $('#calendar').fullCalendar({
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,agendaWeek,agendaDay,listWeek'
-      },
-      defaultDate: '2018-03-12',
-      navLinks: true, // can click day/week names to navigate views
-      editable: true,
-      eventLimit: true, // allow "more" link when too many events
-      events: [
-        {
-          title: 'All Day Event',
-          start: '2018-03-01',
-        },
-        {
-          title: 'Long Event',
-          start: '2018-03-07',
-          end: '2018-03-10'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-03-09T16:00:00'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-03-16T16:00:00'
-        },
-        {
-          title: 'Conference',
-          start: '2018-03-11',
-          end: '2018-03-13'
-        },
-        {
-          title: 'Meeting',
-          start: '2018-03-12T10:30:00',
-          end: '2018-03-12T12:30:00'
-        },
-        {
-          title: 'Lunch',
-          start: '2018-03-12T12:00:00'
-        },
-        {
-          title: 'Meeting',
-          start: '2018-03-12T14:30:00'
-        },
-        {
-          title: 'Happy Hour',
-          start: '2018-03-12T17:30:00'
-        },
-        {
-          title: 'Dinner',
-          start: '2018-03-12T20:00:00'
-        },
-        {
-          title: 'Birthday Party',
-          start: '2018-03-13T07:00:00'
-        },
-        {
-          title: 'Click for Google',
-          url: 'http://google.com/',
-          start: '2018-03-28'
-        }
-      ]
-    });
-
-  });
-
-</script>
-	<style>
-  #calendar {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-</style>
+	
 
 </head>
 <body>
@@ -449,6 +368,16 @@
 
 
 
+<script>
+	$(function(){
+		$('.open-popup-link').magnificPopup({
+		  type:'inline',
+		  midClick: true 
+		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
+	});
+</script>
+
 
 
 <div class="institutional_knowledge_base_wrapper">
@@ -548,7 +477,7 @@
 
 
 				<div class="doclist_fun_row">
-					<div class="doclist_fun_btn"><i class="fas fa-plus"></i> 新增人員</div>
+					<a href="#popup_new-group" class="doclist_fun_btn open-popup-link"><i class="fas fa-plus"></i> 新增群組</a>	
 				</div>
 
 			</div>
@@ -600,7 +529,12 @@
 					<div class="cos_a"></div>
 					<div class="cos_a"></div>
 					<div class="cos_a">人數 </div>
-					<div class="cos_c"><span><i class="fas fa-cog"></i> 管理</span></div>
+					<div class="cos_c">
+						<a href="#popup_edit-group" class="doclist_fun_btn open-popup-link">
+							<span><i class="fas fa-cog"></i>編輯</span>
+						</a>
+
+					</div>
 					<div class="cos_c"><span style="color:#e75541"><i class="fas fa-trash-alt"></i> 刪除</span></div>
 				</div>
 
@@ -609,7 +543,11 @@
 					<div class="cos_a"></div>
 					<div class="cos_a"></div>
 					<div class="cos_a">38 </div>
-					<div class="cos_c"><span><i class="fas fa-cog"></i> 管理</span></div>
+					<div class="cos_c">
+						<a href="#popup_edit-group" class="doclist_fun_btn open-popup-link">
+							<span><i class="fas fa-cog"></i>編輯</span>
+						</a>
+					</div>
 					<div class="cos_c"><span style="color:#e75541"><i class="fas fa-trash-alt"></i> 刪除</span></div>
 				</div>
 				<div class="table_row">
@@ -617,7 +555,11 @@
 					<div class="cos_a"></div>
 					<div class="cos_a"></div>
 					<div class="cos_a">38 </div>
-					<div class="cos_c"><span><i class="fas fa-cog"></i> 管理</span></div>
+					<div class="cos_c">
+						<a href="#popup_edit-group" class="doclist_fun_btn open-popup-link">
+							<span><i class="fas fa-cog"></i>編輯</span>
+						</a>
+					</div>
 					<div class="cos_c"><span style="color:#e75541"><i class="fas fa-trash-alt"></i> 刪除</span></div>
 				</div>
 				<div class="table_row">
@@ -625,7 +567,35 @@
 					<div class="cos_a"></div>
 					<div class="cos_a"></div>
 					<div class="cos_a">38 </div>
-					<div class="cos_c"><span><i class="fas fa-cog"></i> 管理</span></div>
+					<div class="cos_c">
+						<a href="#popup_edit-group" class="doclist_fun_btn open-popup-link">
+							<span><i class="fas fa-cog"></i>編輯</span>
+						</a>
+					</div>
+					<div class="cos_c"><span style="color:#e75541"><i class="fas fa-trash-alt"></i> 刪除</span></div>
+				</div>				
+				<div class="table_row">
+					<div class="cos_b">是誰住在深海的大鳳梨裡 </div>
+					<div class="cos_a"></div>
+					<div class="cos_a"></div>
+					<div class="cos_a">38 </div>
+					<div class="cos_c">
+						<a href="#popup_edit-group" class="doclist_fun_btn open-popup-link">
+							<span><i class="fas fa-cog"></i>編輯</span>
+						</a>
+					</div>
+					<div class="cos_c"><span style="color:#e75541"><i class="fas fa-trash-alt"></i> 刪除</span></div>
+				</div>				
+				<div class="table_row">
+					<div class="cos_b">是誰住在深海的大鳳梨裡 </div>
+					<div class="cos_a"></div>
+					<div class="cos_a"></div>
+					<div class="cos_a">38 </div>
+					<div class="cos_c">
+						<a href="#popup_edit-group" class="doclist_fun_btn open-popup-link">
+							<span><i class="fas fa-cog"></i>編輯</span>
+						</a>
+					</div>
 					<div class="cos_c"><span style="color:#e75541"><i class="fas fa-trash-alt"></i> 刪除</span></div>
 				</div>				
 				
@@ -679,7 +649,59 @@
 		</div>
 	</div>
 	
+	
+	<!-- loghtbox -->
+	<div id="popup_new-group" class="lightbox_go mfp-hide">
+		<div class="edit_layout_title">
+			新增群組
+		</div>
 
+		<div class="edit_layout_row">
+			群組名稱
+			<input type="text">
+		</div>
+		<div class="btn_section">
+			<div class="cancel_fun">取消</div>
+			<div class="add_fun">確定</div>
+		</div>
+	</div>
+
+	<!-- loghtbox -->
+	<div id="popup_edit-group" class="lightbox_go mfp-hide">
+		<div class="edit_layout_title">
+			編輯群組
+		</div>
+
+		<div class="edit_layout_row">
+			<p>群組名稱</p>
+			<input type="text">
+		</div>
+		<div class="edit_layout_row">
+			<p>人員</p>
+			<select name="" id="">
+				<option value="">飄髮哥</option>
+				<option value="">拉布朗</option>
+				<option value="">鈴木一郎</option>
+				<option value="">櫻桃小丸子</option>
+				<option value="">王大明</option>
+				<option value="">大空翼</option>
+			</select>
+			
+		</div>		
+		<div class="edit_layout_row">
+			<div class="select_named_group">
+				<div class="select_named">飄髮哥<div class="close"><i class="fas fa-times"></i></div></div>
+				<div class="select_named">飄髮哥<div class="close"><i class="fas fa-times"></i></div></div>
+				<div class="select_named">飄髮哥<div class="close"><i class="fas fa-times"></i></div></div>
+				<div class="select_named">飄髮哥<div class="close"><i class="fas fa-times"></i></div></div>
+			</div>
+		</div>
+
+		<div class="btn_section">
+			<div class="cancel_fun">取消</div>
+			<div class="add_fun">確定</div>
+		</div>
+	</div>
 
 	<!-- right_pillar -->
 	<!-- <div class="institutional_knowledge_base_right">

@@ -111,9 +111,13 @@ $(function(){
     });
 
 
-    
+
     $('.text_unedit').click(function(){
         $('.text_unedit_dropdown').toggleClass( "show_show" )
+    });   
+
+     $('.find_name').click(function(){
+        $('.search_member_dropdown').toggleClass( "show_show" )
     });
 
 

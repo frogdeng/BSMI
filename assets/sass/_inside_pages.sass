@@ -464,6 +464,7 @@ $page_width: 1044px
 		justify-content: flex-start
 		align-items: center
 		.doclist_fun_btn
+			display: block
 			color: #419fe3
 			border: 1px solid #419fe3
 			padding: 8px 20px
@@ -509,6 +510,11 @@ $page_width: 1044px
 			font-size: 14px
 			margin-left: 10px
 			cursor: pointer
+			transition: all .3s
+			&:hover
+				background: #e75541
+				color: #FFF
+
 			
 		.doclist_fun_cancel_btn
 			color: #FFF
@@ -2695,6 +2701,7 @@ $page_width: 1044px
 			box-shadow: 0 -6px 13px 0 rgba(0, 0, 0, 0.1)
 			background: #FFF
 			padding: 10px 16px
+
 			.filter_btn-reset
 				color: #419fe3
 				border-radius: 4px

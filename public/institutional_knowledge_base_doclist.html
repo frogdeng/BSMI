@@ -45,88 +45,7 @@
 
 <link rel="stylesheet" href="css/module.css">
 
-	<script>
-
-  $(document).ready(function() {
-
-    $('#calendar').fullCalendar({
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,agendaWeek,agendaDay,listWeek'
-      },
-      defaultDate: '2018-03-12',
-      navLinks: true, // can click day/week names to navigate views
-      editable: true,
-      eventLimit: true, // allow "more" link when too many events
-      events: [
-        {
-          title: 'All Day Event',
-          start: '2018-03-01',
-        },
-        {
-          title: 'Long Event',
-          start: '2018-03-07',
-          end: '2018-03-10'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-03-09T16:00:00'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-03-16T16:00:00'
-        },
-        {
-          title: 'Conference',
-          start: '2018-03-11',
-          end: '2018-03-13'
-        },
-        {
-          title: 'Meeting',
-          start: '2018-03-12T10:30:00',
-          end: '2018-03-12T12:30:00'
-        },
-        {
-          title: 'Lunch',
-          start: '2018-03-12T12:00:00'
-        },
-        {
-          title: 'Meeting',
-          start: '2018-03-12T14:30:00'
-        },
-        {
-          title: 'Happy Hour',
-          start: '2018-03-12T17:30:00'
-        },
-        {
-          title: 'Dinner',
-          start: '2018-03-12T20:00:00'
-        },
-        {
-          title: 'Birthday Party',
-          start: '2018-03-13T07:00:00'
-        },
-        {
-          title: 'Click for Google',
-          url: 'http://google.com/',
-          start: '2018-03-28'
-        }
-      ]
-    });
-
-  });
-
-</script>
-	<style>
-  #calendar {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-</style>
+	
 
 </head>
 <body>
@@ -451,6 +370,20 @@
 
 
 
+
+<script>
+	$(function(){
+		$('.open-popup-link').magnificPopup({
+		  type:'inline',
+		  midClick: true 
+		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
+	});
+</script>
+
+
+
+
 <div class="institutional_knowledge_base_wrapper">
 	
 	<!-- left_pillar -->
@@ -548,7 +481,19 @@
 
 				<div class="doclist_fun_row">
 					<div class="doclist_fun_btn"><i class="far fa-heart"></i> 加入收藏</div>
-					<div class="doclist_fun_btn"><i class="fas fa-plus"></i> 新增資料夾</div>
+
+					
+					
+					<a href="#popup_new-folder" class="doclist_fun_btn open-popup-link">
+						<i class="fas fa-plus"></i> 新增資料夾
+					</a>
+					
+
+
+					<!-- <a href="#popup_new-folder" class="add_btn open-popup-link">新增儀表板</a> -->
+
+
+
 					<div class="doclist_fun_btn btn-upload">
 						上傳文件 <i class="fas fa-caret-down"></i>
 						<div class="doclist_dropdown dropdown-upload">
@@ -796,7 +741,6 @@
 
 
 
-
 			<div class="pages">
 				<div class="page_front">
 					<div class="num_page">
@@ -840,6 +784,23 @@
 	</div>
 	
 
+
+
+
+<div id="popup_new-folder" class="lightbox_go mfp-hide">
+	<div class="edit_layout_title">
+		新增資料夾
+	</div>
+
+	<div class="edit_layout_row">
+		資料夾名稱
+		<input type="text">
+	</div>
+	<div class="btn_section">
+		<div class="cancel_fun">取消</div>
+		<div class="add_fun">確定</div>
+	</div>
+</div>
 
 	<!-- right_pillar -->
 	<!-- <div class="institutional_knowledge_base_right">
