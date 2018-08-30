@@ -3458,6 +3458,7 @@ body {
   background-color: #419fe3;
   color: #FFF;
   border-radius: 4px;
+  cursor: pointer;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
