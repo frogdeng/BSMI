@@ -842,50 +842,9 @@ $page_width: 1044px
 				flex-direction: row
 				justify-content: space-between
 				align-items: center
-				position: relative
 				
 				p 
 					color: #444
-				.text_unedit_dropdown
-					display: none
-					
-					position: absolute
-					width: 600px
-					background: #FFF
-					border-radius: 4px
-					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1)
-					overflow: hidden
-					top: 50px
-					.parent_title
-						height: 30px
-						color: #444
-						background: #eee
-						padding: 18px 10px
-						display: flex
-						flex-direction: row
-						justify-content: flex-start
-						align-items: center
-					.text_unedit_dropdown_row						
-						.this_t
-							padding: 10px 16px
-							display: flex
-							flex-direction: row
-							justify-content: space-between
-							align-items: center
-							border-bottom: 1px solid #ddd
-							transition: all .3s
-							&:hover
-								background: rgba(65, 159, 227, 0.1)
-						.this_content
-							padding: 10px 16px
-							padding-left: 50px
-							border-bottom: 1px solid #ddd
-							transition: all .3s
-							&:hover
-								background: rgba(65, 159, 227, 0.1)
-
-
-
 
 			textarea
 				background: #FFF
@@ -897,6 +856,55 @@ $page_width: 1044px
 					color: #c0c0c0
 
 
+
+.text_unedit_dropdown
+	display: none
+	position: absolute
+	width: 600px
+	max-height: 500px
+	background: #FFF
+	border-radius: 4px
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1)
+	overflow: hidden
+	top: 50px
+	.parent_title
+		height: 30px
+		color: #444
+		background: #eee
+		padding: 18px 10px
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+	.text_unedit_dropdown_row						
+		.this_t
+			padding: 10px 16px
+			cursor: pointer
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			border-bottom: 1px solid #ddd
+			transition: all .3s
+			&:hover
+				background: rgba(65, 159, 227, 0.1)
+		.sub_content
+			height: 0px
+			transition: all .3s
+			.this_content
+				display: none
+				padding: 10px 16px
+				padding-left: 50px
+				border-bottom: 1px solid #ddd
+				transition: all .3s
+				&:hover
+					background: #eee
+
+
+
+
+.h_auto
+	height: auto !important
 
 
 .upload_list

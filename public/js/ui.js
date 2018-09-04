@@ -113,11 +113,25 @@ $(function(){
 
 
     $('.text_unedit').click(function(){
-        $('.text_unedit_dropdown').toggleClass( "show_show" )
+        $(this).next('.text_unedit_dropdown').toggleClass( "show_show" )
     });   
+
+   $('.this_t').click(function(){
+        $(this).next('.sub_content').toggleClass( "h_auto")
+        $(this).next('.sub_content').find('.this_content').toggleClass( "show_show")
+        $(this).parent().siblings().find('.this_content').removeClass("show_show")
+        $(this).parent().siblings().find('.sub_content').removeClass("h_auto")
+
+    });   
+
+
+
+
+
 
      $('.find_name').click(function(){
         $('.search_member_dropdown').toggleClass( "show_show" )
+
     });
 
 
