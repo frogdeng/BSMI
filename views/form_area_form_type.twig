@@ -5,6 +5,16 @@
 
 
 
+<script>
+	$(function(){
+		$('.open-popup-link').magnificPopup({
+		  type:'inline',
+		  midClick: true 
+		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
+	});
+</script>
+
 	
 	
 
@@ -18,36 +28,50 @@
 		<div class="switch_view">
 			<div class="switch_view_l switch_view_on">使用情境</div>
 			<div class="switch_view_r">單位組織</div>
-			
-
 		</div>
 
 		<div class="knowledge_ranking">
 			<div class="doclist_fun">
 
-				<span>
-				<div class="doclist_search" style="width: 270px">
-					<input type="text" class="i_search" placeholder="檢索知識" style="width: 230px">
+				<div class="doclist_search">
+					<input type="text" class="i_search" placeholder="檢索知識">
 					<i class="fas fa-search"></i>
 				</div>
-				<div class="select_keyword" >
-					<select name="" id="">
-						<option value="">表單類型</option>
-						<option value="">表單類型</option>
-						<option value="">表單類型</option>
-						<option value="">表單類型</option>
-						<option value="">表單類型</option>
-					</select>
-				</div>
-				</span>
-
-
 
 				<div class="doclist_fun_row">
 					<div class="doclist_fun_btn"><i class="far fa-heart"></i> 加入收藏</div>
-					<div class="doclist_fun_btn"><i class="fas fa-plus"></i> 新增資料夾</div>
-					<div class="doclist_fun_btn">上傳文件 <i class="fas fa-caret-down"></i></div>
-					<div class="doclist_fun_btn">文件管理 <i class="fas fa-caret-down"></i></div>
+
+					
+					
+					<a href="#popup_new-folder" class="doclist_fun_btn open-popup-link">
+						<i class="fas fa-plus"></i> 新增資料夾
+					</a>
+					
+
+
+					<!-- <a href="#popup_new-folder" class="add_btn open-popup-link">新增儀表板</a> -->
+
+
+
+					<div class="doclist_fun_btn btn-upload">
+						上傳文件 <i class="fas fa-caret-down"></i>
+						<div class="doclist_dropdown dropdown-upload">
+							<div class="dropdown_list">超級資料夾</div>
+							<div class="dropdown_list">無敵資料夾</div>
+							<div class="dropdown_list">無堅不摧資料夾</div>
+							<div class="dropdown_list">我的秘密資料夾</div>
+						</div>
+					</div>
+					<div class="doclist_fun_btn btn-doc">
+						文件管理 <i class="fas fa-caret-down "></i>
+						<div class="doclist_dropdown dropdown-doc">
+							<div class="dropdown_list">超級資料夾</div>
+							<div class="dropdown_list">無敵資料夾</div>
+							<div class="dropdown_list">無堅不摧資料夾</div>
+							<div class="dropdown_list">我的秘密資料夾</div>
+						</div>
+							
+					</div>
 				</div>
 
 			</div>
@@ -310,8 +334,28 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- loghtbox -->
+		<div id="popup_new-folder" class="lightbox_go mfp-hide">
+			<div class="edit_layout_title">
+				新增資料夾
+			</div>
+
+			<div class="edit_layout_row">
+				資料夾名稱
+				<input type="text">
+			</div>
+			<div class="btn_section">
+				<div class="cancel_fun">取消</div>
+				<div class="add_fun">確定</div>
+			</div>
+		</div>
+
+
+
 	</div>
 
+<div class="goto_top scroll-to-top"><i class="fas fa-arrow-up"></i></div>
 
 
 <div class="clear"></div>

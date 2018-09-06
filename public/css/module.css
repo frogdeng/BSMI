@@ -2555,6 +2555,25 @@ body {
   transition: all .3s;
   padding: 32px; }
 
+.goto_top {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  background: #6db5ea;
+  bottom: 40px;
+  right: 20px;
+  border-radius: 4px;
+  color: #FFF;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer; }
+
 .institutional_knowledge_base_right {
   -ms-flex: 0 0 204px;
   flex: 0 0 204px;
