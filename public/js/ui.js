@@ -119,20 +119,23 @@ $(function(){
 
 
    $('.this_t').click(function(){
-        $(this).next('.sub_content').toggleClass( "h_auto")
-        $(this).next('.sub_content').find('.this_content').toggleClass( "open")
-        $(this).parent().siblings().find('.this_content').removeClass("open")
+        $(this).next('.sub_content').toggleClass("h_auto")
+        $(this).next('.sub_content').find('.this_content').toggleClass("this_open")
+        $(this).parent().siblings().find('.this_content').removeClass("this_open")
         $(this).parent().siblings().find('.sub_content').removeClass("h_auto")
 
+
         $(this).parent().siblings().find('.third_sub_content_dropdown').removeClass("h_auto")
-        $(this).parent().siblings().find('.third_this_content').removeClass("open")
+        $(this).parent().siblings().find('.third_this_content').removeClass("this_open")
+
+        $(this).next('.sub_content').find('.third_this_content').removeClass("this_open")
 
     });     
 
    $('.this_content').click(function(){
         $(this).next('.third_sub_content_dropdown').toggleClass( "h_auto")
-        $(this).next('.third_sub_content_dropdown').find('.third_this_content').toggleClass( "open")
-        $(this).parent().siblings().find('.third_this_content').removeClass("open")
+        $(this).next('.third_sub_content_dropdown').find('.third_this_content').toggleClass( "this_open")
+        $(this).parent().siblings().find('.third_this_content').removeClass("this_open")
         $(this).parent().siblings().find('.third_sub_content_dropdown').removeClass("h_auto")
 
      

@@ -2688,7 +2688,7 @@ body {
 .left_pillar .left_pillar_item .inside_item .subitem:nth-last-child(1) {
   border-bottom: none; }
 
-.open {
+.this_open {
   display: -ms-flexbox !important;
   display: flex !important; }
 
